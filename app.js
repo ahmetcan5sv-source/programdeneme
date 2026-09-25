@@ -102,7 +102,8 @@ function searchCourses() {
     if (year && c.year !== year) return false;
     if (!matchesType(c, type)) return false;
     if (!q) return true;
-    return c.code.includes(q) || c.name.toLocaleUpperCase("tr").replace(/\s+/g, "").includes(q);
+    const norm = (t) => t.toLocaleUpperCase("tr").replace(/\s+/g, "");
+    return c.code.includes(q) || norm(c.name).includes(q) || c.sections.some((s) => norm(s.instructor).includes(q));
   });
 
   $("results").innerHTML = list.map((c) => `
@@ -162,7 +163,7 @@ function renderSelected() {
     const secs = c.sections.length > 1 ? `<div class="secs">` + c.sections.map((s) => `
       <label title="${s.slots.map(slotText).join(", ")}${s.instructor ? " — " + s.instructor : ""}">
         <input type="checkbox" data-code="${c.code}" data-sec="${s.id}" ${sel.excluded.includes(s.id) ? "" : "checked"}>
-        ${sectionLabel(s)}
+        ${sectionLabel(s)}${s.instructor ? ` <span class="who">· ${s.instructor.split(" ").pop()}</span>` : ""}
       </label>`).join("") + `</div>` : "";
     return `<li style="border-color:${colorOf(c.code)}">
       <div class="head"><span><b>${c.code}</b> ${c.name}</span>
@@ -321,6 +322,8 @@ function renderGrid() {
     html += `</div>`;
   }
   $("grid").innerHTML = html;
+  if (previewCode) drawPreview(previewCode);
+  renderFits();
 
   const noSlot = sch.filter((o) => o.sec.slots.length === 0).map((o) => o.course.code);
   $("unscheduled").textContent = noSlot.length ? `Saati belli olmayan dersler: ${noSlot.join(", ")}` : "";
@@ -431,6 +434,23 @@ function bind() {
     update();
   });
   $("png").addEventListener("click", downloadPng);
+  $("print").addEventListener("click", () => window.print());
+  $("icsBtn").addEventListener("click", downloadIcs);
+  $("theme").addEventListener("click", () => {
+    const order = ["auto", "light", "dark"];
+    applyTheme(order[(order.indexOf(currentTheme()) + 1) % order.length]);
+  });
+  $("fits").addEventListener("click", (e) => {
+    const li = e.target.closest("li[data-code]");
+    if (li) addCourse(li.dataset.code);
+  });
+  // Preview only for mouse users; on touch a tap adds the course directly
+  $("results").addEventListener("mouseover", (e) => {
+    const li = e.target.closest("li[data-code]");
+    const code = li ? li.dataset.code : null;
+    if (code !== previewCode) { previewCode = code; renderGrid(); }
+  });
+  $("results").addEventListener("mouseleave", () => { if (previewCode) { previewCode = null; renderGrid(); } });
   $("share").addEventListener("click", async () => {
     try { await navigator.clipboard.writeText(location.href); $("share").textContent = "Kopyalandı"; }
     catch (_) { prompt("Linki kopyala:", location.href); }
@@ -461,6 +481,97 @@ async function downloadPng() {
   a.click();
 }
 
+// ---------- preview / fits ----------
+let previewCode = null;
+
+function drawPreview(code) {
+  if (state.selected.some((s) => s.code === code)) return;
+  const c = courses.get(code);
+  const cols = $("grid").querySelectorAll(".col");
+  for (const sec of c.sections) for (const sl of sec.slots) {
+    const el = document.createElement("div");
+    el.className = "blk ghost";
+    el.style.top = `calc(var(--row-h) * ${(toMin(sl.s) - gridStart) / 60})`;
+    el.style.height = `calc(var(--row-h) * ${(toMin(sl.e) - toMin(sl.s)) / 60} - 2px)`;
+    el.innerHTML = `<b>${c.code}</b>${c.sections.length > 1 ? sectionLabel(sec) : ""}`;
+    cols[sl.d].appendChild(el);
+  }
+}
+
+function renderFits() {
+  const sch = schedules[current];
+  $("fitsSection").hidden = !sch;
+  if (!sch) return;
+  const taken = sch.flatMap((o) => toIntervals(o.sec, state.selected.find((x) => x.code === o.course.code) || {}));
+  const hasRektorluk = state.selected.some((s) => courses.get(s.code).category === "rektorluk");
+  const list = DATA.courses.filter((c) => {
+    if (state.selected.some((s) => s.code === c.code) || !c.sections.length) return false;
+    if (hasRektorluk && c.category === "rektorluk") return false;
+    return c.sections.some((sec) => sectionUsable(sec) && !clashes(taken, toIntervals(sec, {})));
+  });
+  $("fits").innerHTML = list.map((c) => `
+    <li data-code="${c.code}">
+      <span><span class="code">${c.code}</span> ${c.name}</span>
+      <span class="tags">${typeTag(c)}</span>
+    </li>`).join("") || `<li class="muted">Sığan ders yok</li>`;
+}
+
+// ---------- calendar export ----------
+function downloadIcs() {
+  const sch = schedules[current];
+  const start = $("icsStart").value, end = $("icsEnd").value;
+  $("icsWarn").textContent = "";
+  if (!sch) { $("icsWarn").textContent = "Önce bir program oluştur."; return; }
+  if (!start || !end || end < start) { $("icsWarn").textContent = "Geçerli bir başlangıç ve bitiş tarihi seç."; return; }
+
+  // Turkey is UTC+3 all year, so times are written in UTC
+  const utc = (date, hhmm) => {
+    const [h, m] = hhmm.split(":").map(Number);
+    const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), h - 3, m));
+    return d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+  };
+  const esc = (t) => String(t).replace(/[\\;,]/g, (x) => "\\" + x);
+  const first = new Date(start + "T00:00:00");
+  const last = new Date(end + "T00:00:00");
+  const until = utc(last, "23:59");
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//AYBU Program Yapici//TR", "CALSCALE:GREGORIAN"];
+  let n = 0;
+  for (const o of sch) for (const sl of o.sec.slots) {
+    const day = new Date(first);
+    day.setDate(day.getDate() + ((sl.d + 1 - day.getDay() + 7) % 7));
+    if (day > last) continue;
+    lines.push("BEGIN:VEVENT",
+      `UID:${o.course.code}-${o.sec.id}-${sl.d}-${sl.s.replace(":", "")}-${n++}@aybu-program`,
+      `DTSTAMP:${stamp}`,
+      `DTSTART:${utc(day, sl.s)}`,
+      `DTEND:${utc(day, sl.e)}`,
+      `RRULE:FREQ=WEEKLY;UNTIL=${until}`,
+      `SUMMARY:${esc(`${o.course.code} ${o.course.name}`.trim())}`,
+      `LOCATION:${esc(sl.r || "")}`,
+      `DESCRIPTION:${esc([sectionLabel(o.sec), o.sec.instructor].filter(Boolean).join(" - "))}`,
+      "END:VEVENT");
+  }
+  lines.push("END:VCALENDAR");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([lines.join("\r\n") + "\r\n"], { type: "text/calendar" }));
+  a.download = "ders-programi.ics";
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+// ---------- theme ----------
+function currentTheme() {
+  try { return localStorage.getItem("aybu-theme") || "auto"; } catch (_) { return "auto"; }
+}
+function applyTheme(t) {
+  if (t === "auto") delete document.documentElement.dataset.theme;
+  else document.documentElement.dataset.theme = t;
+  try { localStorage.setItem("aybu-theme", t); } catch (_) {}
+  $("theme").textContent = `Tema: ${{ auto: "Otomatik", light: "Açık", dark: "Koyu" }[t]}`;
+}
+
 function syncControls() {
   $("minStart").value = state.minStart ?? "";
   $("maxEnd").value = state.maxEnd ?? "";
@@ -475,5 +586,6 @@ initFilters();
 load();
 syncControls();
 bind();
+applyTheme(currentTheme());
 renderFavs();
 update();

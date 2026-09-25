@@ -111,3 +111,20 @@ button:disabled { opacity: .4; cursor: default; }
 .hint { margin: 8px 0 0; }
 button.link { border: none; background: none; padding: 0; color: var(--accent); font-size: inherit; text-decoration: underline; }
 .toolbar { flex-wrap: wrap; }
+
+.top .spacer { flex: 1; }
+.blk.ghost { opacity: .85; background: var(--surface); color: var(--text); outline: 2px dashed var(--text); z-index: 2; pointer-events: none; }
+.extra { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px; }
+.extra summary { cursor: pointer; font-weight: 600; }
+.fits { max-height: 220px; }
+.ics { flex-wrap: wrap; justify-content: flex-start; }
+.ics label { display: flex; gap: 6px; align-items: center; }
+.secs .who { color: var(--muted); }
+
+@media print {
+  .panel, .toolbar button, .hint, .extra, footer, #theme { display: none !important; }
+  .layout { display: block; padding: 0; }
+  .main { border: none; }
+  body { background: #fff; }
+  .blk { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

@@ -5,13 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AYBÜ Program Yapıcı</title>
 <meta name="description" content="AYBÜ Mühendislik öğrencileri için çakışmasız ders programı oluşturucu">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <header class="top">
   <h1>AYBÜ Program Yapıcı</h1>
   <span id="program" class="badge"></span>
   <span id="term" class="muted"></span>
+  <span class="spacer"></span>
+  <button id="theme" aria-label="Tema değiştir">Tema: Otomatik</button>
 </header>
 
 <main class="layout">
@@ -35,7 +37,7 @@
         </select>
       </div>
       <button id="addRequired" class="wide" hidden></button>
-      <input id="search" type="search" placeholder="Kod veya ad ara (ör. MATH101, ENGR)" autocomplete="off">
+      <input id="search" type="search" placeholder="Kod, ders adı veya hoca ara" autocomplete="off">
       <ul id="results" class="results"></ul>
     </section>
 
@@ -80,12 +82,30 @@
       <span class="spacer"></span>
       <button id="saveFav">Kaydet</button>
       <button id="png">PNG indir</button>
+      <button id="print">Yazdır</button>
       <button id="share">Linki kopyala</button>
     </div>
     <p id="clashInfo" class="warn"></p>
     <div id="grid" class="grid"></div>
     <div id="unscheduled" class="small muted"></div>
-    <p class="small muted hint">Boş kalmasını istediğin saatlere takvimde tıkla. <button id="clearBlocked" class="link">Engelleri temizle</button></p>
+    <p class="small muted hint">Boş kalmasını istediğin saatlere takvimde tıkla. Arama listesinde bir dersin üstüne gelince saatleri takvimde soluk görünür. <button id="clearBlocked" class="link">Engelleri temizle</button></p>
+
+    <section class="extra" id="fitsSection" hidden>
+      <h2>Bu programa sığan dersler</h2>
+      <p class="small muted">Görüntülenen programa çakışmadan eklenebilecek dersler. Eklemek için tıkla.</p>
+      <ul id="fits" class="results fits"></ul>
+    </section>
+
+    <details class="extra" id="icsBox">
+      <summary>Takvime aktar (Google Takvim, telefon)</summary>
+      <p class="small muted">Görüntülenen programı haftalık tekrarlayan etkinlikler olarak .ics dosyasına aktarır. Dönemin ilk ve son ders gününü seç.</p>
+      <div class="row ics">
+        <label>Başlangıç <input type="date" id="icsStart"></label>
+        <label>Bitiş <input type="date" id="icsEnd"></label>
+        <button id="icsBtn">.ics indir</button>
+      </div>
+      <p id="icsWarn" class="warn"></p>
+    </details>
   </section>
 </main>
 
@@ -93,7 +113,7 @@
   Veriler OBS ders programından aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
-<script src="data/courses.js?v=4"></script>
-<script src="app.js?v=4"></script>
+<script src="data/courses.js?v=5"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>
