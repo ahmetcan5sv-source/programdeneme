@@ -13,6 +13,7 @@ const isOnline = (slot) => /online|aybuzem|onl\./i.test(slot.r || "");
 const $ = (id) => document.getElementById(id);
 
 const courses = new Map(DATA.courses.map((c) => [c.code, c]));
+const courseOfSection = new Map(DATA.courses.flatMap((c) => c.sections.map((s) => [s, c])));
 
 // Grid range derived from the data, rounded to the half hour
 let gridStart = Infinity, gridEnd = 0;
@@ -168,8 +169,8 @@ function renderSelected() {
     return `<li style="border-color:${colorOf(c.code)}">
       <div class="head"><span><b>${c.code}</b> ${c.name}</span>
       <button class="rm" data-rm="${c.code}" aria-label="Kaldır">×</button></div>${secs}
-      <label class="small muted clashbox"><input type="checkbox" data-clash="${c.code}" ${sel.clash ? "checked" : ""}>
-        Çakışabilir</label></li>`;
+      ${c.noClash ? `<span class="small muted clashbox">Çakışmadan muaf</span>` : `<label class="small muted clashbox">
+        <input type="checkbox" data-clash="${c.code}" ${sel.clash ? "checked" : ""}> Çakışabilir</label>`}</li>`;
   }).join("");
 }
 
@@ -209,7 +210,7 @@ function countedSlots(sec) {
 }
 
 function toIntervals(sec, sel) {
-  if (sel.clash) return [];
+  if (sel.clash || courseOfSection.get(sec).noClash) return [];
   return countedSlots(sec).map((sl) => [sl.d, toMin(sl.s), toMin(sl.e)]);
 }
 

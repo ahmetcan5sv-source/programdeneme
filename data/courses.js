@@ -12,6 +12,7 @@ window.COURSE_DATA = {
    "year": 1,
    "required": true,
    "ects": 5,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -42,6 +43,7 @@ window.COURSE_DATA = {
    "year": 1,
    "required": true,
    "ects": 5,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -66,6 +68,7 @@ window.COURSE_DATA = {
    "year": 1,
    "required": true,
    "ects": 2,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -90,6 +93,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": false,
    "ects": null,
+   "noClash": false,
    "sections": [
     {
      "id": "ENGR",
@@ -114,6 +118,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": false,
    "ects": null,
+   "noClash": false,
    "sections": [
     {
      "id": "ENGR",
@@ -138,6 +143,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": false,
    "ects": null,
+   "noClash": false,
    "sections": [
     {
      "id": "ENGR",
@@ -162,6 +168,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": false,
    "ects": null,
+   "noClash": false,
    "sections": [
     {
      "id": "ENGR",
@@ -186,6 +193,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": true,
    "ects": 3,
+   "noClash": false,
    "sections": [
     {
      "id": "ENGR",
@@ -210,6 +218,7 @@ window.COURSE_DATA = {
    "year": 3,
    "required": false,
    "ects": null,
+   "noClash": false,
    "sections": [
     {
      "id": "ENGR",
@@ -234,6 +243,7 @@ window.COURSE_DATA = {
    "year": 4,
    "required": false,
    "ects": 15,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -258,6 +268,7 @@ window.COURSE_DATA = {
    "year": 1,
    "required": true,
    "ects": 2,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -282,6 +293,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": true,
    "ects": 6,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -312,6 +324,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": true,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -336,6 +349,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": true,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -360,6 +374,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": true,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -384,6 +399,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": true,
    "ects": 3,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -408,6 +424,7 @@ window.COURSE_DATA = {
    "year": 3,
    "required": true,
    "ects": 4,
+   "noClash": true,
    "sections": [
     {
      "id": "IE",
@@ -432,6 +449,7 @@ window.COURSE_DATA = {
    "year": 3,
    "required": true,
    "ects": 5,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -456,6 +474,7 @@ window.COURSE_DATA = {
    "year": 3,
    "required": true,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -480,6 +499,7 @@ window.COURSE_DATA = {
    "year": 3,
    "required": true,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -504,6 +524,7 @@ window.COURSE_DATA = {
    "year": 3,
    "required": true,
    "ects": 5,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -528,6 +549,7 @@ window.COURSE_DATA = {
    "year": 3,
    "required": true,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -552,6 +574,7 @@ window.COURSE_DATA = {
    "year": 3,
    "required": false,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -576,6 +599,7 @@ window.COURSE_DATA = {
    "year": 4,
    "required": true,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -600,6 +624,7 @@ window.COURSE_DATA = {
    "year": 4,
    "required": false,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -624,6 +649,7 @@ window.COURSE_DATA = {
    "year": 4,
    "required": false,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -648,6 +674,7 @@ window.COURSE_DATA = {
    "year": 4,
    "required": false,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -672,6 +699,7 @@ window.COURSE_DATA = {
    "year": 4,
    "required": false,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -696,6 +724,7 @@ window.COURSE_DATA = {
    "year": 4,
    "required": false,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -720,6 +749,7 @@ window.COURSE_DATA = {
    "year": 4,
    "required": false,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -744,6 +774,7 @@ window.COURSE_DATA = {
    "year": 4,
    "required": true,
    "ects": 6,
+   "noClash": false,
    "sections": [
     {
      "id": "IE-1",
@@ -894,6 +925,7 @@ window.COURSE_DATA = {
    "year": 1,
    "required": true,
    "ects": 6,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -924,6 +956,7 @@ window.COURSE_DATA = {
    "year": 2,
    "required": true,
    "ects": 6,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -954,6 +987,7 @@ window.COURSE_DATA = {
    "year": 1,
    "required": true,
    "ects": 4,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -978,6 +1012,7 @@ window.COURSE_DATA = {
    "year": 1,
    "required": true,
    "ects": 2,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -1002,6 +1037,7 @@ window.COURSE_DATA = {
    "year": 1,
    "required": true,
    "ects": 2,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",
@@ -1026,6 +1062,7 @@ window.COURSE_DATA = {
    "year": 1,
    "required": true,
    "ects": 2,
+   "noClash": false,
    "sections": [
     {
      "id": "IE",

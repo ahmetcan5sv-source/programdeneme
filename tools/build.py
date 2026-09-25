@@ -20,6 +20,8 @@ OUT = ROOT / "data" / "courses.js"
 
 TERM = "2026-2027 Güz"
 PROGRAM = "IE"
+# Çakışma kontrolüne girmeyen dersler (ör. sınıfta yapılmayan staj dersleri)
+NO_CLASH = {"IE300"}
 DEPARTMENTS = OrderedDict([
     ("CENG", "Bilgisayar Mühendisliği"),
     ("EE", "Elektrik-Elektronik Mühendisliği"),
@@ -90,6 +92,7 @@ def main():
                     "year": int(m.group()) if (m := re.search(r"\d", code)) else None,
                     "required": curriculum.get(code, False),
                     "ects": ects.get(code, 4 if elective.match(code) else None),
+                    "noClash": code in NO_CLASH,
                     "sections": OrderedDict(),
                 })
                 sec_no = (row.get("section") or "").strip()
