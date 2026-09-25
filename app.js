@@ -24,10 +24,11 @@ gridStart = Math.floor(gridStart / 60) * 60 + (gridStart % 60 >= 30 ? 30 : 0);
 gridEnd = Math.ceil((gridEnd - 30) / 60) * 60 + 30;
 
 const state = {
-  selected: [],          // [{ code, excluded: [sectionId, ...] }]
+  selected: [],          // [{ code, excluded: [sectionId, ...], clash: bool }]
   freeDays: [],
-  minStart: gridStart,
-  maxEnd: gridEnd,
+  blocked: [],           // ["day:minute"] hour cells the user wants kept free
+  minStart: null,        // null = no limit
+  maxEnd: null,
   ignoreOnline: true,
   sortBy: "freedays",
 };
@@ -51,7 +52,22 @@ function load() {
     const s = JSON.parse(raw);
     Object.assign(state, s);
     state.selected = state.selected.filter((x) => courses.has(x.code));
+    state.blocked = state.blocked || [];
+    // Drop time limits that are no longer offered (e.g. saved when the grid started at 08:30)
+    for (const k of ["minStart", "maxEnd"]) {
+      const v = state[k];
+      if (v != null && (v < gridStart || v > gridEnd || (v - gridStart) % 60)) state[k] = null;
+    }
   } catch (_) {}
+}
+
+// Saved schedules live only in this browser
+function loadFavs() {
+  try { return JSON.parse(localStorage.getItem("aybu-favs")) || []; } catch (_) { return []; }
+}
+function storeFavs(favs) {
+  try { localStorage.setItem("aybu-favs", JSON.stringify(favs)); } catch (_) {}
+  renderFavs();
 }
 
 // ---------- search / selection ----------
@@ -73,8 +89,9 @@ function initFilters() {
 
   const opts = [];
   for (let m = gridStart; m <= gridEnd; m += 60) opts.push(m);
-  $("minStart").innerHTML = opts.map((m) => `<option value="${m}">${fmt(m)}</option>`).join("");
-  $("maxEnd").innerHTML = opts.map((m) => `<option value="${m}">${fmt(m)}</option>`).join("");
+  const html = `<option value="">Sınır yok</option>` + opts.map((m) => `<option value="${m}">${fmt(m)}</option>`).join("");
+  $("minStart").innerHTML = html;
+  $("maxEnd").innerHTML = html;
 }
 
 function searchCourses() {
@@ -134,7 +151,12 @@ function slotText(sl) {
 }
 
 function renderSelected() {
+  const known = state.selected.map((s) => courses.get(s.code).ects).filter((x) => x != null);
+  const unknown = state.selected.length - known.length;
   $("selCount").textContent = state.selected.length ? `(${state.selected.length})` : "";
+  $("ects").textContent = state.selected.length
+    ? `Toplam ${known.reduce((a, b) => a + b, 0)} AKTS${unknown ? ` (+${unknown} dersin AKTS'si bilinmiyor)` : ""}`
+    : "";
   $("selected").innerHTML = state.selected.map((sel) => {
     const c = courses.get(sel.code);
     const secs = c.sections.length > 1 ? `<div class="secs">` + c.sections.map((s) => `
@@ -144,22 +166,50 @@ function renderSelected() {
       </label>`).join("") + `</div>` : "";
     return `<li style="border-color:${colorOf(c.code)}">
       <div class="head"><span><b>${c.code}</b> ${c.name}</span>
-      <button class="rm" data-rm="${c.code}" aria-label="Kaldır">×</button></div>${secs}</li>`;
+      <button class="rm" data-rm="${c.code}" aria-label="Kaldır">×</button></div>${secs}
+      <label class="small muted clashbox"><input type="checkbox" data-clash="${c.code}" ${sel.clash ? "checked" : ""}>
+        Çakışabilir</label></li>`;
   }).join("");
 }
 
 // ---------- schedule generation ----------
-function sectionUsable(sec) {
-  return sec.slots.every((sl) => {
-    if (isOnline(sl) && state.ignoreOnline) return true;
-    return !state.freeDays.includes(sl.d) && toMin(sl.s) >= state.minStart && toMin(sl.e) <= state.maxEnd;
+function hitsBlocked(sl) {
+  const s = toMin(sl.s), e = toMin(sl.e);
+  return state.blocked.some((k) => {
+    const [d, m] = k.split(":").map(Number);
+    return d === sl.d && s < m + 60 && m < e;
   });
 }
 
-function toIntervals(sec) {
-  return sec.slots
-    .filter((sl) => !(state.ignoreOnline && isOnline(sl)))
-    .map((sl) => [sl.d, toMin(sl.s), toMin(sl.e)]);
+// Why a slot is filtered out, or null if it is allowed
+function slotProblem(sl) {
+  if (isOnline(sl) && state.ignoreOnline) return null;
+  if (state.freeDays.includes(sl.d)) return `${DAYS[sl.d]} boş olsun filtresi`;
+  if (state.minStart != null && toMin(sl.s) < state.minStart) return `en erken başlangıç ${fmt(state.minStart)}`;
+  if (state.maxEnd != null && toMin(sl.e) > state.maxEnd) return `en geç bitiş ${fmt(state.maxEnd)}`;
+  if (hitsBlocked(sl)) return `engellenen saat (${DAYS_SHORT[sl.d]} ${sl.s})`;
+  return null;
+}
+
+function sectionUsable(sec) {
+  return sec.slots.every((sl) => !slotProblem(sl));
+}
+
+function emptyReason(sel) {
+  const c = courses.get(sel.code);
+  const open = c.sections.filter((s) => !sel.excluded.includes(s.id));
+  if (!open.length) return "tüm şubeleri hariç tutuldu";
+  const reasons = new Set(open.map((s) => s.slots.map(slotProblem).find(Boolean)));
+  return [...reasons].join(", ");
+}
+
+function countedSlots(sec) {
+  return sec.slots.filter((sl) => !(state.ignoreOnline && isOnline(sl)));
+}
+
+function toIntervals(sec, sel) {
+  if (sel.clash) return [];
+  return countedSlots(sec).map((sl) => [sl.d, toMin(sl.s), toMin(sl.e)]);
 }
 
 function clashes(a, b) {
@@ -171,12 +221,17 @@ function generate() {
   const items = state.selected.map((sel) => {
     const c = courses.get(sel.code);
     const secs = c.sections.filter((s) => !sel.excluded.includes(s.id) && sectionUsable(s))
-      .map((s) => ({ course: c, sec: s, iv: toIntervals(s) }));
-    return { code: c.code, secs };
+      .map((s) => ({ course: c, sec: s, iv: toIntervals(s, sel) }));
+    return { code: c.code, secs, sel };
   });
 
-  const empty = items.filter((i) => i.secs.length === 0).map((i) => i.code);
-  if (empty.length) return { list: [], empty, pairs: [] };
+  const emptyItems = items.filter((i) => i.secs.length === 0);
+  if (emptyItems.length) {
+    return {
+      list: [], empty: emptyItems.map((i) => i.code), pairs: [],
+      reasons: emptyItems.map((i) => `${i.code}: ${emptyReason(i.sel)}`),
+    };
+  }
 
   items.sort((a, b) => a.secs.length - b.secs.length);
   const list = [];
@@ -199,12 +254,12 @@ function generate() {
       }
     }
   }
-  return { list, empty: [], pairs };
+  return { list, empty: [], pairs, reasons: [] };
 }
 
 function score(sch) {
   const byDay = [[], [], [], [], []];
-  for (const o of sch) for (const [d, s, e] of o.iv) byDay[d].push([s, e]);
+  for (const o of sch) for (const sl of countedSlots(o.sec)) byDay[sl.d].push([toMin(sl.s), toMin(sl.e)]);
   let freeDays = 0, gaps = 0, lastEnd = 0;
   for (const day of byDay) {
     if (!day.length) { freeDays++; continue; }
@@ -233,14 +288,33 @@ function renderGrid() {
 
   const sch = schedules[current] || [];
   for (let d = 0; d < 5; d++) {
-    html += `<div class="col">` + `<div class="cell"></div>`.repeat(rows);
+    html += `<div class="col">` + Array.from({ length: rows }, (_, i) => {
+      const key = `${d}:${gridStart + i * 60}`;
+      return `<div class="cell${state.blocked.includes(key) ? " blocked" : ""}" data-key="${key}"></div>`;
+    }).join("");
+    // Overlapping blocks (online or "çakışabilir" courses) share the column side by side
+    const items = [];
     for (const o of sch) for (const sl of o.sec.slots) {
-      if (sl.d !== d) continue;
-      const top = (toMin(sl.s) - gridStart) / 60;
-      const h = (toMin(sl.e) - toMin(sl.s)) / 60;
-      const clash = isOnline(sl) && sch.some((p) => p !== o && p.sec.slots.some((q) =>
-        q.d === d && toMin(q.s) < toMin(sl.e) && toMin(sl.s) < toMin(q.e)));
-      html += `<div class="blk${clash ? " clash" : ""}" style="top:calc(var(--row-h) * ${top});height:calc(var(--row-h) * ${h} - 2px);background:${colorOf(o.course.code)}"
+      if (sl.d === d) items.push({ o, sl, s: toMin(sl.s), e: toMin(sl.e) });
+    }
+    items.sort((a, b) => a.s - b.s || b.e - a.e);
+    const laneEnds = [];
+    for (const it of items) {
+      it.lane = laneEnds.findIndex((end) => end <= it.s);
+      if (it.lane === -1) it.lane = laneEnds.length;
+      laneEnds[it.lane] = it.e;
+    }
+    for (const it of items) {
+      const overlapping = items.filter((x) => x.s < it.e && it.s < x.e);
+      it.lanes = Math.max(...overlapping.map((x) => x.lane)) + 1;
+    }
+
+    for (const { o, sl, s, e, lane, lanes } of items) {
+      const top = (s - gridStart) / 60;
+      const h = (e - s) / 60;
+      const clash = lanes > 1;
+      const pos = lanes > 1 ? `left:calc(${(lane / lanes) * 100}% + 1px);right:auto;width:calc(${100 / lanes}% - 2px);` : "";
+      html += `<div class="blk${clash ? " clash" : ""}" style="${pos}top:calc(var(--row-h) * ${top});height:calc(var(--row-h) * ${h} - 2px);background:${colorOf(o.course.code)}"
         title="${o.course.code} ${o.course.name}\n${sectionLabel(o.sec)}${o.sec.instructor ? " — " + o.sec.instructor : ""}\n${sl.s}-${sl.e} ${sl.r || ""}">
         <b>${o.course.code}</b>${o.course.sections.length > 1 ? sectionLabel(o.sec) + "<br>" : ""}${sl.r || ""}</div>`;
     }
@@ -269,7 +343,8 @@ function update() {
   searchCourses();
   const r = generate();
   schedules = r.list; lastEmpty = r.empty;
-  $("clashInfo").textContent = r.pairs.length ? `Her şubesi çakışan dersler: ${r.pairs.join(", ")}` : "";
+  $("clashInfo").textContent = r.reasons.length ? `Elenme sebebi — ${r.reasons.join("; ")}`
+    : r.pairs.length ? `Her şubesi çakışan dersler: ${r.pairs.join(", ")}` : "";
   sortSchedules();
   current = 0;
   renderCounter(lastEmpty);
@@ -295,6 +370,11 @@ function bind() {
   });
   $("selected").addEventListener("change", (e) => {
     const cb = e.target;
+    if (cb.dataset.clash) {
+      state.selected.find((s) => s.code === cb.dataset.clash).clash = cb.checked;
+      update();
+      return;
+    }
     if (!cb.dataset.sec) return;
     const sel = state.selected.find((s) => s.code === cb.dataset.code);
     sel.excluded = cb.checked ? sel.excluded.filter((x) => x !== cb.dataset.sec) : [...sel.excluded, cb.dataset.sec];
@@ -304,8 +384,8 @@ function bind() {
     state.freeDays = [...$("freeDays").querySelectorAll("input:checked")].map((i) => +i.value);
     update();
   });
-  $("minStart").addEventListener("change", (e) => { state.minStart = +e.target.value; update(); });
-  $("maxEnd").addEventListener("change", (e) => { state.maxEnd = +e.target.value; update(); });
+  $("minStart").addEventListener("change", (e) => { state.minStart = e.target.value ? +e.target.value : null; update(); });
+  $("maxEnd").addEventListener("change", (e) => { state.maxEnd = e.target.value ? +e.target.value : null; update(); });
   $("ignoreOnline").addEventListener("change", (e) => { state.ignoreOnline = e.target.checked; update(); });
   $("sortBy").addEventListener("change", (e) => { state.sortBy = e.target.value; sortSchedules(); current = 0; renderCounter(lastEmpty); renderGrid(); save(); });
   $("prev").addEventListener("click", () => { if (current > 0) { current--; renderCounter(lastEmpty); renderGrid(); } });
@@ -315,6 +395,42 @@ function bind() {
     if (e.key === "ArrowLeft") $("prev").click();
     if (e.key === "ArrowRight") $("next").click();
   });
+  $("grid").addEventListener("click", (e) => {
+    const cell = e.target.closest(".cell");
+    if (!cell) return;
+    const k = cell.dataset.key;
+    state.blocked = state.blocked.includes(k) ? state.blocked.filter((x) => x !== k) : [...state.blocked, k];
+    update();
+  });
+  $("clearBlocked").addEventListener("click", () => { state.blocked = []; update(); });
+  $("saveFav").addEventListener("click", () => {
+    const sch = schedules[current];
+    if (!sch) return;
+    const favs = loadFavs();
+    const picks = sch.map((o) => ({
+      code: o.course.code, sec: o.sec.id,
+      clash: !!state.selected.find((x) => x.code === o.course.code)?.clash,
+    }));
+    const same = favs.find((f) => JSON.stringify(f.picks) === JSON.stringify(picks));
+    if (!same) favs.push({ name: `Program ${favs.length + 1}`, picks });
+    storeFavs(favs);
+    $("saveFav").textContent = same ? "Zaten kayıtlı" : "Kaydedildi";
+    setTimeout(() => ($("saveFav").textContent = "Kaydet"), 1500);
+  });
+  $("favs").addEventListener("click", (e) => {
+    const favs = loadFavs();
+    const rm = e.target.closest("[data-rmfav]");
+    if (rm) { favs.splice(+rm.dataset.rmfav, 1); storeFavs(favs); return; }
+    const li = e.target.closest("[data-fav]");
+    if (!li) return;
+    state.selected = favs[+li.dataset.fav].picks.filter((p) => courses.has(p.code)).map((p) => ({
+      code: p.code,
+      excluded: courses.get(p.code).sections.map((s) => s.id).filter((id) => id !== p.sec),
+      clash: !!p.clash,
+    }));
+    update();
+  });
+  $("png").addEventListener("click", downloadPng);
   $("share").addEventListener("click", async () => {
     try { await navigator.clipboard.writeText(location.href); $("share").textContent = "Kopyalandı"; }
     catch (_) { prompt("Linki kopyala:", location.href); }
@@ -322,9 +438,32 @@ function bind() {
   });
 }
 
+function renderFavs() {
+  const favs = loadFavs();
+  $("favSection").hidden = !favs.length;
+  $("favs").innerHTML = favs.map((f, i) => `
+    <li data-fav="${i}"><span><b>${f.name}</b> <span class="muted small">${f.picks.map((p) => p.code).join(", ")}</span></span>
+    <button class="rm" data-rmfav="${i}" aria-label="Sil">×</button></li>`).join("");
+}
+
+async function downloadPng() {
+  if (!window.html2canvas || !schedules[current]) return;
+  const grid = $("grid");
+  const canvas = await html2canvas(grid, {
+    scale: 2,
+    width: grid.scrollWidth,
+    windowWidth: Math.max(document.documentElement.clientWidth, grid.scrollWidth + 400),
+    backgroundColor: getComputedStyle(document.querySelector(".main")).backgroundColor,
+  });
+  const a = document.createElement("a");
+  a.download = "ders-programi.png";
+  a.href = canvas.toDataURL("image/png");
+  a.click();
+}
+
 function syncControls() {
-  $("minStart").value = state.minStart;
-  $("maxEnd").value = state.maxEnd;
+  $("minStart").value = state.minStart ?? "";
+  $("maxEnd").value = state.maxEnd ?? "";
   $("ignoreOnline").checked = state.ignoreOnline;
   $("sortBy").value = state.sortBy;
   for (const cb of $("freeDays").querySelectorAll("input")) cb.checked = state.freeDays.includes(+cb.value);
@@ -336,4 +475,5 @@ initFilters();
 load();
 syncControls();
 bind();
+renderFavs();
 update();

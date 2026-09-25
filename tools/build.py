@@ -63,10 +63,14 @@ def main():
         for row in csv.DictReader(f):
             names[norm_code(row["code"])] = row["name"].strip()
 
-    curriculum = {}
+    curriculum, ects = {}, {}
     with open(SRC / f"{PROGRAM}_mufredat.csv", encoding="utf-8-sig") as f:
         for row in csv.DictReader(f):
-            curriculum[norm_code(row["code"])] = row["type"].strip().lower().startswith("z")
+            code = norm_code(row["code"])
+            curriculum[code] = row["type"].strip().lower().startswith("z")
+            ects[code] = int(row["ects"])
+    # Müfredatta adı geçmeyen bölüm seçmelileri (IE3XX / IE4XX) 4 AKTS
+    elective = re.compile(rf"^{PROGRAM}[34]\d\d$")
 
     courses = OrderedDict()
     sources = [SRC / f"{d}.csv" for d in (PROGRAM, "ENGR", "rektorluk")]
@@ -85,6 +89,7 @@ def main():
                     "category": category(code, dept),
                     "year": int(m.group()) if (m := re.search(r"\d", code)) else None,
                     "required": curriculum.get(code, False),
+                    "ects": ects.get(code, 4 if elective.match(code) else None),
                     "sections": OrderedDict(),
                 })
                 sec_no = (row.get("section") or "").strip()

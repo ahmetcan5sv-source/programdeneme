@@ -100,3 +100,14 @@ button:disabled { opacity: .4; cursor: default; }
   .grid { grid-template-columns: 40px repeat(5, minmax(56px, 1fr)); }
   .blk { font-size: 10px; }
 }
+
+.grid .cell { cursor: pointer; }
+.grid .cell:hover { background: var(--bg); }
+.grid .cell.blocked {
+  background: repeating-linear-gradient(45deg, transparent 0 6px, color-mix(in srgb, var(--warn) 25%, transparent) 6px 12px);
+}
+.clashbox { display: flex; gap: 4px; align-items: center; margin-top: 4px; }
+.favs li { align-items: center; }
+.hint { margin: 8px 0 0; }
+button.link { border: none; background: none; padding: 0; color: var(--accent); font-size: inherit; text-decoration: underline; }
+.toolbar { flex-wrap: wrap; }

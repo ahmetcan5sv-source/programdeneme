@@ -43,7 +43,13 @@
       <h2>Seçilen dersler <span id="selCount" class="muted"></span></h2>
       <p class="muted small">Şube kutucuklarının işaretini kaldırarak o şubeyi hariç tutabilirsin.</p>
       <ul id="selected" class="selected"></ul>
+      <p id="ects" class="small"></p>
       <p id="warn" class="warn" hidden></p>
+    </section>
+
+    <section id="favSection" hidden>
+      <h2>Kaydedilen programlar</h2>
+      <ul id="favs" class="results favs"></ul>
     </section>
 
     <section>
@@ -72,17 +78,21 @@
       <span id="counter">Ders seç</span>
       <button id="next" aria-label="Sonraki program">›</button>
       <span class="spacer"></span>
+      <button id="saveFav">Kaydet</button>
+      <button id="png">PNG indir</button>
       <button id="share">Linki kopyala</button>
     </div>
     <p id="clashInfo" class="warn"></p>
     <div id="grid" class="grid"></div>
     <div id="unscheduled" class="small muted"></div>
+    <p class="small muted hint">Boş kalmasını istediğin saatlere takvimde tıkla. <button id="clearBlocked" class="link">Engelleri temizle</button></p>
   </section>
 </main>
 
 <footer class="small muted">
   Veriler OBS ders programından aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
 <script src="data/courses.js"></script>
 <script src="app.js"></script>
 </body>
