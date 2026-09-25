@@ -100,7 +100,7 @@ function searchCourses() {
   const year = +$("yearFilter").value;
   const type = $("typeFilter").value;
   const list = DATA.courses.filter((c) => {
-    if (year && c.year !== year) return false;
+    if (year && c.year !== year && type !== "rektorluk") return false;
     if (!matchesType(c, type)) return false;
     if (!q) return true;
     const norm = (t) => t.toLocaleUpperCase("tr").replace(/\s+/g, "");

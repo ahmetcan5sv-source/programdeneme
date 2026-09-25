@@ -1,7 +1,8 @@
-code,section,year,day,start,end,room,instructor
-ENGR206,,,Per,15:00,17:00,Online,Dr. Öğr. Üyesi Ahmet Çelik (Metalurji ve Malzeme)
-ENGR213,,,Sal,15:00,18:00,Online,Dr. Öğr. Üyesi M. K. Mahmood Mahmood (Enerji Sistemleri)
-ENGR227,,,Çar,13:30,15:30,CZ-08/09,Doç. Dr. Mustafa Güngörmüş (Bilgisayar)
-ENGR251,,,Sal,14:00,17:00,Online,Dr. Öğr. Üyesi Semih Ağca (Metalurji ve Malzeme)
-ENGR322,,,Per,11:00,12:50,A422,Dr. Öğr. Üyesi Esra Özen (Endüstri)
-ENGR265,,,Cum,19:00,21:00,Online,Prof. Dr. Hüseyin Canbolat (Metalurji ve Malzeme)
+code,section,year,day,start,end,room,instructor,ects
+ENGR201,,2,Çar,08:00,11:50,,Prof.Dr. Özge Sürücü,6
+ENGR206,,2,Per,17:00,18:50,,Dr. Öğr. Üyesi Ahmet Çelik,3
+ENGR213,,2,Per,10:00,12:50,,Dr. Öğr. Üyesi Musaria Karim Mahmood Mahmood,3
+ENGR227,,1,Çar,13:00,14:50,,,3
+ENGR251,,2,Sal,15:00,17:50,,Arş.Gör.Dr. Oğuzhan Bilaç,3
+ENGR265,,,Cum,19:00,21:00,Online,Prof. Dr. Hüseyin Canbolat,3
+ENGR322,,3,Per,11:00,12:50,A422,Dr. Öğr. Üyesi Esra Özen,3

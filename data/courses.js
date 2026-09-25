@@ -6,6 +6,112 @@ window.COURSE_DATA = {
  },
  "courses": [
   {
+   "code": "ALM101",
+   "name": "Almanca I",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 4,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Sema Koçlu Maman",
+     "slots": [
+      {
+       "d": 1,
+       "s": "08:00",
+       "e": "10:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Sema Koçlu Maman",
+     "slots": [
+      {
+       "d": 1,
+       "s": "11:00",
+       "e": "13:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-3",
+     "label": "Ş3",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Sema Koçlu Maman",
+     "slots": [
+      {
+       "d": 1,
+       "s": "14:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-4",
+     "label": "Ş4",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Sema Koçlu Maman",
+     "slots": [
+      {
+       "d": 2,
+       "s": "08:00",
+       "e": "10:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "ALM201",
+   "name": "Almanca III",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 4,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Sema Koçlu Maman",
+     "slots": [
+      {
+       "d": 2,
+       "s": "11:00",
+       "e": "13:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Sema Koçlu Maman",
+     "slots": [
+      {
+       "d": 2,
+       "s": "14:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
    "code": "CENG103",
    "name": "Computer Programming",
    "category": "dept",
@@ -87,25 +193,50 @@ window.COURSE_DATA = {
    ]
   },
   {
-   "code": "ENGR206",
-   "name": "Science, Technology and Society",
+   "code": "ENGR201",
+   "name": "Engineering Mathematics I",
    "category": "engr",
    "year": 2,
    "required": false,
-   "ects": null,
+   "ects": 6,
    "noClash": false,
    "sections": [
     {
      "id": "ENGR",
      "label": "ENGR",
      "dept": "ENGR",
-     "instructor": "Dr. Öğr. Üyesi Ahmet Çelik (Metalurji ve Malzeme)",
+     "instructor": "Prof.Dr. Özge Sürücü",
+     "slots": [
+      {
+       "d": 2,
+       "s": "08:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "ENGR206",
+   "name": "Science, Technology and Society",
+   "category": "engr",
+   "year": 2,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "ENGR",
+     "label": "ENGR",
+     "dept": "ENGR",
+     "instructor": "Dr. Öğr. Üyesi Ahmet Çelik",
      "slots": [
       {
        "d": 3,
-       "s": "15:00",
-       "e": "17:00",
-       "r": "Online"
+       "s": "17:00",
+       "e": "18:50",
+       "r": ""
       }
      ]
     }
@@ -117,20 +248,20 @@ window.COURSE_DATA = {
    "category": "engr",
    "year": 2,
    "required": false,
-   "ects": null,
+   "ects": 3,
    "noClash": false,
    "sections": [
     {
      "id": "ENGR",
      "label": "ENGR",
      "dept": "ENGR",
-     "instructor": "Dr. Öğr. Üyesi M. K. Mahmood Mahmood (Enerji Sistemleri)",
+     "instructor": "Dr. Öğr. Üyesi Musaria Karim Mahmood Mahmood",
      "slots": [
       {
-       "d": 1,
-       "s": "15:00",
-       "e": "18:00",
-       "r": "Online"
+       "d": 3,
+       "s": "10:00",
+       "e": "12:50",
+       "r": ""
       }
      ]
     }
@@ -142,20 +273,20 @@ window.COURSE_DATA = {
    "category": "engr",
    "year": 2,
    "required": false,
-   "ects": null,
+   "ects": 3,
    "noClash": false,
    "sections": [
     {
      "id": "ENGR",
      "label": "ENGR",
      "dept": "ENGR",
-     "instructor": "Doç. Dr. Mustafa Güngörmüş (Bilgisayar)",
+     "instructor": "",
      "slots": [
       {
        "d": 2,
-       "s": "13:30",
-       "e": "15:30",
-       "r": "CZ-08/09"
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
       }
      ]
     }
@@ -167,20 +298,20 @@ window.COURSE_DATA = {
    "category": "engr",
    "year": 2,
    "required": false,
-   "ects": null,
+   "ects": 3,
    "noClash": false,
    "sections": [
     {
      "id": "ENGR",
      "label": "ENGR",
      "dept": "ENGR",
-     "instructor": "Dr. Öğr. Üyesi Semih Ağca (Metalurji ve Malzeme)",
+     "instructor": "Arş.Gör.Dr. Oğuzhan Bilaç",
      "slots": [
       {
        "d": 1,
-       "s": "14:00",
-       "e": "17:00",
-       "r": "Online"
+       "s": "15:00",
+       "e": "17:50",
+       "r": ""
       }
      ]
     }
@@ -199,7 +330,7 @@ window.COURSE_DATA = {
      "id": "ENGR",
      "label": "ENGR",
      "dept": "ENGR",
-     "instructor": "Prof. Dr. Hüseyin Canbolat (Metalurji ve Malzeme)",
+     "instructor": "Prof. Dr. Hüseyin Canbolat",
      "slots": [
       {
        "d": 4,
@@ -217,14 +348,14 @@ window.COURSE_DATA = {
    "category": "engr",
    "year": 3,
    "required": false,
-   "ects": null,
+   "ects": 3,
    "noClash": false,
    "sections": [
     {
      "id": "ENGR",
      "label": "ENGR",
      "dept": "ENGR",
-     "instructor": "Dr. Öğr. Üyesi Esra Özen (Endüstri)",
+     "instructor": "Dr. Öğr. Üyesi Esra Özen",
      "slots": [
       {
        "d": 3,
@@ -1025,6 +1156,652 @@ window.COURSE_DATA = {
        "s": "13:00",
        "e": "14:50",
        "r": "Fizik Lab."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RALL101",
+   "name": "Advising in Language Learning I",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Gamze Güven Yalçın",
+     "slots": [
+      {
+       "d": 2,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Gamze Güven Yalçın",
+     "slots": [
+      {
+       "d": 2,
+       "s": "12:30",
+       "e": "14:20",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-3",
+     "label": "Ş3",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Ebru Sınar Okutucu",
+     "slots": [
+      {
+       "d": 4,
+       "s": "09:00",
+       "e": "10:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-4",
+     "label": "Ş4",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Ebru Sınar Okutucu",
+     "slots": [
+      {
+       "d": 4,
+       "s": "11:00",
+       "e": "12:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-5",
+     "label": "Ş5",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Pınar Üstündağ Algın",
+     "slots": [
+      {
+       "d": 3,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-6",
+     "label": "Ş6",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Pınar Üstündağ Algın",
+     "slots": [
+      {
+       "d": 3,
+       "s": "12:00",
+       "e": "13:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RECON803",
+   "name": "Contemporary Issues in Turkish Economics",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Doç.Dr. Bora Altay",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RHEM811",
+   "name": "Sağlığı Koruma, Geliştirme ve Sürdürme",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Doç.Dr. Kamile Bahar Aydın",
+     "slots": [
+      {
+       "d": 4,
+       "s": "17:00",
+       "e": "18:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RIIF802",
+   "name": "İslam Medeniyeti ve Aktüel Değeri",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Doç.Dr. Adnan Kara",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB804",
+   "name": "Effective Communication and Mentorship",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Hatice Karaaslan",
+     "slots": [
+      {
+       "d": 1,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Arzu Kıratlı",
+     "slots": [
+      {
+       "d": 4,
+       "s": "14:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB806",
+   "name": "Transformative Learning and Leadership",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Hatice Karaaslan",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Ahmet Çolak",
+     "slots": [
+      {
+       "d": 3,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB811",
+   "name": "Critical and Analytical Thinking",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Hatice Karaaslan",
+     "slots": [
+      {
+       "d": 2,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Hatice Karaaslan",
+     "slots": [
+      {
+       "d": 1,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB812",
+   "name": "Etkili Çoklu Ortam Sunum Teknikleri",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Ahmet Çolak",
+     "slots": [
+      {
+       "d": 3,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB813",
+   "name": "Effective Multimedia Presentation Skills",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Hatice Karaaslan",
+     "slots": [
+      {
+       "d": 3,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Ahmet Çolak",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB815",
+   "name": "Universal Design and Storytelling",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Hatice Karaaslan",
+     "slots": [
+      {
+       "d": 3,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör.Dr. Ahmet Çolak",
+     "slots": [
+      {
+       "d": 2,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB832",
+   "name": "Popular Literature",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Doç.Dr. Kübra Baysal",
+     "slots": [
+      {
+       "d": 2,
+       "s": "12:00",
+       "e": "13:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB833",
+   "name": "Postcolonial Literature",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Doç.Dr. Kübra Baysal",
+     "slots": [
+      {
+       "d": 2,
+       "s": "14:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB835",
+   "name": "Language, Power, and Society",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Vedat Kızıl",
+     "slots": [
+      {
+       "d": 2,
+       "s": "14:30",
+       "e": "16:20",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RODB836",
+   "name": "AI, Language, and Communication",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Vedat Kızıl",
+     "slots": [
+      {
+       "d": 2,
+       "s": "12:30",
+       "e": "14:20",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RSSB809",
+   "name": "Pickleball",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Doç.Dr. Tuğba Mutlu Bozkurt",
+     "slots": [
+      {
+       "d": 2,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RUS101",
+   "name": "Elementary Russian I",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Gabor Kotik",
+     "slots": [
+      {
+       "d": 0,
+       "s": "16:00",
+       "e": "18:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Gabor Kotik",
+     "slots": [
+      {
+       "d": 1,
+       "s": "16:00",
+       "e": "18:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-3",
+     "label": "Ş3",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Gabor Kotik",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-4",
+     "label": "Ş4",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Gabor Kotik",
+     "slots": [
+      {
+       "d": 3,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RUS201",
+   "name": "Elementary Russian III",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Gabor Kotik",
+     "slots": [
+      {
+       "d": 2,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "rektorluk-2",
+     "label": "Ş2",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Gabor Kotik",
+     "slots": [
+      {
+       "d": 3,
+       "s": "16:00",
+       "e": "18:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "RUS301",
+   "name": "Elementary Russian V",
+   "category": "rektorluk",
+   "year": null,
+   "required": false,
+   "ects": 3,
+   "noClash": false,
+   "sections": [
+    {
+     "id": "rektorluk-1",
+     "label": "Ş1",
+     "dept": "rektorluk",
+     "instructor": "Öğr.Gör. Gabor Kotik",
+     "slots": [
+      {
+       "d": 2,
+       "s": "16:00",
+       "e": "18:50",
+       "r": ""
       }
      ]
     }

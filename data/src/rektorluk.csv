@@ -1,0 +1,39 @@
+code,section,year,day,start,end,room,instructor,ects,name
+ALM101,1,,Sal,08:00,10:50,,Öğr.Gör.Dr. Sema Koçlu Maman,4,Almanca I
+ALM101,2,,Sal,11:00,13:50,,Öğr.Gör.Dr. Sema Koçlu Maman,4,Almanca I
+ALM101,3,,Sal,14:00,16:50,,Öğr.Gör.Dr. Sema Koçlu Maman,4,Almanca I
+ALM101,4,,Çar,08:00,10:50,,Öğr.Gör.Dr. Sema Koçlu Maman,4,Almanca I
+ALM201,1,,Çar,11:00,13:50,,Öğr.Gör.Dr. Sema Koçlu Maman,4,Almanca III
+ALM201,2,,Çar,14:00,16:50,,Öğr.Gör.Dr. Sema Koçlu Maman,4,Almanca III
+RALL101,1,,Çar,10:00,11:50,,Öğr.Gör. Gamze Güven Yalçın,3,Advising in Language Learning I
+RALL101,2,,Çar,12:30,14:20,,Öğr.Gör. Gamze Güven Yalçın,3,Advising in Language Learning I
+RALL101,3,,Cum,09:00,10:50,,Öğr.Gör. Ebru Sınar Okutucu,3,Advising in Language Learning I
+RALL101,4,,Cum,11:00,12:50,,Öğr.Gör. Ebru Sınar Okutucu,3,Advising in Language Learning I
+RALL101,5,,Per,10:00,11:50,,Öğr.Gör. Pınar Üstündağ Algın,3,Advising in Language Learning I
+RALL101,6,,Per,12:00,13:50,,Öğr.Gör. Pınar Üstündağ Algın,3,Advising in Language Learning I
+RECON803,1,,Çar,13:00,14:50,,Doç.Dr. Bora Altay,3,Contemporary Issues in Turkish Economics
+RHEM811,1,,Cum,17:00,18:50,,Doç.Dr. Kamile Bahar Aydın,3,"Sağlığı Koruma, Geliştirme ve Sürdürme"
+RIIF802,1,,Çar,13:00,14:50,,Doç.Dr. Adnan Kara,3,İslam Medeniyeti ve Aktüel Değeri
+RODB804,1,,Sal,10:00,11:50,,Öğr.Gör.Dr. Hatice Karaaslan,3,Effective Communication and Mentorship
+RODB804,2,,Cum,14:00,15:50,,Öğr.Gör. Arzu Kıratlı,3,Effective Communication and Mentorship
+RODB806,1,,Çar,13:00,14:50,,Öğr.Gör.Dr. Hatice Karaaslan,3,Transformative Learning and Leadership
+RODB806,2,,Per,13:00,14:50,,Öğr.Gör.Dr. Ahmet Çolak,3,Transformative Learning and Leadership
+RODB811,1,,Çar,10:00,11:50,,Öğr.Gör.Dr. Hatice Karaaslan,3,Critical and Analytical Thinking
+RODB811,2,,Sal,13:00,14:50,,Öğr.Gör.Dr. Hatice Karaaslan,3,Critical and Analytical Thinking
+RODB812,1,,Per,10:00,11:50,,Öğr.Gör.Dr. Ahmet Çolak,3,Etkili Çoklu Ortam Sunum Teknikleri
+RODB813,1,,Per,13:00,14:50,,Öğr.Gör.Dr. Hatice Karaaslan,3,Effective Multimedia Presentation Skills
+RODB813,2,,Çar,13:00,14:50,,Öğr.Gör.Dr. Ahmet Çolak,3,Effective Multimedia Presentation Skills
+RODB815,1,,Per,10:00,11:50,,Öğr.Gör.Dr. Hatice Karaaslan,3,Universal Design and Storytelling
+RODB815,2,,Çar,10:00,11:50,,Öğr.Gör.Dr. Ahmet Çolak,3,Universal Design and Storytelling
+RODB832,1,,Çar,12:00,13:50,,Doç.Dr. Kübra Baysal,3,Popular Literature
+RODB833,1,,Çar,14:00,15:50,,Doç.Dr. Kübra Baysal,3,Postcolonial Literature
+RODB835,1,,Çar,14:30,16:20,,Öğr.Gör. Vedat Kızıl,3,"Language, Power, and Society"
+RODB836,1,,Çar,12:30,14:20,,Öğr.Gör. Vedat Kızıl,3,"AI, Language, and Communication"
+RSSB809,1,,Çar,15:00,16:50,,Doç.Dr. Tuğba Mutlu Bozkurt,3,Pickleball
+RUS101,1,,Pzt,16:00,18:50,,Öğr.Gör. Gabor Kotik,3,Elementary Russian I
+RUS101,2,,Sal,16:00,18:50,,Öğr.Gör. Gabor Kotik,3,Elementary Russian I
+RUS101,3,,Çar,13:00,15:50,,Öğr.Gör. Gabor Kotik,3,Elementary Russian I
+RUS101,4,,Per,09:00,11:50,,Öğr.Gör. Gabor Kotik,3,Elementary Russian I
+RUS201,1,,Çar,09:00,11:50,,Öğr.Gör. Gabor Kotik,3,Elementary Russian III
+RUS201,2,,Per,16:00,18:50,,Öğr.Gör. Gabor Kotik,3,Elementary Russian III
+RUS301,1,,Çar,16:00,18:50,,Öğr.Gör. Gabor Kotik,3,Elementary Russian V

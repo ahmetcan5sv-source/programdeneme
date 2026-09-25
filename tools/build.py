@@ -2,7 +2,7 @@
 
 Siteye yalnızca PROGRAM bölümünün dersleri, ENGR.csv ve rektorluk.csv girer.
 Her CSV satırı bir ders bloğudur:
-    code,section,year,day,start,end,room,instructor
+    code,section,year,day,start,end,room,instructor[,ects,name]
 <PROGRAM>_mufredat.csv dersleri Zorunlu/Seçmeli olarak işaretler; listede olmayanlar seçmelidir.
 
 Kullanım:  python tools/build.py
@@ -87,17 +87,19 @@ def main():
                     continue
                 c = courses.setdefault(code, {
                     "code": code,
-                    "name": names.get(code, ""),
+                    "name": names.get(code) or (row.get("name") or "").strip(),
                     "category": category(code, dept),
-                    "year": int(m.group()) if (m := re.search(r"\d", code)) else None,
+                    # Rektörlük kodlarındaki rakam (RODB804) sınıfı göstermez
+                    "year": None if dept == "rektorluk" else int(m.group()) if (m := re.search(r"\d", code)) else None,
                     "required": curriculum.get(code, False),
-                    "ects": ects.get(code, 4 if elective.match(code) else None),
+                    "ects": ects.get(code) or (int(row["ects"]) if (row.get("ects") or "").strip()
+                                               else 4 if elective.match(code) else None),
                     "noClash": code in NO_CLASH,
                     "sections": OrderedDict(),
                 })
                 sec_no = (row.get("section") or "").strip()
                 sec_id = dept + (f"-{sec_no}" if sec_no else "")
-                label = ("Rektörlük" if dept == "rektorluk" else dept) + (f" Ş{sec_no}" if sec_no else "")
+                label = f"Ş{sec_no}" if dept == "rektorluk" and sec_no else dept + (f" Ş{sec_no}" if sec_no else "")
                 sec = c["sections"].setdefault(sec_id, {
                     "id": sec_id, "label": label, "dept": dept,
                     "instructor": "", "slots": [],
