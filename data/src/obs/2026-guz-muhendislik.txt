@@ -1,0 +1,1211 @@
+
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+BİLGİSAYAR MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	BIO101	BIOLOGY FOR COMPUTER ENGINEERS  [Sal 14:00,Sal 15:00,Sal 16:00]	Z	3	0	5	Arş.Gör. SEMA KARABUDAK	1	Dönemsel	İngilizce			 	
+1	CENG101	INTRODUCTION TO COMPUTER ENGINEERING  [Per 12:00,Per 13:00]	Z	2	0	2	Prof.Dr. MUHAMMED FATİH DEMİRCİ	1	Dönemsel	İngilizce			 	
+1	CENG113	COMPUTER PROGRAMMING I  [Çar 15:00,Çar 16:00,Per 14:00,Per 15:00,Per 16:00]	Z	5	0	5	Dr. Öğr. Üyesi YUSUF ŞEVKİ GÜNAYDIN	1	Dönemsel	İngilizce			 	
+1	CENG114	COMPUTER PROGRAMMING II  [Çar 08:00,Çar 09:00,Per 11:00,Per 12:00,Per 13:00]	Z	5	0	6	Öğr.Gör.Dr. YUSUF EVREN AYKAÇ	1	Dönemsel	İngilizce			 	
+1	CENG201	OBJECT ORIENTED PROGRAMMING  [Per 08:00,Per 09:00,Per 10:00]	Z	5	0	6	Doç.Dr. MUHAMMED ABDULLAH BÜLBÜL	2	Dönemsel	İngilizce			 	
+1	CENG203	DIGITAL DESIGN  [Sal 08:00,Sal 09:00,Sal 10:00]	Z	5	0	5	Doç.Dr. OSMAN SERDAR GEDİK	2	Dönemsel	İngilizce			 	
+1	CENG207	PROBABILITY AND STATISTICS  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	5	Dr. Öğr. Üyesi Fatma Yerlikaya Özkurt	2	Dönemsel	İngilizce			 	
+1	CENG209	SYSTEMS PROGRAMMING  [Cum 09:00,Cum 10:00,Cum 11:00]	Z	3	0	5	Dr. Öğr. Üyesi ÇAĞDAŞ EVREN GEREDE	2	Dönemsel	İngilizce			 	
+1	CENG300	INDUSTRIAL PRACTICE I  [Pzt 08:00,Pzt 09:00]	Z	2	0	4	Prof.Dr. MUHAMMED FATİH DEMİRCİ	3	Staj	İngilizce			 	
+1	CENG301	DATABASE MANAGEMENT SYSTEMS  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	5	Dr. Öğr. Üyesi MUSTAFA YENİAD	3	Dönemsel	İngilizce			 	
+49 - 1/5
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+BİLGİSAYAR MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CENG303	DESIGN AND ANALYSIS OF ALGORITHMS  [Pzt 14:00,Pzt 15:00,Pzt 16:00]	Z	3	0	6	Doç.Dr. FATİH NAR	3	Dönemsel	İngilizce			 	
+1	CENG305	OPERATING SYSTEMS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	6	Dr. Öğr. Üyesi GÜLAY YALÇIN ALKAN	3	Dönemsel	İngilizce			 	
+1	CENG315	COMPUTER GRAPHICS  [Sal 14:00,Sal 15:00,Sal 16:00]	S	3	0	5	Doç.Dr. MUHAMMED ABDULLAH BÜLBÜL	3	Dönemsel	İngilizce			 	
+1	CENG327	INTRODUCTION TO SCIENTIFIC COMPUTING  [Sal 11:00,Sal 12:00,Sal 13:00]	Z	3	0	5	Doç.Dr. FAHREDDİN ŞÜKRÜ TORUN	3	Dönemsel	İngilizce			 	
+1	CENG347	INTRODUCTION TO QUANTUM COMPUTING  [Çar 08:00,Çar 09:00,Çar 10:00]	S	3	0	5	Doç.Dr. FAHREDDİN ŞÜKRÜ TORUN	3	Dönemsel	İngilizce			 	
+1	CENG400	INDUSTRIAL PRACTICE II  [Pzt 10:00,Pzt 11:00]	Z	2	0	4	Prof.Dr. MUHAMMED FATİH DEMİRCİ	4	Staj	İngilizce			 	
+1	CENG401	GRADUATION PROJECT I  [Pzt 12:00,Pzt 13:00]	Z	6	0	6	Prof.Dr. MUHAMMED FATİH DEMİRCİ	4	Dönemsel	İngilizce			 	
+3	CENG401	GRADUATION PROJECT I  [Pzt 12:00,Pzt 13:00]	Z	6	0	6	Doç.Dr. MUHAMMED ABDULLAH BÜLBÜL	4	Dönemsel	İngilizce			 	
+12	CENG401	GRADUATION PROJECT I  [Pzt 10:00,Pzt 11:00]	Z	6	0	6	Dr. Öğr. Üyesi TOLGA ÖZASLAN	4	Dönemsel	İngilizce			 	
+4	CENG401	GRADUATION PROJECT I  [Sal 12:00,Sal 13:00]	Z	6	0	6	Doç.Dr. OSMAN SERDAR GEDİK	4	Dönemsel	İngilizce			 	
+49 - 2/5
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+BİLGİSAYAR MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+6	CENG401	GRADUATION PROJECT I  [Sal 14:00,Sal 15:00]	Z	6	0	6	Dr. Öğr. Üyesi FADİ YILMAZ	4	Dönemsel	İngilizce			 	
+11	CENG401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Dr. Öğr. Üyesi ÇAĞDAŞ EVREN GEREDE	4	Dönemsel	İngilizce			 	
+5	CENG401	GRADUATION PROJECT I  [Pzt 12:00,Pzt 13:00]	Z	6	0	6	Prof.Dr. FATİH VEHBİ ÇELEBİ	4	Dönemsel	İngilizce			 	
+7	CENG401	GRADUATION PROJECT I  [Per 15:00,Per 16:00]	Z	6	0	6	Doç.Dr. FAHREDDİN ŞÜKRÜ TORUN	4	Dönemsel	İngilizce			 	
+13	CENG401	GRADUATION PROJECT I  [Pzt 12:00,Pzt 13:00]	Z	6	0	6	Öğr.Gör.Dr. YUSUF EVREN AYKAÇ	4	Dönemsel	İngilizce			 	
+10	CENG401	GRADUATION PROJECT I  [Pzt 14:00,Pzt 15:00]	Z	6	0	6	Dr. Öğr. Üyesi YUSUF ŞEVKİ GÜNAYDIN	4	Dönemsel	İngilizce			 	
+2	CENG401	GRADUATION PROJECT I  [Sal 08:00,Sal 09:00]	Z	6	0	6	Prof.Dr. ABDULLAH ÇAVUŞOĞLU	4	Dönemsel	İngilizce			 	
+9	CENG401	GRADUATION PROJECT I  [Çar 12:00,Çar 13:00]	Z	6	0	6	Dr. Öğr. Üyesi MUSTAFA YENİAD	4	Dönemsel	İngilizce			 	
+8	CENG401	GRADUATION PROJECT I  [Çar 15:00,Çar 16:00]	Z	6	0	6	Dr. Öğr. Üyesi Fatma Yerlikaya Özkurt	4	Dönemsel	İngilizce			 	
+14	CENG401	GRADUATION PROJECT I  [Pzt 14:00,Pzt 15:00]	Z	6	0	6	Dr. Öğr. Üyesi GÜLAY YALÇIN ALKAN	4	Dönemsel	İngilizce			 	
+49 - 3/5
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+BİLGİSAYAR MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CENG403	SPECIAL TOPICS IN CENG I  [Sal 11:00,Sal 12:00,Sal 13:00]	S	3	0	5	Prof.Dr. FATİH VEHBİ ÇELEBİ	4	Dönemsel	İngilizce			 	
+2	CENG403	SPECIAL TOPICS IN CENG I  [Cum 13:00,Cum 14:00]	S	3	0	5	Prof.Dr. MUHAMMED FATİH DEMİRCİ	4	Dönemsel	İngilizce			 	
+1	CENG407	REMOTE SENSING  [Sal 14:00,Sal 15:00,Sal 16:00]	S	3	0	5	Prof.Dr. FATİH VEHBİ ÇELEBİ	4	Dönemsel	İngilizce			 	
+1	CENG431	SOFTWARE DESIGN PATTERNS  [Çar 09:00,Çar 10:00,Çar 11:00]	S	3	0	5	Dr. Öğr. Üyesi ÇAĞDAŞ EVREN GEREDE	4	Dönemsel	İngilizce			 	
+1	CENG434	MICROSERVICE ORIENTED SYSTEM PRINCIPLES  [Per 08:00,Per 09:00,Per 10:00]	S	3	0	5	Dr. Öğr. Üyesi MUSTAFA YENİAD	4	Dönemsel	İngilizce			 	
+1	CENG441	DIGITAL IMAGE PROCESSING  [Cum 09:00,Cum 10:00]	S	3	0	5	Doç.Dr. OSMAN SERDAR GEDİK	4	Dönemsel	İngilizce			 	
+1	CENG442	NATURAL LANGUAGE PROCESSING  [Sal 08:00,Sal 09:00,Sal 10:00]	S	3	0	5	Öğr.Gör.Dr. YUSUF EVREN AYKAÇ	4	Dönemsel	İngilizce			 	
+1	CENG443	PARALLEL PROGRAMMING II  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	S	3	0	5	Doç.Dr. FAHREDDİN ŞÜKRÜ TORUN	4	Dönemsel	İngilizce			 	
+1	CENG462	GAME DEVELOPMENT  [Cum 13:00,Cum 14:00,Cum 15:00]	S	3	0	5	Öğr.Gör.Dr. YUSUF EVREN AYKAÇ	4	Dönemsel	İngilizce			 	
+1	CENG463	MACHINE LEARNING  [Çar 12:00,Çar 13:00,Çar 14:00]	S	3	0	5	Dr. Öğr. Üyesi YUSUF ŞEVKİ GÜNAYDIN	4	Dönemsel	İngilizce			 	
+49 - 4/5
+
+4
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+BİLGİSAYAR MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CENG469	AUTONOMOUS MOBILE ROBOTS  [Per 14:00,Per 15:00,Per 16:00]	S	3	0	5	Dr. Öğr. Üyesi TOLGA ÖZASLAN	4	Dönemsel	İngilizce			 	
+1	ENG103	ACADEMIC ENGLISH I  [Cum 10:00,Cum 11:00]	Z	2	0	2	Öğr.Gör. DENNIS O`KEEFE	1	Dönemsel	İngilizce			 	
+1	ENGR227	BASIC PHOTOGRAPHY  [Çar 13:00,Çar 14:00]	S	2	0	3	 	2	Dönemsel	İngilizce			 	
+1	MATH101	CALCULUS I   [Sal 10:00,Sal 11:00,Çar 10:00,Çar 11:00]	Z	4	0	6	Doç.Dr. SELİM BAHADIR	1	Dönemsel	İngilizce			 	
+1	MATH201	DIFFERENTIAL EQUATIONS  [Pzt 13:00,Pzt 14:00,Sal 13:00,Sal 14:00]	Z	4	0	6	Dr. Öğr. Üyesi NURAY ÖKTEM	2	Dönemsel	İngilizce			 	
+1	PHYS101	PHYSICS I  [Cum 14:00,Cum 15:00,Cum 16:00]	Z	3	0	4	Dr. Öğr. Üyesi EDİGAR MUCHUWENİ	1	Dönemsel	İngilizce			 	
+1	PHYS103	PHYSICS LABORATORY I  [Pzt 13:00,Pzt 14:00]	Z	2	0	2	Dr. Öğr. Üyesi EDİGAR MUCHUWENİ	1	Dönemsel	İngilizce			 	
+1	TDL101	TÜRK DİLİ I  [Pzt 10:00,Pzt 11:00]	Z	2	0	2	Öğr.Gör.Dr. ZEHRA KUM	1	Dönemsel	Türkçe			 	
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Per 12:00,Per 13:00]	Z	2	0	2	Dr. Öğr. Üyesi ARZU ERMAN	1	Dönemsel	Türkçe			 	
+49 - 5/5
+
+5
+
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Per 10:00,Per 11:00]	Z	2	0	2	Dr. Öğr. Üyesi ARZU ERMAN	1	Dönemsel	Türkçe			 	
+1	TDL101	TÜRK DİLİ I  [Sal 12:00,Sal 13:00]	Z	2	0	2	Öğr.Gör.Dr. ZEHRA KUM	1	Dönemsel	Türkçe			 	
+1	PHYS103	PHYSICS LABORATORY I	Z	2	0	2	Öğr.Gör.Dr. MELİKE AYAZ	1	Dönemsel	İngilizce			 	
+1	PHYS101	PHYSICS I  [Pzt 09:00,Pzt 10:00]	Z	3	0	4	Öğr.Gör.Dr. MELİKE AYAZ	1	Dönemsel	İngilizce			 	
+1	MATH201	DIFFERENTIAL EQUATIONS  [Per 13:00,Per 14:00,Cum 13:00,Cum 14:00]	Z	4	0	6	Öğr.Gör.Dr. ELİF ALTINAY ÖZASLAN	2	Dönemsel	İngilizce			 	
+1	MATH101	CALCULUS I   [Sal 10:00,Sal 11:00,Çar 10:00,Çar 11:00]	Z	4	0	6	Dr. Öğr. Üyesi MAHMUT CAN BOZYİĞİT	1	Dönemsel	İngilizce			 	
+1	ENGR450	ENGINEERING APPLICATION ON SITE  [Per 08:00,Per 09:00,Per 14:00,Cum 15:00,Cum 16:00]	S	5	0	15	Dr. Öğr. Üyesi YUNUS YALMAN	4	Dönemsel	İngilizce			 	
+1	ENG103	ACADEMIC ENGLISH I  [Cum 08:00,Cum 09:00]	Z	2	0	2	Öğr.Gör. DENNIS O`KEEFE	1	Dönemsel	İngilizce			 	
+1	EE463	POWER SYSTEM ANALYSIS  [Çar 14:00,Çar 15:00,Çar 16:00]	S	3	0	5	Prof.Dr. KAMİL ÇAĞATAY BAYINDIR	4	Dönemsel	İngilizce			 	
+1	EE461	POWER ELECTRONICS I  [Sal 08:00,Sal 09:00,Sal 10:00]	S	3	0	5	Prof.Dr. AHMET KARAARSLAN	4	Dönemsel	İngilizce			 	
+71 - 1/8
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	EE455	INTRODUCTION TO COMPUTATIONAL NEUROSCINCE  [Çar 14:00,Çar 15:00,Çar 16:00]	S	3	0	5	Prof.Dr. ÖMER KARAL	4	Dönemsel	İngilizce			 	
+1	EE450	INDRODUCTION TO THE OPTICAL AMPLIFIER SYSTEMS  [Cum 14:00,Cum 15:00,Cum 16:00]	S	3	0	5	Dr. Öğr. Üyesi ABDULLAH ERKAM GÜNDÜZ	4	Dönemsel	İngilizce			 	
+1	EE432	INFORMATION THEORY  [Sal 09:00,Sal 10:00,Sal 11:00]	S	3	0	5	Prof.Dr. SERDAR ÖZYURT	4	Dönemsel	İngilizce			 	
+1	EE424	DIGITAL SYSTEM DESIGN WITH VERILOG  [Cum 14:00,Cum 15:00,Cum 16:00]	S	3	0	5	Prof.Dr. ENVER ÇAVUŞ	4	Dönemsel	İngilizce			 	
+1	EE423	FUNDAMENTALS OF ELECTRO-OPTICAL SYSTEMS  [Çar 11:00,Çar 12:00,Çar 13:00]	S	3	0	5	Prof.Dr. ÖMER KARAL	4	Dönemsel	İngilizce			 	
+1	EE421	OPTOELECTRONICS  [Çar 11:00,Çar 12:00,Çar 13:00]	S	3	0	5	Prof.Dr. ŞERAFETTİN EREL	4	Dönemsel	İngilizce			 	
+1	EE416	ANALOG VLSI CIRCUIT DESIGN  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	S	3	0	5	Dr. Öğr. Üyesi AHMAD SALMANOGHLI KHIAVI	4	Dönemsel	İngilizce			 	
+1	EE409	DIGITAL IMAGE PROCESSING  [Per 13:00,Per 14:00,Per 15:00]	S	3	0	5	Dr. Öğr. Üyesi GÖKHAN KORAY GÜLTEKİN	4	Dönemsel	İngilizce			 	
+1	EE408	NONLINEAR CONTROL SYSTEMS  [Sal 13:00,Sal 14:00,Sal 15:00]	S	3	0	5	Doç.Dr. HALİT ERGEZER	4	Dönemsel	İngilizce			 	
+1	EE407	COMPUTER SOFTWARE APPLICATIONS  [Pzt 10:00,Pzt 11:00,Pzt 12:00]	S	3	0	5	Prof.Dr. İLYAS ÇANKAYA	4	Dönemsel	İngilizce			 	
+71 - 2/8
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	EE403	DIGITAL CONTROL SYSTEMS  [Çar 08:00,Çar 09:00,Çar 10:00]	S	3	0	5	Prof.Dr. HÜSEYİN CANBOLAT	4	Dönemsel	İngilizce			 	
+18	EE402	GRADUATION PROJECT II	Z	6	0	6	Doç.Dr. HALİT ERGEZER	4	Dönemsel	İngilizce			 	
+6	EE402	GRADUATION PROJECT II	Z	6	0	6	Prof.Dr. ENVER ÇAVUŞ	4	Dönemsel	İngilizce			 	
+7	EE402	GRADUATION PROJECT II	Z	6	0	6	Prof.Dr. SERDAR ÖZYURT	4	Dönemsel	İngilizce			 	
+5	EE402	GRADUATION PROJECT II	Z	6	0	6	Prof.Dr. İLYAS ÇANKAYA	4	Dönemsel	İngilizce			 	
+10	EE402	GRADUATION PROJECT II	Z	6	0	6	Dr. Öğr. Üyesi YUNUS YALMAN	4	Dönemsel	İngilizce			 	
+14	EE402	GRADUATION PROJECT II	Z	6	0	6	Dr. Öğr. Üyesi MURAT CAN KARAKOÇ	4	Dönemsel	İngilizce			 	
+13	EE402	GRADUATION PROJECT II	Z	6	0	6	Dr. Öğr. Üyesi ALİ DEĞİRMENCİ	4	Dönemsel	İngilizce			 	
+15	EE402	GRADUATION PROJECT II	Z	6	0	6	Dr. Öğr. Üyesi İRFAN ALP GÜRKAYNAK	4	Dönemsel	İngilizce			 	
+2	EE402	GRADUATION PROJECT II	Z	6	0	6	Prof.Dr. KAMİL ÇAĞATAY BAYINDIR	4	Dönemsel	İngilizce			 	
+71 - 3/8
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+3	EE402	GRADUATION PROJECT II	Z	6	0	6	Prof.Dr. ŞERAFETTİN EREL	4	Dönemsel	İngilizce			 	
+9	EE402	GRADUATION PROJECT II	Z	6	0	6	Dr. Öğr. Üyesi AHMAD SALMANOGHLI KHIAVI	4	Dönemsel	İngilizce			 	
+11	EE402	GRADUATION PROJECT II	Z	6	0	6	Dr. Öğr. Üyesi GÖKHAN KORAY GÜLTEKİN	4	Dönemsel	İngilizce			 	
+1	EE402	GRADUATION PROJECT II	Z	6	0	6	Prof.Dr. HÜSEYİN CANBOLAT	4	Dönemsel	İngilizce			 	
+8	EE402	GRADUATION PROJECT II  [Cum 11:00,Cum 12:00]	Z	6	0	6	Prof.Dr. ÖMER KARAL	4	Dönemsel	İngilizce			 	
+16	EE402	GRADUATION PROJECT II  [Çar 10:00,Çar 11:00]	Z	6	0	6	Dr. Öğr. Üyesi ABDULLAH ERKAM GÜNDÜZ	4	Dönemsel	İngilizce			 	
+4	EE402	GRADUATION PROJECT II  [Cum 10:00,Cum 11:00]	Z	6	0	6	Prof.Dr. AHMET KARAARSLAN	4	Dönemsel	İngilizce			 	
+17	EE402	GRADUATION PROJECT II  [Çar 14:00,Çar 15:00]	Z	6	0	6	Dr. Öğr. Üyesi ÖZGÜN ERSOY	4	Dönemsel	İngilizce			 	
+16	EE401	GRADUATION PROJECT I  [Per 08:00,Per 09:00]	Z	6	0	6	Dr. Öğr. Üyesi ABDULLAH ERKAM GÜNDÜZ	4	Dönemsel	İngilizce			 	
+1	EE401	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Prof.Dr. HÜSEYİN CANBOLAT	4	Dönemsel	İngilizce			 	
+71 - 4/8
+
+4
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+14	EE401	GRADUATION PROJECT I  [Çar 08:00,Çar 09:00]	Z	6	0	6	Dr. Öğr. Üyesi MURAT CAN KARAKOÇ	4	Dönemsel	İngilizce			 	
+10	EE401	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Dr. Öğr. Üyesi YUNUS YALMAN	4	Dönemsel	İngilizce			 	
+6	EE401	GRADUATION PROJECT I  [Cum 13:00,Cum 14:00]	Z	6	0	6	Prof.Dr. SERDAR ÖZYURT	4	Dönemsel	İngilizce			 	
+11	EE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Dr. Öğr. Üyesi GÖKHAN KORAY GÜLTEKİN	4	Dönemsel	İngilizce			 	
+15	EE401	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Dr. Öğr. Üyesi İRFAN ALP GÜRKAYNAK	4	Dönemsel	İngilizce			 	
+7	EE401	GRADUATION PROJECT I	Z	6	0	6	Prof.Dr. ENVER ÇAVUŞ	4	Dönemsel	İngilizce			 	
+8	EE401	GRADUATION PROJECT I	Z	6	0	6	Prof.Dr. ÖMER KARAL	4	Dönemsel	İngilizce			 	
+13	EE401	GRADUATION PROJECT I  [Cum 12:00,Cum 13:00]	Z	6	0	6	Dr. Öğr. Üyesi ALİ DEĞİRMENCİ	4	Dönemsel	İngilizce			 	
+2	EE401	GRADUATION PROJECT I  [Sal 13:00,Sal 14:00]	Z	6	0	6	Prof.Dr. KAMİL ÇAĞATAY BAYINDIR	4	Dönemsel	İngilizce			 	
+3	EE401	GRADUATION PROJECT I  [Cum 13:00,Cum 14:00]	Z	6	0	6	Prof.Dr. ŞERAFETTİN EREL	4	Dönemsel	İngilizce			 	
+71 - 5/8
+
+5
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+4	EE401	GRADUATION PROJECT I  [Cum 13:00,Cum 14:00]	Z	6	0	6	Prof.Dr. AHMET KARAARSLAN	4	Dönemsel	İngilizce			 	
+5	EE401	GRADUATION PROJECT I  [Per 08:00,Per 09:00]	Z	6	0	6	Prof.Dr. İLYAS ÇANKAYA	4	Dönemsel	İngilizce			 	
+9	EE401	GRADUATION PROJECT I  [Cum 12:00,Cum 13:00]	Z	6	0	6	Dr. Öğr. Üyesi AHMAD SALMANOGHLI KHIAVI	4	Dönemsel	İngilizce			 	
+17	EE401	GRADUATION PROJECT I  [Cum 10:00,Cum 11:00,Cum 12:00]	Z	6	0	6	Dr. Öğr. Üyesi ÖZGÜN ERSOY	4	Dönemsel	İngilizce			 	
+18	EE401	GRADUATION PROJECT I  [Cum 10:00,Cum 11:00]	Z	6	0	6	Doç.Dr. HALİT ERGEZER	4	Dönemsel	İngilizce			 	
+1	EE400	INDUSTRIAL PRACTICE II  [Pzt 10:00,Pzt 11:00]	Z	2	0	4	Dr. Öğr. Üyesi OSMAN TOKLUOĞLU	4	Staj	İngilizce			 	
+1	EE335	INTRODUCTION TO ELECTRONICS LABORATORY  [Çar 15:00,Çar 16:00]	Z	2	0	1	Dr. Öğr. Üyesi AHMAD SALMANOGHLI KHIAVI	3	Dönemsel	İngilizce			 	
+1	EE329	ELECTROMECHANICAL ENERGY CONVERSION I LABORATORY  [Pzt 08:00,Çar 08:00]	S	2	0	1	Dr. Öğr. Üyesi YUNUS YALMAN	3	Dönemsel	İngilizce			 	
+1	EE325	INTRODUCTION TO ELECTRONICS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	5	Dr. Öğr. Üyesi AHMAD SALMANOGHLI KHIAVI	3	Dönemsel	İngilizce			 	
+1	EE319	ELECTROMECHANICAL ENERGY CONVERSION I  [Çar 09:00,Çar 10:00,Çar 11:00]	S	3	0	5	Dr. Öğr. Üyesi YUNUS YALMAN	3	Dönemsel	İngilizce			 	
+71 - 6/8
+
+6
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	EE307	DIGITAL SIGNAL PROCESSING  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	6	Dr. Öğr. Üyesi ÖZGÜN ERSOY	3	Dönemsel	İngilizce			 	
+1	EE303	ELECTROMAGNETIC FIELDS   [Pzt 16:00,Per 15:00,Per 16:00]	Z	3	0	5	Dr. Öğr. Üyesi MURAT CAN KARAKOÇ	3	Dönemsel	İngilizce			 	
+1	EE300	INDUSTRIAL PRACTICE I  [Pzt 08:00,Pzt 09:00]	Z	2	0	4	Dr. Öğr. Üyesi OSMAN TOKLUOĞLU	3	Staj	İngilizce			 	
+1	EE225	DIGITAL DESIGN LABORATORY	Z	2	0	2	Dr. Öğr. Üyesi İRFAN ALP GÜRKAYNAK	2	Dönemsel	İngilizce			 	
+1	EE223	CIRCUITS THEORY I LABORATORY	Z	2	0	3	Dr. Öğr. Üyesi ABDULLAH ERKAM GÜNDÜZ	2	Dönemsel	İngilizce			 	
+1	EE215	DIGITAL DESIGN  [Sal 08:00,Sal 09:00,Sal 10:00]	Z	3	0	5	Dr. Öğr. Üyesi İRFAN ALP GÜRKAYNAK	2	Dönemsel	İngilizce			 	
+1	EE213	CIRCUITS THEORY I  [Sal 11:00,Cum 09:00,Cum 10:00,Cum 11:00]	Z	4	0	6	Dr. Öğr. Üyesi ABDULLAH ERKAM GÜNDÜZ	2	Dönemsel	İngilizce			 	
+1	EE207	PROBABILITY AND RANDOM VARIABLES  [Per 08:00,Per 09:00,Per 10:00]	Z	3	0	5	Dr. Öğr. Üyesi OSMAN TOKLUOĞLU	2	Dönemsel	İngilizce			 	
+1	EE101	INTRODUCTION TO ELECTRICAL AND ELECTRONICS ENGINEERING  [Pzt 08:00,Pzt 12:00]	Z	2	0	2	Dr. Öğr. Üyesi ÖZGÜN ERSOY	1	Dönemsel	İngilizce			 	
+1	CHEM101	GENERAL CHEMISTRY  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	5	Doç.Dr. KUROŞ SALİMİ	1	Dönemsel	İngilizce			 	
+71 - 7/8
+
+7
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CENG115	COMPUTER PROGRAMMING I  [Çar 12:00,Çar 13:00,Çar 14:00,Çar 15:00,Çar 16:00]	Z	5	0	5	Dr. Öğr. Üyesi ALİ DEĞİRMENCİ	1	Dönemsel	İngilizce			 	
+71 - 8/8
+
+8
+
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ENDÜSTRİ MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Çar 12:00,Çar 13:00]	Z	2	0	2	Dr. Öğr. Üyesi ARZU ERMAN	1	Dönemsel	Türkçe			 	
+1	TDL101	TÜRK DİLİ I  [Sal 08:00,Sal 09:00]	Z	2	0	2	Öğr.Gör.Dr. ZEHRA KUM	1	Dönemsel	Türkçe			 	
+1	PHYS103	PHYSICS LABORATORY I  [Cum 13:00,Cum 14:00]	Z	2	0	2	Dr. Öğr. Üyesi Ahmad AJJAQ	1	Dönemsel	İngilizce			 	
+1	PHYS101	PHYSICS I  [Sal 10:00,Sal 11:00,Sal 12:00]	Z	3	0	4	Dr. Öğr. Üyesi Ahmad AJJAQ	1	Dönemsel	İngilizce			 	
+1	MATH201	DIFFERANTIAL EQUATIONS  [Çar 10:00,Çar 11:00,Cum 10:00,Cum 11:00]	Z	4	0	6	Öğr.Gör.Dr. ELİF ALTINAY ÖZASLAN	2	Dönemsel	İngilizce			 	
+1	MATH101	CALCULUS I   [Sal 15:00,Sal 16:00,Per 10:00,Per 11:00]	Z	4	0	6	Öğr.Gör.Dr. ELİF ALTINAY ÖZASLAN	1	Dönemsel	İngilizce			 	
+2	IE491	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Prof.Dr. ERGÜN ERASLAN	4	Dönemsel	İngilizce			 	
+3	IE491	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Prof.Dr. SERVET SOYGÜDER	4	Dönemsel	İngilizce			 	
+7	IE491	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Dr. Öğr. Üyesi DENİZ EFENDİOĞLU	4	Dönemsel	İngilizce			 	
+9	IE491	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Dr. Öğr. Üyesi MELİKE KAYA AKÇA	4	Dönemsel	İngilizce			 	
+41 - 1/5
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ENDÜSTRİ MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+4	IE491	GRADUATION PROJECT I  [Cum 08:00]	Z	6	0	6	Prof. BABEK ERDEBİLLİ	4	Dönemsel	İngilizce			 	
+1	IE491	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Prof.Dr. METE GÜNDOĞAN	4	Dönemsel	İngilizce			 	
+8	IE491	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Dr. Öğr. Üyesi CİHAT ÖZTÜRK	4	Dönemsel	İngilizce			 	
+5	IE491	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Doç.Dr. İBRAHİM YILMAZ	4	Dönemsel	İngilizce			 	
+6	IE491	GRADUATION PROJECT I  [Cum 08:00]	Z	6	0	6	Doç.Dr. GERÇEK BUDAK	4	Dönemsel	İngilizce			 	
+10	IE491	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Arş.Gör.Dr. NURULLAH GÜLEÇ	4	Dönemsel	İngilizce			 	
+1	IE482	ADVANCED TOPICS  [Sal 11:00,Sal 12:00,Sal 13:00]	S	3	0	4	Arş.Gör.Dr. MELDA KEVSER AKGÜN	4	Dönemsel	İngilizce			 	
+1	IE471	SYSTEMS ENGINEERING I  [Sal 14:00,Sal 15:00,Sal 16:00]	S	3	0	4	Prof.Dr. METE GÜNDOĞAN	4	Dönemsel	İngilizce			 	
+1	IE421	QUALITY IMPROVEMENT METHODS  [Per 14:00,Per 15:00,Per 16:00]	S	3	0	4	Doç.Dr. GERÇEK BUDAK	4	Dönemsel	İngilizce			 	
+1	IE419	MAINTENANCE PLANNING  [Çar 13:00,Çar 14:00,Çar 15:00]	S	3	0	4	Prof.Dr. SERVET SOYGÜDER	4	Dönemsel	İngilizce			 	
+41 - 2/5
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ENDÜSTRİ MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	IE417	OPTIMIZATION TOOLS AND TECHNİQUES  [Sal 08:00,Sal 09:00,Sal 10:00]	S	3	0	4	Doç.Dr. İBRAHİM YILMAZ	4	Dönemsel	İngilizce			 	
+1	IE407	PLANNING FOR ENGINEERS  [Per 08:00,Per 09:00,Per 10:00]	S	3	0	4	Dr. Öğr. Üyesi CİHAT ÖZTÜRK	4	Dönemsel	İngilizce			 	
+1	IE400	INDUSTRIAL PRACTICE II  [Pzt 14:00,Pzt 15:00]	Z	2	0	4	Doç.Dr. İBRAHİM YILMAZ	4	Staj	İngilizce			 	
+1	IE371	SERVICE SYSTEMS MANAGEMENT  [Per 11:00,Per 12:00,Per 13:00]	S	3	0	4	Doç.Dr. GERÇEK BUDAK	3	Dönemsel	İngilizce			 	
+1	IE363	LOGISTICS MANAGEMENT  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	4	Dr. Öğr. Üyesi MELİKE KAYA AKÇA	3	Dönemsel	İngilizce			 	
+1	IE351	PRODUCTION PLANNING AND CONTROL I   [Sal 08:00,Sal 09:00,Sal 10:00]	Z	3	0	5	Dr. Öğr. Üyesi CİHAT ÖZTÜRK	3	Dönemsel	İngilizce			 	
+1	IE341	ERGONOMICS  [Per 14:00,Per 15:00,Per 16:00]	Z	3	0	4	Prof.Dr. ERGÜN ERASLAN	3	Dönemsel	İngilizce			 	
+1	IE331	ENGINEERING ECONOMY  [Pzt 08:00,Pzt 09:00,Pzt 10:00]	Z	3	0	4	Prof. BABEK ERDEBİLLİ	3	Dönemsel	İngilizce			 	
+1	IE319	OPERATION RESEARCH III  [Sal 11:00,Sal 12:00,Sal 13:00]	Z	3	0	5	Doç.Dr. İBRAHİM YILMAZ	3	Dönemsel	İngilizce			 	
+1	IE300	INDUSTRIAL PRACTICE I  [Pzt 10:00,Pzt 11:00]	Z	2	0	4	Doç.Dr. GERÇEK BUDAK	3	Staj	İngilizce			 	
+41 - 3/5
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ENDÜSTRİ MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	IE253	INTRODUCTION TO MATERIAL SCIENCE  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	3	Prof.Dr. SERVET SOYGÜDER	2	Dönemsel	İngilizce			 	
+1	IE233	MANAGERIAL AND COST ACCOUNTING FOR ENGINEERS  [Per 12:00,Per 13:00,Per 14:00]	Z	3	0	4	Dr. Öğr. Üyesi MELİKE KAYA AKÇA	2	Dönemsel	İngilizce			 	
+1	IE231	ECONOMICS I  [Pzt 11:00,Pzt 12:00,Pzt 13:00]	Z	3	0	4	Arş.Gör.Dr. NURULLAH GÜLEÇ	2	Dönemsel	İngilizce			 	
+1	IE221	INTRODUCTION TO PROBABILITY  [Cum 14:00,Cum 15:00,Cum 16:00]	Z	3	0	4	Dr. Öğr. Üyesi DENİZ EFENDİOĞLU	2	Dönemsel	İngilizce			 	
+1	IE211	OPERATIONS RESEARCH I  [Pzt 14:00,Pzt 15:00,Pzt 16:00,Sal 08:00,Sal 09:00]	Z	5	0	6	Prof. BABEK ERDEBİLLİ	2	Dönemsel	İngilizce			 	
+1	IE103	INTRODUCTION TO INDUSTRIAL ENGINEERING  [Per 15:00,Per 16:00]	Z	2	0	2	Dr. Öğr. Üyesi DENİZ EFENDİOĞLU	1	Dönemsel	İngilizce			 	
+1	ENGR450	ENGINEERING APPLICATION ON SITE I  [Pzt 15:00]	S	2	0	15	Prof.Dr. METE GÜNDOĞAN	4	Dönemsel	İngilizce			 	
+1	ENGR322	LABOR LAW  [Per 11:00,Per 12:00]	S	2	0	3	Dr. Öğr. Üyesi ESRA ÖZEN	3	Dönemsel	İngilizce			 	
+1	ENG103	ACADEMIC ENGLISH I  [Per 12:00,Per 13:00]	Z	2	0	2	Öğr.Gör. DENNIS O`KEEFE	1	Dönemsel	İngilizce			 	
+1	CHEM101	GENERAL CHEMISTRY  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	5	Dr. Öğr. Üyesi AHMET UÇAR	1	Dönemsel	İngilizce			 	
+41 - 4/5
+
+4
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+ENDÜSTRİ MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CENG103	COMPUTER PROGRAMMING  [Per 08:00,Per 09:00,Cum 08:00,Cum 09:00,Cum 10:00]	Z	5	0	5	Arş.Gör.Dr. MELDA KEVSER AKGÜN	1	Dönemsel	İngilizce			 	
+41 - 5/5
+
+5
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+İNŞAAT MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Çar 10:00,Çar 11:00]	Z	2	0	2	Dr. Öğr. Üyesi ARZU ERMAN	1	Dönemsel	Türkçe			 	
+1	TDL101	TÜRK DİLİ I  [Sal 16:00,Çar 10:00]	Z	2	0	2	Öğr.Gör.Dr. ZEHRA KUM	1	Dönemsel	Türkçe			 	
+1	PHYS103	PHYSICS LABORATORY I  [Pzt 12:00,Pzt 13:00]	Z	2	0	2	Dr. Öğr. Üyesi Ahmad AJJAQ	1	Dönemsel	İngilizce			 	
+1	PHYS101	PHYSICS I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	4	Dr. Öğr. Üyesi Ahmad AJJAQ	1	Dönemsel	İngilizce			 	
+1	MATH201	DIFFERENTIAL EQUATIONS  [Pzt 10:00,Pzt 11:00,Pzt 14:00,Pzt 15:00]	Z	4	0	6	Öğr.Gör.Dr. Emine Tuğba YAZICI	2	Dönemsel	İngilizce			 	
+1	MATH101	CALCULUS I  [Sal 10:00,Sal 11:00,Per 10:00,Per 11:00]	Z	4	0	6	Dr. Öğr. Üyesi FARUK YILMAZ	1	Dönemsel	İngilizce			 	
+1	ENG201	TECHNICAL ENGLISH  [Per 14:00,Per 15:00,Per 16:00]	Z	3	0	4	Dr. Öğr. Üyesi Döndü SARIŞEN	2	Dönemsel	İngilizce			 	
+1	ENG103	ACADEMIC ENGLISH I  [Sal 13:00,Sal 14:00]	Z	2	0	2	Öğr.Gör.Dr. SİBEL EYLENEN	1	Dönemsel	İngilizce			 	
+1	CHEM101	GENERAL CHEMISTRY  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	5	Dr. Öğr. Üyesi NİMET YILDIRIM TİRGİL	1	Dönemsel	İngilizce			 	
+9	CE496	GRADUATION PROJECT   [Pzt 12:00,Pzt 13:00]	Z	6	0	6	Dr. Öğr. Üyesi DAVUT YILMAZ	4	Dönemsel	İngilizce			 	
+57 - 1/6
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+İNŞAAT MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+12	CE496	GRADUATION PROJECT   [Sal 09:00,Sal 10:00]	Z	6	0	6	Dr. Öğr. Üyesi Vesile Hatun AKANSEL	4	Dönemsel	İngilizce			 	
+14	CE496	GRADUATION PROJECT   [Sal 13:00,Sal 14:00]	Z	6	0	6	Dr. Öğr. Üyesi ALİ ULVİ GALİP ŞENOCAK	4	Dönemsel	İngilizce			 	
+15	CE496	GRADUATION PROJECT   [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Dr. Öğr. Üyesi Döndü SARIŞEN	4	Dönemsel	İngilizce			 	
+1	CE496	GRADUATION PROJECT   [Pzt 12:00,Pzt 13:00]	Z	6	0	6	Prof.Dr. MEHMET BARAN	4	Dönemsel	İngilizce			 	
+4	CE496	GRADUATION PROJECT   [Per 13:00,Per 14:00]	Z	6	0	6	Doç.Dr. ARZU ÖZKAYA	4	Dönemsel	İngilizce			 	
+5	CE496	GRADUATION PROJECT   [Cum 15:00,Cum 16:00]	Z	6	0	6	Doç.Dr. SERTAÇ ORUÇ	4	Dönemsel	İngilizce			 	
+10	CE496	GRADUATION PROJECT   [Pzt 14:00,Pzt 15:00]	Z	6	0	6	Dr. Öğr. Üyesi OKAN İLHAN	4	Dönemsel	İngilizce			 	
+16	CE496	GRADUATION PROJECT   [Çar 10:00,Çar 11:00]	Z	6	0	6	Dr. Öğr. Üyesi MEHMET SALİH TÜRKER	4	Dönemsel	İngilizce			 	
+17	CE496	GRADUATION PROJECT   [Çar 12:00,Çar 13:00]	Z	6	0	6	Dr. Öğr. Üyesi HASANBURAK YÜCEL	4	Dönemsel	İngilizce			 	
+18	CE496	GRADUATION PROJECT   [Çar 14:00,Çar 15:00]	Z	6	0	6	Dr. Öğr. Üyesi EMİRCAN ÖZÇELİKCİ	4	Dönemsel	İngilizce			 	
+57 - 2/6
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+İNŞAAT MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+2	CE496	GRADUATION PROJECT   [Sal 10:00,Per 09:00]	Z	6	0	6	Prof.Dr. TAHA TAŞKİRAN	4	Dönemsel	İngilizce			 	
+7	CE496	GRADUATION PROJECT   [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Dr. Öğr. Üyesi ZEYNEP HURİ ÖZKUL BİRGÖREN	4	Dönemsel	İngilizce			 	
+8	CE496	GRADUATION PROJECT   [Pzt 10:00,Pzt 11:00]	Z	6	0	6	Doç.Dr. EMİN ŞENGÜN	4	Dönemsel	İngilizce			 	
+19	CE496	GRADUATION PROJECT   [Çar 16:00,Per 08:00]	Z	6	0	6	Öğr.Gör.Dr. Emine Tuğba YAZICI	4	Dönemsel	İngilizce			 	
+3	CE496	GRADUATION PROJECT   [Per 11:00,Per 12:00]	Z	6	0	6	Doç.Dr. MAHMUT CEM YILMAZ	4	Dönemsel	İngilizce			 	
+6	CE496	GRADUATION PROJECT   [Cum 14:00,Cum 15:00]	Z	6	0	6	Doç.Dr. ABDULLAH DİLSİZ	4	Dönemsel	İngilizce			 	
+11	CE496	GRADUATION PROJECT   [Pzt 16:00,Per 08:00]	Z	6	0	6	Dr. Öğr. Üyesi SERDAR DİNDAR	4	Dönemsel	İngilizce			 	
+13	CE496	GRADUATION PROJECT   [Sal 11:00,Sal 12:00]	Z	6	0	6	Dr. Öğr. Üyesi DUYGU DEMİRTÜRK	4	Dönemsel	İngilizce			 	
+1	CE493	INTRODUCTION TO TIMBER STRUCTURAL DESIGN  [Pzt 08:00,Pzt 09:00,Pzt 10:00]	S	3	0	6	Dr. Öğr. Üyesi Vesile Hatun AKANSEL	4	Dönemsel	İngilizce			 	
+1	CE491	COMPUTER AIDED CONSTRUCTION PLANNING SYSTEMS  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	S	3	0	4	Doç.Dr. SERTAÇ ORUÇ	4	Dönemsel	İngilizce			 	
+57 - 3/6
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+İNŞAAT MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CE487	SUSTAINABILITY IN THE BUILT ENVIRONMENT  [Cum 14:00,Cum 15:00,Cum 16:00]	S	3	0	4	Dr. Öğr. Üyesi EMİRCAN ÖZÇELİKCİ	4	Dönemsel	İngilizce			 	
+1	CE481	INTRODUCTION TO EARTHQUAKE ENGINEERING  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	5	Doç.Dr. ABDULLAH DİLSİZ	4	Dönemsel	İngilizce			 	
+1	CE471	STEEL STRUCTURES  [Çar 14:00,Çar 15:00,Çar 16:00]	Z	3	0	6	Doç.Dr. MAHMUT CEM YILMAZ	4	Dönemsel	İngilizce			 	
+1	CE457	COMPUTER-AIDED HIGHWAY DESIGN  [Sal 08:00,Sal 09:00,Sal 10:00]	S	3	0	6	Dr. Öğr. Üyesi SERDAR DİNDAR	4	Dönemsel	İngilizce			 	
+1	CE455	PYTHON APPLICATIONS IN CIVIL ENGINEERING  [Cum 08:00,Cum 09:00,Cum 10:00]	S	3	0	4	Dr. Öğr. Üyesi ALİ ULVİ GALİP ŞENOCAK	4	Dönemsel	İngilizce			 	
+1	CE454	PROJECT ANALYSIS AND TRANSPORT SECTOR APPLICATIONS  [Sal 11:00,Sal 12:00,Sal 13:00]	S	3	0	4	Dr. Öğr. Üyesi HASANBURAK YÜCEL	4	Dönemsel	İngilizce			 	
+1	CE441	DESIGN OF REINFORCED CONCRETE STRUCTURES  [Çar 08:00,Çar 09:00,Çar 10:00]	Z	3	0	6	Prof.Dr. MEHMET BARAN	4	Dönemsel	İngilizce			 	
+1	CE431	COMPUTER AIDED STRUCTURAL DESIGN  [Pzt 12:00,Pzt 13:00,Pzt 14:00,Pzt 15:00]	S	4	0	6	Dr. Öğr. Üyesi Vesile Hatun AKANSEL	4	Dönemsel	İngilizce			 	
+1	CE427	OPEN CHANNEL HYDRAULICS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	S	3	0	4	Dr. Öğr. Üyesi MEHMET SALİH TÜRKER	4	Dönemsel	İngilizce			 	
+1	CE425	HYDROSYSTEMS MODELLING AND MANAGEMENT  [Sal 14:00,Sal 15:00,Sal 16:00]	S	3	0	6	Dr. Öğr. Üyesi Döndü SARIŞEN	4	Dönemsel	İngilizce			 	
+57 - 4/6
+
+4
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+İNŞAAT MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CE421	FOUNDATION ENGINEERING   [Pzt 16:00,Per 13:00,Per 14:00]	Z	3	0	5	Prof.Dr. TAHA TAŞKİRAN	4	Dönemsel	İngilizce			 	
+1	CE411	HIGHWAY MATERIALS  [Çar 11:00,Çar 12:00,Çar 13:00]	S	3	0	4	Dr. Öğr. Üyesi DUYGU DEMİRTÜRK	4	Dönemsel	İngilizce			 	
+1	CE410	INFRASTRUCTURE AND PROJECT FINANCE  [Cum 11:00,Cum 12:00,Cum 13:00]	S	3	0	4	Dr. Öğr. Üyesi HASANBURAK YÜCEL	4	Dönemsel	İngilizce			 	
+1	CE406	PROPERTIES OF FRESH AND HARDENED CONCRETE  [Sal 12:00,Sal 13:00,Per 08:00]	S	3	0	4	Doç.Dr. EMİN ŞENGÜN	4	Dönemsel	İngilizce			 	
+1	CE400	INDUSTRIAL PRACTICE II  [Pzt 10:00,Pzt 11:00]	Z	2	0	4	Prof.Dr. MEHMET BARAN	4	Staj	İngilizce			 	
+1	CE331	STRUCTURAL ANALYSIS I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	5	Doç.Dr. ABDULLAH DİLSİZ	3	Dönemsel	İngilizce			 	
+1	CE315	SOIL MECHANICS I  [Cum 10:00,Cum 11:00,Cum 14:00,Cum 15:00,Cum 16:00]	Z	5	0	5	Dr. Öğr. Üyesi ZEYNEP HURİ ÖZKUL BİRGÖREN	3	Dönemsel	İngilizce			 	
+1	CE311	TRANSPORTATION ENGINEERING I  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	4	Dr. Öğr. Üyesi SERDAR DİNDAR	3	Dönemsel	İngilizce			 	
+1	CE309	HYDROLOGY   [Per 10:00,Per 11:00,Per 12:00]	Z	3	0	4	Dr. Öğr. Üyesi Döndü SARIŞEN	3	Dönemsel	İngilizce			 	
+1	CE307	HYDRAULICS  [Sal 08:00,Sal 09:00,Sal 10:00,Sal 11:00]	Z	4	0	5	Doç.Dr. ARZU ÖZKAYA	3	Dönemsel	İngilizce			 	
+57 - 5/6
+
+5
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+İNŞAAT MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CE301	NUMERICAL METHODS FOR ENGINEERS  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	5	Dr. Öğr. Üyesi OKAN İLHAN	3	Dönemsel	İngilizce			 	
+1	CE300	INDUSTRIAL PRACTICE I  [Pzt 08:00,Pzt 09:00]	Z	2	0	4	Prof.Dr. MEHMET BARAN	3	Staj	İngilizce			 	
+1	CE205	DYNAMICS  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	6	Arş.Gör.Dr. ABDULLAH TÜRER	2	Dönemsel	İngilizce			 	
+1	CE203	STRENGTH OF MATERIALS I  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	6	Doç.Dr. MAHMUT CEM YILMAZ	2	Dönemsel	İngilizce			 	
+1	CE201	MATERIALS SCIENCE  [Per 09:00,Per 10:00,Per 13:00]	Z	3	0	5	Doç.Dr. EMİN ŞENGÜN	2	Dönemsel	İngilizce			 	
+1	CE103	TECHNICAL DRAWING FOR CIVIL ENGINEERING  [Per 12:00,Per 13:00,Per 14:00]	Z	3	0	5	Dr. Öğr. Üyesi ALİ ULVİ GALİP ŞENOCAK	1	Dönemsel	İngilizce			 	
+1	CE101	INTRODUCTION TO CIVIL ENGINEERING  [Cum 10:00,Cum 11:00]	Z	2	0	2	Dr. Öğr. Üyesi MEHMET SALİH TÜRKER	1	Dönemsel	İngilizce			 	
+
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MAKİNE MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CHEM101	GENERAL CHEMISTRY  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	5	Dr. Öğr. Üyesi AHMET ÇELİK	1	Dönemsel	İngilizce			 	
+1	ENG103	ACADEMIC ENGLISH I  [Cum 09:00,Cum 10:00]	Z	2	0	2	Öğr.Gör.Dr. SİBEL EYLENEN	1	Dönemsel	İngilizce			 	
+1	ENG201	TECHNICAL ENGLISH   [Sal 12:00,Sal 13:00,Sal 14:00]	Z	3	0	4	Dr. Öğr. Üyesi METE BAKIR	2	Dönemsel	İngilizce			 	
+1	ENGR201	ENGINEERING MATHEMATICS I  [Sal 15:00,Sal 16:00,Per 08:00,Per 09:00]	Z	4	0	6	Doç.Dr. KEMAL BİLEN	2	Dönemsel	İngilizce			 	
+1	ENGR450	ENGINEERING APPLICATION ON SITE	S	5	0	15	Dr. Öğr. Üyesi OĞUZHAN MÜLKOĞLU	4	Dönemsel	İngilizce			 	
+1	MATH101	CALCULUS I   [Pzt 10:00,Pzt 11:00,Çar 10:00,Çar 11:00]	Z	4	0	6	Öğr.Gör.Dr. NEZAKAT JAVANSHIR	1	Dönemsel	İngilizce			 	
+1	MCE101	INTRODUCTION TO MECHANICAL ENGINEERING  [Çar 08:00,Çar 09:00]	Z	2	0	2	Doç.Dr. YASİN SARIKAVAK	1	Dönemsel	İngilizce			 	
+1	MCE103	COMPUTER AIDED TECHNICAL DRAWING I  [Sal 13:00,Sal 14:00,Sal 15:00,Sal 16:00]	Z	4	0	5	Dr. Öğr. Üyesi NECATİ UÇAK	1	Dönemsel	İngilizce			 	
+2	MCE103	COMPUTER AIDED TECHNICAL DRAWING I  [Cum 13:00,Cum 14:00,Cum 15:00,Cum 16:00]	Z	4	0	5	Dr. Öğr. Üyesi NECATİ UÇAK	1	Dönemsel	İngilizce			 	
+1	MCE201	MATERIAL SCIENCE   [Cum 14:00,Cum 15:00,Cum 16:00]	Z	3	0	3	Doç.Dr. YASİN SARIKAVAK	2	Dönemsel	İngilizce			 	
+54 - 1/6
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MAKİNE MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	MCE203	THERMODYNAMICS I  [Per 12:00,Per 13:00,Per 14:00]	Z	3	0	5	Prof.Dr. SELAHATTİN ÇELİK	2	Dönemsel	İngilizce			 	
+1	MCE205	STRENGTH OF MATERIALS I  [Çar 14:00,Çar 15:00,Çar 16:00]	Z	3	0	5	Doç.Dr. BARIŞ KALAYCIOĞLU	2	Dönemsel	İngilizce			 	
+1	MCE209	MANUFACTURING TECHNOLOGIES I  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	4	Prof.Dr. ADEM ÇİÇEK	2	Dönemsel	İngilizce			 	
+1	MCE300	INDUSTRIAL PRACTICE I  [Per 15:00,Per 16:00]	Z	2	0	4	Prof.Dr. SELAHATTİN ÇELİK	3	Staj	İngilizce			 	
+1	MCE301	FLUID MECHANICS I  [Per 11:00,Per 12:00,Per 13:00]	Z	3	0	5	Prof.Dr. HASAN ÖZCAN	3	Dönemsel	İngilizce			 	
+1	MCE303	MECHANISMS  [Pzt 13:00,Pzt 14:00]	Z	2	0	4	Dr. Öğr. Üyesi POLAT KURT	3	Dönemsel	İngilizce			 	
+1	MCE305	MACHINE ELEMENTS I  [Pzt 10:00,Pzt 11:00,Cum 13:00,Cum 14:00]	Z	4	0	5	Doç.Dr. BARIŞ KALAYCIOĞLU	3	Dönemsel	İngilizce			 	
+1	MCE307	HEAT TRANSFER  [Pzt 15:00,Pzt 16:00,Per 15:00,Per 16:00]	Z	4	0	5	Prof.Dr. KAMİL ARSLAN	3	Dönemsel	İngilizce			 	
+1	MCE309	SYSTEM DYNAMICS AND CONTROL  [Sal 14:00,Sal 15:00,Sal 16:00]	Z	3	0	5	Dr. Öğr. Üyesi POLAT KURT	3	Dönemsel	İngilizce			 	
+1	MCE311	ENGINEERING ECONOMY  [Cum 09:00,Cum 10:00]	Z	2	0	2	Prof.Dr. HASAN ÖZCAN	3	Dönemsel	İngilizce			 	
+54 - 2/6
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MAKİNE MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	MCE400	INDUSTRIAL PRACTICE II  [Cum 08:00,Cum 09:00]	Z	2	0	4	Prof.Dr. SELAHATTİN ÇELİK	4	Staj	İngilizce			 	
+17	MCE401	GRADUATION PROJECT I	Z	6	0	6	Dr. Öğr. Üyesi NECATİ UÇAK	4	Dönemsel	İngilizce			 	
+4	MCE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. VELİ ÇELİK	4	Dönemsel	İngilizce			 	
+1	MCE401	GRADUATION PROJECT I  [Cum 10:00,Cum 11:00]	Z	6	0	6	Prof.Dr. SELAHATTİN ÇELİK	4	Dönemsel	İngilizce			 	
+3	MCE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. ÜNAL ÇAMDALI	4	Dönemsel	İngilizce			 	
+13	MCE401	GRADUATION PROJECT I	Z	6	0	6	Doç.Dr. YASİN SARIKAVAK	4	Dönemsel	İngilizce			 	
+11	MCE401	GRADUATION PROJECT I	Z	6	0	6	Doç.Dr. BARIŞ KALAYCIOĞLU	4	Dönemsel	İngilizce			 	
+15	MCE401	GRADUATION PROJECT I	Z	6	0	6	Dr. Öğr. Üyesi OĞUZHAN MÜLKOĞLU	4	Dönemsel	İngilizce			 	
+16	MCE401	GRADUATION PROJECT I	Z	6	0	6	Dr. Öğr. Üyesi METE BAKIR	4	Dönemsel	İngilizce			 	
+2	MCE401	GRADUATION PROJECT I	Z	6	0	6	Prof.Dr. KAMİL ARSLAN	4	Dönemsel	İngilizce			 	
+54 - 3/6
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MAKİNE MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+6	MCE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. SADETTİN ORHAN	4	Dönemsel	İngilizce			 	
+9	MCE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. MEHMET SUNAR	4	Dönemsel	İngilizce			 	
+7	MCE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. HASAN ÖZCAN	4	Dönemsel	İngilizce			 	
+5	MCE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. ADEM ÇİÇEK	4	Dönemsel	İngilizce			 	
+8	MCE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. AHMET PINARBAŞI	4	Dönemsel	İngilizce			 	
+14	MCE401	GRADUATION PROJECT I	Z	6	0	6	Dr. Öğr. Üyesi POLAT KURT	4	Dönemsel	İngilizce			 	
+12	MCE401	GRADUATION PROJECT I	Z	6	0	6	Doç.Dr. KEMAL BİLEN	4	Dönemsel	İngilizce			 	
+1	MCE403	MACHINERY LABORATORY I  [Çar 08:00,Çar 09:00,Çar 10:00]	Z	3	0	4	Dr. Öğr. Üyesi OĞUZHAN MÜLKOĞLU	4	Dönemsel	İngilizce			 	
+1	MCE405	HYDRAULIC MACHINERY  [Cum 14:00,Cum 15:00,Cum 16:00]	S	3	0	5	Prof.Dr. AHMET PINARBAŞI	4	Dönemsel	İngilizce			 	
+1	MCE413	REFRIGERATION TECHNOLOGY  [Cum 09:00,Cum 10:00,Cum 11:00]	S	3	0	5	Prof.Dr. ÜNAL ÇAMDALI	4	Dönemsel	İngilizce			 	
+54 - 4/6
+
+4
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MAKİNE MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	MCE423	HEAT EXCHANGERS  [Sal 09:00,Sal 10:00,Sal 11:00]	S	3	0	5	Doç.Dr. KEMAL BİLEN	4	Dönemsel	İngilizce			 	
+1	MCE429	HYDROGEN TECHNOLOGIES  [Per 08:00,Per 09:00,Per 10:00]	S	3	0	5	Prof.Dr. SELAHATTİN ÇELİK	4	Dönemsel	İngilizce			 	
+1	MCE433	FINITE ELEMENT METHODS  [Per 15:00,Per 16:00,Cum 08:00]	S	3	0	5	Prof.Dr. MEHMET SUNAR	4	Dönemsel	İngilizce			 	
+1	MCE438	COMPUTER AIDED MANUFACTURING(CAM)  [Per 14:00,Per 15:00,Per 16:00]	S	3	0	5	Dr. Öğr. Üyesi NECATİ UÇAK	4	Dönemsel	İngilizce			 	
+1	MCE443	DESIGN AND ANALYSIS OF MECHANICAL SYSTEMS  [Pzt 14:00,Pzt 15:00,Pzt 16:00]	S	3	0	5	Doç.Dr. BARIŞ KALAYCIOĞLU	4	Dönemsel	İngilizce			 	
+1	MCE451	ROBOTICS  [Cum 14:00,Cum 15:00,Cum 16:00]	S	3	0	5	Dr. Öğr. Üyesi POLAT KURT	4	Dönemsel	İngilizce			 	
+1	MCE452	MECHANICAL VIBRATIONS  [Sal 14:00,Sal 15:00,Sal 16:00]	S	3	0	5	Prof.Dr. SADETTİN ORHAN	4	Dönemsel	İngilizce			 	
+1	MCE457	NANOFABRICATION TECHNIQUES	S	3	0	5	Doç.Dr. FATMA DOĞAN GÜZEL	4	Dönemsel	İngilizce			 	
+1	MCE479	DESIGN AND ANALYSIS OF COMPOSITE STRUCTURES  [Per 09:00,Per 10:00,Per 11:00]	S	3	0	5	Prof.Dr. MEHMET SUNAR	4	Dönemsel	İngilizce			 	
+1	MCE495	OPTIMIZATION TECHNIQUES IN ENGINEERING  [Sal 09:00,Sal 10:00,Sal 11:00]	S	3	0	5	Dr. Öğr. Üyesi OĞUZHAN MÜLKOĞLU	4	Dönemsel	İngilizce			 	
+54 - 5/6
+
+5
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MAKİNE MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	PHYS101	PHYSICS I  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	4	Dr. Öğr. Üyesi EDİGAR MUCHUWENİ	1	Dönemsel	İngilizce			 	
+1	PHYS103	PHYSICS LABORATORY I  [Pzt 08:00,Pzt 09:00]	Z	2	0	2	Dr. Öğr. Üyesi EDİGAR MUCHUWENİ	1	Dönemsel	İngilizce			 	
+1	TDL101	TÜRK DİLİ I  [Sal 10:00,Sal 11:00]	Z	2	0	2	Öğr.Gör.Dr. ZEHRA KUM	1	Dönemsel	Türkçe			 	
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Per 14:00,Per 15:00]	Z	2	0	2	Dr. Öğr. Üyesi ARZU ERMAN	1	Dönemsel	Türkçe			 	
+54 - 6/6
+
+6
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MATEMATİK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Çar 14:00,Çar 15:00]	Z	2	0	2	Dr. Öğr. Üyesi ARZU ERMAN	1	Dönemsel	Türkçe			 	
+1	TDL101	TÜRK DİLİ I  [Sal 14:00,Sal 15:00]	Z	2	0	2	Öğr.Gör.Dr. ZEHRA KUM	1	Dönemsel	Türkçe			 	
+1	MATH425	MATHEMATICAL WRITING AND DESIGN  [Pzt 10:00,Pzt 11:00,Per 08:00]	S	3	0	6	Dr. Öğr. Üyesi NURAY ÖKTEM	4	Dönemsel	İngilizce			 	
+1	MATH423	FUNCTIONAL ANALYSIS  [Per 13:00,Per 14:00,Per 15:00,Per 16:00]	S	4	0	6	Doç.Dr. ABDULHAMİT KÜÇÜKASLAN	4	Dönemsel	İngilizce			 	
+1	MATH415	RESEARCH METHODS IN MATHEMATICS  [Sal 09:00,Sal 10:00,Sal 11:00]	S	3	0	6	Dr. Öğr. Üyesi MİNE YİĞİTER	4	Dönemsel	İngilizce			 	
+2	MATH411	GRADUATION PROJECT I  [Pzt 13:30,Pzt 14:30]	Z	6	0	7	Prof.Dr. GÜLNİHAL MERAL	4	Dönemsel	İngilizce			 	
+11	MATH411	GRADUATION PROJECT I  [Pzt 14:30,Pzt 15:30]	Z	6	0	7	Öğr.Gör.Dr. NEZAKAT JAVANSHIR	4	Dönemsel	İngilizce			 	
+12	MATH411	GRADUATION PROJECT I  [Sal 13:00,Sal 14:00]	Z	6	0	7	Öğr.Gör.Dr. ELİF ALTINAY ÖZASLAN	4	Dönemsel	İngilizce			 	
+3	MATH411	GRADUATION PROJECT I  [Per 12:00,Per 13:00]	Z	6	0	7	Doç.Dr. SELİM BAHADIR	4	Dönemsel	İngilizce			 	
+7	MATH411	GRADUATION PROJECT I  [Çar 08:00,Çar 09:00]	Z	6	0	7	Dr. Öğr. Üyesi Fatma PARLAK	4	Dönemsel	İngilizce			 	
+31 - 1/4
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MATEMATİK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+5	MATH411	GRADUATION PROJECT I  [Sal 15:00,Per 09:30]	Z	6	0	7	Dr. Öğr. Üyesi FARUK YILMAZ	4	Dönemsel	İngilizce			 	
+9	MATH411	GRADUATION PROJECT I  [Cum 10:00,Cum 11:00]	Z	6	0	7	Dr. Öğr. Üyesi MİNE YİĞİTER	4	Dönemsel	İngilizce			 	
+1	MATH411	GRADUATION PROJECT I  [Cum 13:30,Cum 14:30]	Z	6	0	7	Prof.Dr. NİYAZİ ŞAHİN	4	Dönemsel	İngilizce			 	
+10	MATH411	GRADUATION PROJECT I  [Sal 09:00,Sal 10:00]	Z	6	0	7	Dr. Öğr. Üyesi NURAY ÖKTEM	4	Dönemsel	İngilizce			 	
+6	MATH411	GRADUATION PROJECT I  [Cum 13:30,Cum 14:30]	Z	6	0	7	Dr. Öğr. Üyesi ŞEHLA EMİNOĞLU	4	Dönemsel	İngilizce			 	
+4	MATH411	GRADUATION PROJECT I  [Çar 13:00,Çar 14:00]	Z	6	0	7	Doç.Dr. ABDULHAMİT KÜÇÜKASLAN	4	Dönemsel	İngilizce			 	
+8	MATH411	GRADUATION PROJECT I  [Çar 15:30,Çar 16:30]	Z	6	0	7	Dr. Öğr. Üyesi MAHMUT CAN BOZYİĞİT	4	Dönemsel	İngilizce			 	
+1	MATH323	COMBINATORICS  [Sal 13:00,Sal 14:00,Çar 15:00]	S	3	0	6	Doç.Dr. SELİM BAHADIR	3	Dönemsel	İngilizce			 	
+1	MATH321	INTRODUCTION TO PROBABILITY THEORY  [Pzt 08:00,Per 09:00]	S	3	0	6	Dr. Öğr. Üyesi Fatma PARLAK	3	Dönemsel	İngilizce			 	
+1	MATH317	INTRODUCTION TO NUMERICAL ANALYSIS  [Çar 13:00,Çar 14:00,Per 10:00,Per 11:00]	Z	4	0	6	Prof.Dr. NİYAZİ ŞAHİN	3	Dönemsel	İngilizce			 	
+31 - 2/4
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MATEMATİK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	MATH315	GENERAL TOPOLOGY  [Pzt 13:00,Cum 08:00,Cum 12:00,Cum 16:00]	Z	4	0	6	Öğr.Gör.Dr. NEZAKAT JAVANSHIR	3	Dönemsel	İngilizce			 	
+1	MATH313	ABSTRACT ALGEBRA I  [Sal 15:00,Sal 16:00,Çar 08:00,Çar 09:00]	Z	4	0	6	Dr. Öğr. Üyesi MAHMUT CAN BOZYİĞİT	3	Dönemsel	İngilizce			 	
+1	MATH217	ALGEBRAIC STRUCTURES  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	5	Doç.Dr. SELİM BAHADIR	2	Dönemsel	İngilizce			 	
+1	MATH215	DIFFERENTIAL EQUATIONS I  [Cum 09:00,Cum 10:00,Cum 11:00]	Z	3	0	5	Dr. Öğr. Üyesi ŞEHLA EMİNOĞLU	2	Dönemsel	İngilizce			 	
+1	MATH213	LINEAR ALGEBRA I  [Sal 13:00,Sal 14:00,Çar 13:00,Çar 14:00]	Z	4	0	10	Dr. Öğr. Üyesi MAHMUT CAN BOZYİĞİT	2	Dönemsel	İngilizce			 	
+1	MATH211	ADVANCED CALCULUS I  [Pzt 10:00,Pzt 11:00,Sal 10:00,Sal 11:00,Çar 10:00,Çar 11:00]	Z	6	0	10	Prof.Dr. GÜLNİHAL MERAL	2	Dönemsel	İngilizce			 	
+1	MATH115	ANALYTIC GEOMETRY  [Pzt 08:00,Pzt 09:00,Sal 08:00]	Z	3	0	5	Dr. Öğr. Üyesi NURAY ÖKTEM	1	Dönemsel	İngilizce			 	
+1	MATH113	ABSTRACT MATHEMATICS  [Sal 16:00,Per 15:00,Per 16:00]	Z	3	0	5	Dr. Öğr. Üyesi FARUK YILMAZ	1	Dönemsel	İngilizce			 	
+1	MATH111	CALCULUS I  [Pzt 13:00,Pzt 14:00,Çar 08:00,Çar 09:00,Per 13:00,Per 14:00]	Z	6	0	10	Dr. Öğr. Üyesi ŞEHLA EMİNOĞLU	1	Dönemsel	İngilizce			 	
+1	ENG103	ACADEMIC ENGLISH I  [Çar 12:00,Çar 13:00]	Z	2	0	2	Öğr.Gör.Dr. DİLEK İŞLER HAYIRLI	1	Dönemsel	İngilizce			 	
+31 - 3/4
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+MATEMATİK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CENG103	COMPUTER PROGRAMMING I  [Pzt 14:00,Pzt 15:00,Pzt 16:00,Çar 10:00,Çar 11:00]	Z	5	0	6	Dr. Öğr. Üyesi Fatma PARLAK	3	Dönemsel	İngilizce			 	
+31 - 4/4
+
+4
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+METALURJİ VE MALZEME MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Çar 16:00,Per 16:00]	Z	2	0	2	Dr. Öğr. Üyesi ARZU ERMAN	1	Dönemsel	Türkçe			 	
+1	TDL101	TÜRK DİLİ I  [Pzt 12:00,Pzt 13:00]	Z	2	0	2	Öğr.Gör.Dr. ZEHRA KUM	1	Dönemsel	Türkçe			 	
+1	PHYS103	PHYSICS LABORATORY I  [Per 13:00,Per 14:00]	Z	2	0	2	Dr. Öğr. Üyesi Ahmad AJJAQ	1	Dönemsel	İngilizce			 	
+1	PHYS101	PHYSICS I  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	4	Dr. Öğr. Üyesi Ahmad AJJAQ	1	Dönemsel	İngilizce			 	
+1	MSE437	METAL FATIGUE AND CREEP  [Çar 13:00,Çar 14:00,Çar 15:00]	S	3	0	4	Doç.Dr. MEHMET FATİH ÖKTEM	4	Dönemsel	İngilizce			 	
+1	MSE431	NOVEL MATERIALS FOR ENERGY APPLICATION  [Per 13:00,Per 14:00,Per 15:00]	S	3	0	4	Arş.Gör.Dr. OĞUZHAN BİLAÇ	4	Dönemsel	İngilizce			 	
+1	MSE417	POWDER BASED PRODUCTION METHODS  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	S	3	0	4	Dr. Öğr. Üyesi İDRİS TUĞRUL GÜLENÇ	4	Dönemsel	İngilizce			 	
+1	MSE415	GLASS TECHNOLOGY  [Pzt 08:00,Pzt 09:00,Pzt 10:00]	S	3	0	4	Prof.Dr. GÜLSÜM TOPATEŞ	4	Dönemsel	İngilizce			 	
+1	MSE413	THIN FILMS FABRICATION AND CHARACTERIZATION  [Sal 13:00,Sal 14:00,Sal 15:00]	S	3	0	4	Arş.Gör.Dr. İREMNUR AKÇAKOCA	4	Dönemsel	İngilizce			 	
+1	MSE412	GRADUATION PROJECT II  [Pzt 11:00,Pzt 12:00]	Z	2	0	4	Dr. Öğr. Üyesi NİMET YILDIRIM TİRGİL	4	Dönemsel	İngilizce			 	
+56 - 1/6
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+METALURJİ VE MALZEME MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+2	MSE412	GRADUATION PROJECT II  [Pzt 17:00,Pzt 18:00]	Z	2	0	4	Dr. Öğr. Üyesi MEHMET REMZİ ABUL	4	Dönemsel	İngilizce			 	
+9	MSE411	GRADUATION PROJECT I  [Çar 11:00,Çar 12:00]	Z	2	0	4	Dr. Öğr. Üyesi NİMET YILDIRIM TİRGİL	4	Dönemsel	İngilizce			 	
+7	MSE411	GRADUATION PROJECT I  [Çar 11:00,Çar 12:00]	Z	2	0	4	Doç.Dr. MEHMET FATİH ÖKTEM	4	Dönemsel	İngilizce			 	
+3	MSE411	GRADUATION PROJECT I  [Çar 10:00,Çar 11:00]	Z	2	0	4	Prof.Dr. CİHANGİR DURAN	4	Dönemsel	İngilizce			 	
+5	MSE411	GRADUATION PROJECT I  [Çar 11:00,Çar 12:00]	Z	2	0	4	Prof.Dr. GÜLSÜM TOPATEŞ	4	Dönemsel	İngilizce			 	
+6	MSE411	GRADUATION PROJECT I  [Pzt 11:00,Pzt 12:00]	Z	2	0	4	Doç.Dr. METEHAN ERDOĞAN	4	Dönemsel	İngilizce			 	
+8	MSE411	GRADUATION PROJECT I  [Çar 17:00,Çar 18:00]	Z	2	0	4	Doç.Dr. ŞERİFE AKKOYUN	4	Dönemsel	İngilizce			 	
+10	MSE411	GRADUATION PROJECT I  [Çar 11:00,Çar 12:00]	Z	2	0	4	Dr. Öğr. Üyesi İDRİS TUĞRUL GÜLENÇ	4	Dönemsel	İngilizce			 	
+11	MSE411	GRADUATION PROJECT I  [Çar 11:00,Çar 12:00]	Z	2	0	4	Dr. Öğr. Üyesi FURKAN ÖZDEMİR	4	Dönemsel	İngilizce			 	
+2	MSE411	GRADUATION PROJECT I  [Çar 11:00,Çar 12:00]	Z	2	0	4	Prof.Dr. HASAN OKUYUCU	4	Dönemsel	İngilizce			 	
+56 - 2/6
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+METALURJİ VE MALZEME MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	MSE411	GRADUATION PROJECT I  [Çar 11:00,Çar 12:00]	Z	2	0	4	Dr. Öğr. Üyesi MEHMET REMZİ ABUL	4	Dönemsel	İngilizce			 	
+4	MSE411	GRADUATION PROJECT I  [Çar 11:00,Çar 12:00]	Z	2	0	4	Prof.Dr. GÜVEN ÇANKAYA	4	Dönemsel	İngilizce			 	
+12	MSE411	GRADUATION PROJECT I  [Pzt 10:00,Pzt 11:00]	Z	2	0	4	Dr. Öğr. Üyesi SEMİH AĞCA	4	Dönemsel	İngilizce			 	
+13	MSE411	GRADUATION PROJECT I  [Çar 10:00,Çar 11:00]	Z	2	0	4	Arş.Gör.Dr. OĞUZHAN BİLAÇ	4	Dönemsel	İngilizce			 	
+14	MSE411	GRADUATION PROJECT I  [Pzt 11:00,Pzt 12:00]	Z	2	0	4	Arş.Gör.Dr. İREMNUR AKÇAKOCA	4	Dönemsel	İngilizce			 	
+1	MSE410	GRADUATION PROJECT I  [Sal 10:00,Sal 11:00]	Z	6	0	6	Prof.Dr. HASAN OKUYUCU	4	Dönemsel	İngilizce			 	
+1	MSE403	SELECTION AND PERFORMANCE OF MATERIALS  [Çar 08:00,Çar 09:00,Çar 10:00]	Z	3	0	5	Arş.Gör.Dr. İREMNUR AKÇAKOCA	4	Dönemsel	İngilizce			 	
+1	MSE401	NANOTECHNOLOGY AND NANOMATERIALS  [Per 08:00,Per 09:00,Per 10:00]	S	3	0	5	Prof.Dr. GÜLSÜM TOPATEŞ	4	Dönemsel	İngilizce			 	
+1	MSE400	INDUSTRIAL PRACTICES II	Z	2	0	4	Prof.Dr. HASAN OKUYUCU	4	Staj	İngilizce			 	
+1	MSE370	INTRODUCTION TO BIOMATERIALS  [Cum 08:00,Cum 09:00,Cum 10:00]	S	3	0	4	Dr. Öğr. Üyesi NİMET YILDIRIM TİRGİL	3	Dönemsel	İngilizce			 	
+56 - 3/6
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+METALURJİ VE MALZEME MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	MSE361	NUCLEATION AND SOLIDIFICATION  [Cum 14:00,Cum 15:00,Cum 16:00]	S	3	0	4	Dr. Öğr. Üyesi MEHMET REMZİ ABUL	3	Dönemsel	İngilizce			 	
+1	MSE355	CHEMICAL METALURGY  [Çar 08:00,Çar 09:00,Çar 10:00]	S	3	0	4	Doç.Dr. METEHAN ERDOĞAN	3	Dönemsel	İngilizce			 	
+1	MSE317	INTRODUCTION TO POLYMERS  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	5	Doç.Dr. ŞERİFE AKKOYUN	3	Dönemsel	İngilizce			 	
+1	MSE311	MATERIALS CHARACTERIZATION TECHNIQUES  [Pzt 08:00,Pzt 09:00,Sal 08:00,Sal 09:00]	Z	4	0	5	Prof.Dr. CİHANGİR DURAN	3	Dönemsel	İngilizce			 	
+1	MSE309	MECHANICAL BEHAVIOUR OF MATERIALS  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	5	Doç.Dr. MEHMET FATİH ÖKTEM	3	Dönemsel	İngilizce			 	
+1	MSE303	PROCESSING OF MATERIALS I  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Dr. Öğr. Üyesi FURKAN ÖZDEMİR	3	Dönemsel	İngilizce			 	
+1	MSE301	MATERIALS PROCESSING LAB.I  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	5	Dr. Öğr. Üyesi FURKAN ÖZDEMİR	3	Dönemsel	İngilizce			 	
+2	MSE301	MATERIALS PROCESSING LAB.I  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	5	Dr. Öğr. Üyesi FURKAN ÖZDEMİR	3	Dönemsel	İngilizce			 	
+1	MSE300	INDUSTRIAL PRACTICES I	Z	2	0	4	Prof.Dr. HASAN OKUYUCU	3	Staj	İngilizce			 	
+1	MSE211	PHYSICAL MEASUREMENT LABORATORY  [Cum 14:00,Cum 15:00,Cum 16:00]	S	3	0	4	Prof.Dr. GÜVEN ÇANKAYA	2	Dönemsel	İngilizce			 	
+56 - 4/6
+
+4
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+METALURJİ VE MALZEME MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	MSE203	THERMODYNAMICS OF MATERIALS I  [Cum 08:00,Cum 09:00,Cum 10:00]	Z	3	0	6	Doç.Dr. METEHAN ERDOĞAN	2	Dönemsel	İngilizce			 	
+1	MSE201	MATERIALS SCIENCE I  [Pzt 10:00,Pzt 11:00,Per 10:00,Per 11:00]	Z	4	0	6	Dr. Öğr. Üyesi İDRİS TUĞRUL GÜLENÇ	2	Dönemsel	İngilizce			 	
+2	MSE103	COMPUTER AIDED ENGINEERING DRAWING  [Cum 14:00,Cum 15:00,Cum 16:00]	Z	3	0	5	Öğr.Gör. HACI MURAT ÖZDEMİR	1	Dönemsel	İngilizce			 	
+1	MSE103	COMPUTER AIDED ENGINEERING DRAWING  [Cum 08:00,Cum 09:00,Cum 10:00]	Z	3	0	5	Öğr.Gör. HACI MURAT ÖZDEMİR	1	Dönemsel	İngilizce			 	
+1	MSE101	INTRODUCTION TO MATERIALS ENGINEERING  [Per 08:00,Per 09:00]	Z	2	0	2	Prof.Dr. HASAN OKUYUCU	1	Dönemsel	İngilizce			 	
+1	MATH201	DIFFERENTIAL EQUATIONS  [Sal 13:00,Sal 14:00,Per 13:00,Per 14:00]	Z	4	0	6	Dr. Öğr. Üyesi FARUK YILMAZ	2	Dönemsel	İngilizce			 	
+1	MATH101	CALCULUS I   [Pzt 08:00,Pzt 09:00,Çar 08:00,Çar 09:00]	Z	4	0	6	Öğr.Gör.Dr. NEZAKAT JAVANSHIR	1	Dönemsel	İngilizce			 	
+1	ENGR450	ENGINEERING APPLICATION ON SITE  [Cum 08:00,Cum 09:00,Cum 10:00,Cum 11:00,Cum 12:00]	S	5	0	15	Prof.Dr. HASAN OKUYUCU	4	Dönemsel	İngilizce			 	
+3	ENGR265	PRINCIPLES OF OCCUPATIONAL HEALTH AND SAFETY I	Z	2	0	3	Prof.Dr. HÜSEYİN CANBOLAT	2	Dönemsel	İngilizce			 	
+1	ENGR265	PRINCIPLES OF OCCUPATIONAL HEALTH AND SAFETY I  [Cum 19:00,Cum 20:00]	Z	2	0	3	Prof.Dr. HÜSEYİN CANBOLAT	2	Dönemsel	İngilizce			 	
+56 - 5/6
+
+5
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+METALURJİ VE MALZEME MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+2	ENGR265	PRINCIPLES OF OCCUPATIONAL HEALTH AND SAFETY I	Z	2	0	3	Prof.Dr. HÜSEYİN CANBOLAT	2	Dönemsel	İngilizce			 	
+1	ENGR251	ENGINEERING ETHICS  [Sal 15:00,Sal 16:00,Sal 17:00]	S	3	0	3	Arş.Gör.Dr. OĞUZHAN BİLAÇ	2	Dönemsel	İngilizce			 	
+1	ENGR206	SCIENCE, TECHNOLOGY AND SOCIETY  [Per 17:00,Per 18:00]	S	2	0	3	Dr. Öğr. Üyesi AHMET ÇELİK	2	Dönemsel	İngilizce			 	
+1	ENG201	TECHNICAL ENGLISH I  [Çar 08:00,Çar 09:00,Çar 10:00]	Z	3	0	4	Dr. Öğr. Üyesi MEHMET REMZİ ABUL	2	Dönemsel	İngilizce			 	
+1	ENG103	ACADEMIC ENGLISH I  [Sal 10:00,Sal 11:00]	Z	2	0	2	Öğr.Gör.Dr. SİBEL EYLENEN	1	Dönemsel	İngilizce			 	
+1	CHEM101	GENERAL CHEMISTRY  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	5	Doç.Dr. ŞERİFE AKKOYUN	1	Dönemsel	İngilizce			 	
+56 - 6/6
+
+6
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+YAZILIM MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Çar 08:00,Çar 09:00]	Z	2	0	2	Dr. Öğr. Üyesi ARZU ERMAN	1	Dönemsel	Türkçe			 	
+1	TDL101	TÜRK DİLİ I  [Pzt 16:00,Çar 11:00]	Z	2	0	2	Öğr.Gör.Dr. ZEHRA KUM	1	Dönemsel	Türkçe			 	
+3	SENG487	GUIDED RESEARCH  [Çar 08:00,Çar 09:00,Çar 10:00]	S	3	0	5	Dr. Öğr. Üyesi ABDULKADİR TAŞDELEN	4	Dönemsel	İngilizce			 	
+2	SENG487	GUIDED RESEARCH  [Pzt 08:00,Pzt 09:00,Pzt 10:00]	S	3	0	5	Dr. Öğr. Üyesi Tuba ÇAĞLIKANTAR	4	Dönemsel	İngilizce			 	
+4	SENG487	GUIDED RESEARCH  [Pzt 08:00,Pzt 09:00,Per 10:00]	S	3	0	5	Dr. Öğr. Üyesi FATMA KÜÇÜK	4	Dönemsel	İngilizce			 	
+5	SENG487	GUIDED RESEARCH  [Pzt 08:00,Pzt 09:00,Pzt 10:00]	S	3	0	5	Doç.Dr. YENAL ARSLAN	4	Dönemsel	İngilizce			 	
+1	SENG435	INTRODUCTION TO DIGITAL IMAGE PROCESSING  [Per 08:00,Per 09:00,Per 10:00]	S	3	0	5	Dr. Öğr. Üyesi Tuba ÇAĞLIKANTAR	4	Dönemsel	İngilizce			 	
+1	SENG433	FUNDAMENTALS OF BLOCKCHAIN TECHNOLOGY  [Çar 14:00,Çar 15:00,Çar 16:00]	S	3	0	5	Dr. Öğr. Üyesi ABDULKADİR TAŞDELEN	4	Dönemsel	İngilizce			 	
+1	SENG425	DATA SCIENCE  [Pzt 10:00,Pzt 11:00,Pzt 12:00]	S	3	0	5	Dr. Öğr. Üyesi FATMA KÜÇÜK	4	Dönemsel	İngilizce			 	
+1	SENG423	INTERNET OF THINGS  [Per 11:00,Per 12:00,Per 13:00]	S	3	0	5	Dr. Öğr. Üyesi MEHMET ULVİ ŞİMŞEK	4	Dönemsel	İngilizce			 	
+41 - 1/5
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+YAZILIM MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+7	SENG401	GRADUATION PROJECT I  [Cum 15:00,Cum 16:00]	Z	6	0	6	Dr. Öğr. Üyesi MEHMET ULVİ ŞİMŞEK	4	Dönemsel	İngilizce			 	
+1	SENG401	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Doç.Dr. HİLAL ARSLAN	4	Dönemsel	İngilizce			 	
+5	SENG401	GRADUATION PROJECT I  [Per 14:00,Per 15:00]	Z	6	0	6	Dr. Öğr. Üyesi FATMA KÜÇÜK	4	Dönemsel	İngilizce			 	
+3	SENG401	GRADUATION PROJECT I  [Cum 15:00,Cum 16:00]	Z	6	0	6	Dr. Öğr. Üyesi ÖMER MİNTEMUR	4	Dönemsel	İngilizce			 	
+8	SENG401	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Dr. Öğr. Üyesi Tuba ÇAĞLIKANTAR	4	Dönemsel	İngilizce			 	
+2	SENG401	GRADUATION PROJECT I  [Cum 08:00,Cum 09:00]	Z	6	0	6	Doç.Dr. YENAL ARSLAN	4	Dönemsel	İngilizce			 	
+4	SENG401	GRADUATION PROJECT I  [Cum 13:00,Cum 14:00]	Z	6	0	6	Dr. Öğr. Üyesi RASHA OSMAN	4	Dönemsel	İngilizce			 	
+6	SENG401	GRADUATION PROJECT I  [Cum 15:00,Cum 16:00]	Z	6	0	6	Dr. Öğr. Üyesi ABDULKADİR TAŞDELEN	4	Dönemsel	İngilizce			 	
+1	SENG400	INDUSTRIAL PRACTICE II  [Pzt 14:00,Pzt 15:00]	Z	2	0	4	Doç.Dr. HİLAL ARSLAN	4	Staj	İngilizce			 	
+1	SENG319	SOFTWARE DESIGN PATTERNS  [Cum 10:00,Cum 11:00,Cum 12:00]	Z	3	0	6	Dr. Öğr. Üyesi RASHA OSMAN	3	Dönemsel	İngilizce			 	
+41 - 2/5
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+YAZILIM MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	SENG314	FORMAL LANGUAGES WITH ABSTRACT MACHINES  [Per 08:00,Per 09:00,Per 10:00]	S	3	0	5	Dr. Öğr. Üyesi MEHMET ULVİ ŞİMŞEK	3	Dönemsel	İngilizce			 	
+1	SENG305	OPERATING SYSTEMS  [Per 14:00,Per 15:00,Per 16:00]	Z	3	0	6	Dr. Öğr. Üyesi RASHA OSMAN	3	Dönemsel	İngilizce			 	
+1	SENG303	DESIGN AND ANALYSIS OF ALGORITHMS  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	5	Doç.Dr. HİLAL ARSLAN	3	Dönemsel	İngilizce			 	
+1	SENG301	DATABASE MANAGEMENT SYSTEMS  [Sal 10:00,Sal 11:00,Sal 12:00,Sal 15:00,Sal 16:00]	Z	5	0	5	Dr. Öğr. Üyesi RASHA OSMAN	3	Dönemsel	İngilizce			 	
+1	SENG300	INDUSTRIAL PRACTICE I  [Pzt 13:00,Çar 12:00]	Z	2	0	4	Doç.Dr. HİLAL ARSLAN	3	Staj	İngilizce			 	
+1	SENG211	SOFTWARE PROJECT MANAGEMENT  [Çar 08:00,Çar 15:00,Çar 16:00]	Z	3	0	6	Doç.Dr. YENAL ARSLAN	2	Dönemsel	İngilizce			 	
+1	SENG209	SOFTWARE REQUIREMENTS ENGINEERING  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	6	Doç.Dr. YENAL ARSLAN	2	Dönemsel	İngilizce			 	
+1	SENG207	PROBABILITY AND STATISTICS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	6	Dr. Öğr. Üyesi Fatma Yerlikaya Özkurt	2	Dönemsel	İngilizce			 	
+1	SENG201	OBJECT ORIENTED PROGRAMMING  [Sal 09:00,Sal 10:00,Sal 11:00,Per 09:00,Per 10:00]	Z	5	0	6	Dr. Öğr. Üyesi ÖMER MİNTEMUR	2	Dönemsel	İngilizce			 	
+1	SENG113	COMPUTER PROGRAMMING I  [Pzt 09:00,Pzt 10:00,Pzt 11:00,Per 13:00,Per 14:00]	Z	5	0	5	Dr. Öğr. Üyesi ÖMER MİNTEMUR	1	Dönemsel	İngilizce			 	
+41 - 3/5
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+YAZILIM MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	SENG101	INTRODUCTION TO SOFTWARE ENGINEERING   [Çar 10:00,Çar 11:00]	Z	2	0	2	Dr. Öğr. Üyesi FATMA KÜÇÜK	1	Dönemsel	İngilizce			 	
+1	PHYS103	PHYSICS LABORATORY I  [Cum 15:00,Cum 16:00]	Z	2	0	2	Öğr.Gör.Dr. MELİKE AYAZ	1	Dönemsel	İngilizce			 	
+1	PHYS101	PHYSICS I  [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	4	Öğr.Gör.Dr. MELİKE AYAZ	1	Dönemsel	İngilizce			 	
+1	MATH201	DIFFERENTIAL EQUATIONS  [Per 11:00,Per 12:00,Per 13:00,Per 14:00]	Z	4	0	6	Prof.Dr. ÜNAL ÇAMDALI	2	Dönemsel	İngilizce			 	
+1	ENGR450	ENGINEERING APPLICATION ON SITE  [Sal 09:00,Sal 10:00,Cum 10:00,Cum 11:00,Cum 12:00]	S	5	0	15	Doç.Dr. HİLAL ARSLAN	4	Dönemsel	İngilizce			 	
+3	ENGR450	ENGINEERING APPLICATION ON SITE	S	5	0	15	Dr. Öğr. Üyesi FATMA KÜÇÜK	4	Dönemsel	İngilizce			 	
+5	ENGR450	ENGINEERING APPLICATION ON SITE	S	5	0	15	Dr. Öğr. Üyesi Tuba ÇAĞLIKANTAR	4	Dönemsel	İngilizce			 	
+4	ENGR450	ENGINEERING APPLICATION ON SITE	S	5	0	15	Dr. Öğr. Üyesi ABDULKADİR TAŞDELEN	4	Dönemsel	İngilizce			 	
+2	ENGR450	ENGINEERING APPLICATION ON SITE	S	5	0	15	Dr. Öğr. Üyesi MEHMET ULVİ ŞİMŞEK	4	Dönemsel	İngilizce			 	
+1	ENG103	ACADEMIC ENGLISH I  [Per 15:00,Per 16:00]	Z	2	0	2	Öğr.Gör. DENNIS O`KEEFE	1	Dönemsel	İngilizce			 	
+41 - 4/5
+
+4
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program	
+YAZILIM MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	CHEM101	GENERAL CHEMISTRY  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Doç.Dr. FURKAN SOYSAL	1	Dönemsel	İngilizce			 	
+41 - 5/5
+
+5

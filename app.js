@@ -4,6 +4,7 @@ const DATA = window.COURSE_DATA;
 const DAYS = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"];
 const DAYS_SHORT = ["Pzt", "Sal", "Çar", "Per", "Cum"];
 const CATEGORY_LABEL = { dept: "Seçmeli", engr: "ENGR", rektorluk: "Rektörlük", ortak: "Ortak" };
+const DEFAULT_PROGRAM = "IE";
 const COLORS = ["#a5c8ff", "#ffc9a3", "#b8e6b0", "#f3b3d6", "#d7c4ff", "#ffe08a", "#9fe3e0", "#f5b2a8", "#c9d99a", "#c7d0dc"];
 const MAX_RESULTS = 20000;
 
@@ -32,6 +33,8 @@ const state = {
   maxEnd: null,
   ignoreOnline: true,
   sortBy: "freedays",
+  program: DEFAULT_PROGRAM,  // student's department
+  ownSections: true,         // for shared courses (MATH101...) only use the student's department section
 };
 let schedules = [];
 let current = 0;
@@ -54,6 +57,7 @@ function load() {
     Object.assign(state, s);
     state.selected = state.selected.filter((x) => courses.has(x.code));
     state.blocked = state.blocked || [];
+    if (!DATA.programs[state.program]) state.program = DEFAULT_PROGRAM;
     // Drop time limits that are no longer offered (e.g. saved when the grid started at 08:30)
     for (const k of ["minStart", "maxEnd"]) {
       const v = state[k];
@@ -71,17 +75,62 @@ function storeFavs(favs) {
   renderFavs();
 }
 
+// ---------- program-relative course info ----------
+const progInfo = (c) => c.programs[state.program];
+const isRequired = (c) => !!progInfo(c)?.req;
+const yearOf = (c) => progInfo(c)?.year ?? c.year;
+const isOtherDept = (c) => !progInfo(c) && (c.category === "dept" || c.category === "ortak");
+const deptsOf = (c) => [...new Set(c.sections.map((s) => s.dept))];
+const facultyOf = (dept) => DATA.programs[dept]?.faculty;
+const deptName = (dept) => DATA.programs[dept]?.name || dept;
+// Departments that open the course (for ENGR courses this is what students want to know)
+const offeredBy = (c) => deptsOf(c).filter((d) => DATA.programs[d]);
+const myFaculty = () => facultyOf(state.program);
+
+// Can a student of the selected program take this course at all?
+function available(c) {
+  if (c.category === "rektorluk" || progInfo(c)) return true;
+  if (c.ownOnly) return false;                       // projects, internships, ENGR450: own department only
+  if (c.category === "engr") return myFaculty() === DATA.engrFaculty;
+  return c.sections.some((s) => facultyOf(s.dept) === myFaculty());
+}
+
+function typeLabel(c) {
+  if (isRequired(c)) return "Zorunlu";
+  if (isOtherDept(c)) return `Diğer bölüm (${deptsOf(c).join(", ")})`;
+  return CATEGORY_LABEL[c.category];
+}
+
+// Sections the generator may use, before the user's own exclusions
+function candidateSections(c) {
+  let secs = c.sections.filter((s) => s.dept === "rektorluk" || s.dept === "ENGR" || facultyOf(s.dept) === myFaculty());
+  if (c.ownOnly || (state.ownSections && secs.some((s) => s.dept === state.program))) {
+    secs = secs.filter((s) => s.dept === state.program);
+  }
+  return secs;
+}
+
 // ---------- search / selection ----------
 function matchesType(c, type) {
-  if (type === "zorunlu") return c.required;
-  if (type === "secmeli") return !c.required && (c.category === "dept" || c.category === "ortak");
+  if (type === "zorunlu") return isRequired(c);
+  if (type === "secmeli") return !!progInfo(c) && !isRequired(c) && (c.category === "dept" || c.category === "ortak");
+  if (type === "diger") return isOtherDept(c);
   if (type) return c.category === type;
   return true;
 }
 
 function typeTag(c) {
-  if (c.required) return `<span class="tag req">Zorunlu</span>`;
-  return `<span class="tag">${CATEGORY_LABEL[c.category]}</span>`;
+  const offer = c.category === "engr" && offeredBy(c).length
+    ? `<span class="tag" title="${offeredBy(c).map(deptName).join(", ")}">${offeredBy(c).join(", ")}</span>` : "";
+  if (isRequired(c)) return `<span class="tag req">Zorunlu</span>${offer}`;
+  if (isOtherDept(c)) return `<span class="tag other">${deptsOf(c).join(", ")}</span>`;
+  return `<span class="tag">${CATEGORY_LABEL[c.category]}</span>${offer}`;
+}
+
+// Own department first, then ENGR, rektörlük and other departments
+function rank(c) {
+  if (progInfo(c)) return 0;
+  return { engr: 1, rektorluk: 2 }[c.category] ?? 3;
 }
 
 function initFilters() {
@@ -100,12 +149,13 @@ function searchCourses() {
   const year = +$("yearFilter").value;
   const type = $("typeFilter").value;
   const list = DATA.courses.filter((c) => {
-    if (year && c.year !== year && type !== "rektorluk") return false;
+    if (!available(c)) return false;
+    if (year && yearOf(c) !== year && type !== "rektorluk") return false;
     if (!matchesType(c, type)) return false;
     if (!q) return true;
     const norm = (t) => t.toLocaleUpperCase("tr").replace(/\s+/g, "");
     return c.code.includes(q) || norm(c.name).includes(q) || c.sections.some((s) => norm(s.instructor).includes(q));
-  });
+  }).sort((a, b) => rank(a) - rank(b) || a.code.localeCompare(b.code));
 
   $("results").innerHTML = list.map((c) => `
     <li data-code="${c.code}">
@@ -120,13 +170,14 @@ function searchCourses() {
 }
 
 function requiredFor(year) {
-  return DATA.courses.filter((c) => c.required && c.year === year && c.sections.length &&
+  return DATA.courses.filter((c) => isRequired(c) && yearOf(c) === year && c.sections.length &&
     !state.selected.some((s) => s.code === c.code));
 }
 
 function addCourse(code) {
   if (state.selected.some((s) => s.code === code)) return;
   const c = courses.get(code);
+  if (!available(c)) return;
   if (c.category === "rektorluk") {
     const other = state.selected.find((s) => courses.get(s.code).category === "rektorluk");
     if (other) { showWarn(`Rektörlük ortak dersinden en fazla 1 tane alınabilir (${other.code} zaten seçili).`); return; }
@@ -161,14 +212,17 @@ function renderSelected() {
     : "";
   $("selected").innerHTML = state.selected.map((sel) => {
     const c = courses.get(sel.code);
-    const secs = c.sections.length > 1 ? `<div class="secs">` + c.sections.map((s) => `
+    const cand = candidateSections(c);
+    const secs = cand.length > 1 ? `<div class="secs">` + cand.map((s) => `
       <label title="${s.slots.map(slotText).join(", ")}${s.instructor ? " — " + s.instructor : ""}">
         <input type="checkbox" data-code="${c.code}" data-sec="${s.id}" ${sel.excluded.includes(s.id) ? "" : "checked"}>
         ${sectionLabel(s)}${s.instructor ? ` <span class="who">· ${s.instructor.split(" ").pop()}</span>` : ""}
       </label>`).join("") + `</div>` : "";
     return `<li style="border-color:${colorOf(c.code)}">
-      <div class="head"><span><b>${c.code}</b> ${c.name}</span>
+      <div class="head"><span><b>${c.code}</b> ${c.name}${c.category === "engr" && offeredBy(c).length
+        ? ` <span class="small muted">· ${offeredBy(c).map(deptName).join(", ")}</span>` : ""}</span>
       <button class="rm" data-rm="${c.code}" aria-label="Kaldır">×</button></div>${secs}
+      ${c.prereq?.length ? `<div class="small prereq">Ön koşul: ${c.prereq.join(", ")} dersini geçmiş olmalısın</div>` : ""}
       ${c.noClash ? `<span class="small muted clashbox">Çakışmadan muaf</span>` : `<label class="small muted clashbox">
         <input type="checkbox" data-clash="${c.code}" ${sel.clash ? "checked" : ""}> Çakışabilir</label>`}</li>`;
   }).join("");
@@ -199,7 +253,9 @@ function sectionUsable(sec) {
 
 function emptyReason(sel) {
   const c = courses.get(sel.code);
-  const open = c.sections.filter((s) => !sel.excluded.includes(s.id));
+  const cand = candidateSections(c);
+  if (!cand.length) return "bölümün için açılmış şubesi yok";
+  const open = cand.filter((s) => !sel.excluded.includes(s.id));
   if (!open.length) return "tüm şubeleri hariç tutuldu";
   const reasons = new Set(open.map((s) => s.slots.map(slotProblem).find(Boolean)));
   return [...reasons].join(", ");
@@ -222,7 +278,7 @@ function clashes(a, b) {
 function generate() {
   const items = state.selected.map((sel) => {
     const c = courses.get(sel.code);
-    const secs = c.sections.filter((s) => !sel.excluded.includes(s.id) && sectionUsable(s))
+    const secs = candidateSections(c).filter((s) => !sel.excluded.includes(s.id) && sectionUsable(s))
       .map((s) => ({ course: c, sec: s, iv: toIntervals(s, sel) }));
     return { code: c.code, secs, sel };
   });
@@ -262,15 +318,26 @@ function generate() {
 function score(sch) {
   const byDay = [[], [], [], [], []];
   for (const o of sch) for (const sl of countedSlots(o.sec)) byDay[sl.d].push([toMin(sl.s), toMin(sl.e)]);
-  let freeDays = 0, gaps = 0, lastEnd = 0;
+  let freeDays = 0, gaps = 0, lastEnd = 0, firstStart = 0, minutes = 0, earliest = Infinity, latest = 0;
   for (const day of byDay) {
     if (!day.length) { freeDays++; continue; }
     day.sort((a, b) => a[0] - b[0]);
-    for (let i = 1; i < day.length; i++) gaps += Math.max(0, day[i][0] - day[i - 1][1]);
-    lastEnd += Math.max(...day.map((x) => x[1]));
+    // Gaps between the end of the busy period so far and the next class
+    let busyEnd = day[0][1];
+    for (let i = 1; i < day.length; i++) {
+      gaps += Math.max(0, day[i][0] - busyEnd - 10);   // 10 min breaks are not gaps
+      busyEnd = Math.max(busyEnd, day[i][1]);
+    }
+    for (const [s, e] of day) minutes += e - s + 10;   // a 50 min period counts as one hour
+    lastEnd += busyEnd;
+    firstStart += day[0][0];
+    earliest = Math.min(earliest, day[0][0]);
+    latest = Math.max(latest, busyEnd);
   }
-  return { freeDays, gaps, lastEnd };
+  return { freeDays, gaps, lastEnd, firstStart, minutes, earliest, latest };
 }
+
+const avgStart = (k) => k.firstStart / Math.max(1, 5 - k.freeDays);
 
 function sortSchedules() {
   const scored = schedules.map((s) => ({ s, k: score(s) }));
@@ -278,6 +345,7 @@ function sortSchedules() {
     freedays: (a, b) => b.k.freeDays - a.k.freeDays || a.k.gaps - b.k.gaps,
     gaps: (a, b) => a.k.gaps - b.k.gaps || b.k.freeDays - a.k.freeDays,
     early: (a, b) => a.k.lastEnd - b.k.lastEnd || a.k.gaps - b.k.gaps,
+    late: (a, b) => avgStart(b.k) - avgStart(a.k) || a.k.gaps - b.k.gaps,
   }[state.sortBy];
   schedules = scored.sort(cmp).map((x) => x.s);
 }
@@ -316,13 +384,14 @@ function renderGrid() {
       const h = (e - s) / 60;
       const clash = lanes > 1;
       const pos = lanes > 1 ? `left:calc(${(lane / lanes) * 100}% + 1px);right:auto;width:calc(${100 / lanes}% - 2px);` : "";
-      html += `<div class="blk${clash ? " clash" : ""}" style="${pos}top:calc(var(--row-h) * ${top});height:calc(var(--row-h) * ${h} - 2px);background:${colorOf(o.course.code)}"
+      html += `<div class="blk${clash ? " clash" : ""}" data-code="${o.course.code}" data-sec="${o.sec.id}" style="${pos}top:calc(var(--row-h) * ${top});height:calc(var(--row-h) * ${h} - 2px);background:${colorOf(o.course.code)}"
         title="${o.course.code} ${o.course.name}\n${sectionLabel(o.sec)}${o.sec.instructor ? " — " + o.sec.instructor : ""}\n${sl.s}-${sl.e} ${sl.r || ""}">
-        <b>${o.course.code}</b>${o.course.sections.length > 1 ? sectionLabel(o.sec) + "<br>" : ""}${sl.r || ""}</div>`;
+        <b>${o.course.code}</b>${o.course.sections.length > 1 || o.course.category === "engr" ? sectionLabel(o.sec) + "<br>" : ""}${sl.r || ""}</div>`;
     }
     html += `</div>`;
   }
   $("grid").innerHTML = html;
+  renderStats(sch);
   if (previewCode) drawPreview(previewCode);
   renderFits();
 
@@ -341,7 +410,19 @@ function renderCounter(empty) {
 }
 
 let lastEmpty = [];
+const undoStack = [];
+let snapshot = null;
+
 function update() {
+  const now = JSON.stringify({ selected: state.selected, blocked: state.blocked, freeDays: state.freeDays,
+    minStart: state.minStart, maxEnd: state.maxEnd, ignoreOnline: state.ignoreOnline,
+    program: state.program, ownSections: state.ownSections });
+  if (snapshot && snapshot !== now) {
+    undoStack.push(snapshot);
+    if (undoStack.length > 50) undoStack.shift();
+  }
+  snapshot = now;
+  $("undo").disabled = !undoStack.length;
   save();
   renderSelected();
   searchCourses();
@@ -391,10 +472,35 @@ function bind() {
   $("minStart").addEventListener("change", (e) => { state.minStart = e.target.value ? +e.target.value : null; update(); });
   $("maxEnd").addEventListener("change", (e) => { state.maxEnd = e.target.value ? +e.target.value : null; update(); });
   $("ignoreOnline").addEventListener("change", (e) => { state.ignoreOnline = e.target.checked; update(); });
+  $("ownSections").addEventListener("change", (e) => { state.ownSections = e.target.checked; update(); });
+  $("programSel").addEventListener("change", (e) => { state.program = e.target.value; update(); });
   $("sortBy").addEventListener("change", (e) => { state.sortBy = e.target.value; sortSchedules(); current = 0; renderCounter(lastEmpty); renderGrid(); save(); });
   $("prev").addEventListener("click", () => { if (current > 0) { current--; renderCounter(lastEmpty); renderGrid(); } });
   $("next").addEventListener("click", () => { if (current < schedules.length - 1) { current++; renderCounter(lastEmpty); renderGrid(); } });
+  $("undo").addEventListener("click", undo);
+  $("grid").addEventListener("click", (e) => {
+    const blk = e.target.closest(".blk:not(.ghost)");
+    if (blk) openDetail(blk.dataset.code, blk.dataset.sec);
+  });
+  $("closeDetail").addEventListener("click", () => $("detail").close());
+  $("detail").addEventListener("click", (e) => { if (e.target === $("detail")) $("detail").close(); });
+  $("removeCourse").addEventListener("click", () => {
+    state.selected = state.selected.filter((s) => s.code !== detailOf.code);
+    $("detail").close();
+    update();
+  });
+  $("lockSec").addEventListener("click", () => {
+    const sel = state.selected.find((s) => s.code === detailOf.code);
+    sel.excluded = candidateSections(courses.get(detailOf.code)).map((s) => s.id).filter((id) => id !== detailOf.sec);
+    $("detail").close();
+    update();
+  });
   document.addEventListener("keydown", (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z" && !e.target.matches("input[type=search], input[type=date]")) {
+      e.preventDefault();
+      undo();
+      return;
+    }
     if (e.target.matches("input, select")) return;
     if (e.key === "ArrowLeft") $("prev").click();
     if (e.key === "ArrowRight") $("next").click();
@@ -482,6 +588,53 @@ async function downloadPng() {
   a.click();
 }
 
+// ---------- undo / stats / detail ----------
+function undo() {
+  if (!undoStack.length) return;
+  const prev = undoStack.pop();
+  Object.assign(state, JSON.parse(prev));
+  snapshot = null;          // do not record the undo itself as a change
+  syncControls();
+  update();
+  $("undo").disabled = !undoStack.length;
+}
+
+function renderStats(sch) {
+  const k = sch && sch.length ? score(sch) : null;
+  if (!k || !k.minutes) { $("stats").textContent = ""; return; }
+  const h = (m) => (m / 60).toLocaleString("tr", { maximumFractionDigits: 1 });
+  $("stats").textContent = [
+    `Haftada ${h(k.minutes)} ders saati`,
+    `${5 - k.freeDays} gün okulda`,
+    `En erken ${fmt(k.earliest)}, en geç ${fmt(k.latest)}`,
+    k.gaps ? `Toplam boşluk ${h(k.gaps)} saat` : "Arada boşluk yok",
+  ].join(" · ");
+}
+
+let detailOf = null;
+function openDetail(code, secId) {
+  const c = courses.get(code);
+  const sec = c.sections.find((s) => s.id === secId);
+  detailOf = { code, sec: secId };
+  const rows = [
+    ["Tür", typeLabel(c)],
+    offeredBy(c).length ? ["Açan bölüm", offeredBy(c).map(deptName).join(", ")] : null,
+    DATA.programs[sec.dept] && offeredBy(c).length > 1 ? ["Bu şube", deptName(sec.dept)] : null,
+    ["AKTS", c.ects ?? "bilinmiyor"],
+    c.sections.length > 1 ? ["Şube", `${sectionLabel(sec)} (${c.sections.length} şubeden biri)`] : null,
+    ["Hoca", sec.instructor || "belirtilmemiş"],
+    ["Saatler", sec.slots.map((sl) => `${DAYS[sl.d]} ${sl.s}–${sl.e}${sl.r ? ` · ${sl.r}` : ""}`).join("<br>")],
+    c.prereq?.length ? ["Ön koşul", c.prereq.join(", ")] : null,
+    c.noClash ? ["Not", "Çakışma kontrolünden muaf"] : null,
+  ].filter(Boolean);
+  $("detailBody").innerHTML = `<h3>${c.code}</h3><div class="muted">${c.name}</div>
+    <dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`;
+  const cand = candidateSections(c);
+  const excluded = state.selected.find((s) => s.code === code).excluded;
+  $("lockSec").hidden = cand.filter((s) => !excluded.includes(s.id)).length < 2;
+  $("detail").showModal();
+}
+
 // ---------- preview / fits ----------
 let previewCode = null;
 
@@ -506,9 +659,9 @@ function renderFits() {
   const taken = sch.flatMap((o) => toIntervals(o.sec, state.selected.find((x) => x.code === o.course.code) || {}));
   const hasRektorluk = state.selected.some((s) => courses.get(s.code).category === "rektorluk");
   const list = DATA.courses.filter((c) => {
-    if (state.selected.some((s) => s.code === c.code) || !c.sections.length) return false;
+    if (state.selected.some((s) => s.code === c.code) || !c.sections.length || !available(c)) return false;
     if (hasRektorluk && c.category === "rektorluk") return false;
-    return c.sections.some((sec) => sectionUsable(sec) && !clashes(taken, toIntervals(sec, {})));
+    return candidateSections(c).some((sec) => sectionUsable(sec) && !clashes(taken, toIntervals(sec, {})));
   });
   $("fits").innerHTML = list.map((c) => `
     <li data-code="${c.code}">
@@ -577,11 +730,15 @@ function syncControls() {
   $("minStart").value = state.minStart ?? "";
   $("maxEnd").value = state.maxEnd ?? "";
   $("ignoreOnline").checked = state.ignoreOnline;
+  $("ownSections").checked = state.ownSections;
+  $("programSel").value = state.program;
   $("sortBy").value = state.sortBy;
   for (const cb of $("freeDays").querySelectorAll("input")) cb.checked = state.freeDays.includes(+cb.value);
 }
 
-$("program").textContent = DATA.program.name;
+$("programSel").innerHTML = [...new Set(Object.values(DATA.programs).map((p) => p.faculty))].map((fac) =>
+  `<optgroup label="${fac}">` + Object.entries(DATA.programs).filter(([, p]) => p.faculty === fac)
+    .map(([code, p]) => `<option value="${code}">${p.name}</option>`).join("") + `</optgroup>`).join("");
 $("term").textContent = DATA.term;
 initFilters();
 load();

@@ -128,3 +128,20 @@ button.link { border: none; background: none; padding: 0; color: var(--accent); 
   body { background: #fff; }
   .blk { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+.stats { margin: 0 0 8px; }
+.blk:not(.ghost) { cursor: pointer; }
+dialog {
+  border: 1px solid var(--border); border-radius: 10px; padding: 16px;
+  background: var(--surface); color: var(--text); max-width: min(420px, calc(100vw - 32px));
+}
+dialog::backdrop { background: rgb(0 0 0 / .35); }
+dialog h3 { margin: 0 0 4px; font-size: 16px; }
+dialog dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 12px 0; font-size: 13px; }
+dialog dt { color: var(--muted); }
+dialog dd { margin: 0; }
+.dlg-actions { justify-content: flex-end; flex-wrap: wrap; }
+.prereq { color: var(--warn); margin-top: 4px; }
+
+.program-sel { font-weight: 600; border-color: var(--accent); color: var(--accent); max-width: 100%; }
+.tag.other { border-style: dashed; }

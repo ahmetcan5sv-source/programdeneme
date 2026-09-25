@@ -1,0 +1,369 @@
+
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+FİNANS VE BANKACILIK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	BF301	ECONOMETRICS I  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	6	Doç.Dr. İKLİM GEDİK BALAY	3	Dönemsel	İngilizce			 	
+1	BF303	COMPUTING FOR FINANCE  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	5	Dr. Öğr. Üyesi ALİ İHSAN ÇETİN	3	Dönemsel	İngilizce			 	
+1	BF305	FINANCIAL STATEMENT ANALYSIS  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Prof.Dr. YÜKSEL AKAY ÜNVAN	3	Dönemsel	İngilizce			 	
+1	BF307	CORPORATE FINANCE  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	5	Prof.Dr. AYHAN KAPUSUZOĞLU	3	Dönemsel	İngilizce			 	
+1	BF309	REAL ESTATE FINANCE  [Sal 09:00,Sal 10:00,Sal 11:00]	S	3	0	5	Prof.Dr. NİLDAĞ BAŞAK CEYLAN	3	Dönemsel	İngilizce			 	
+1	BF315	ISLAMIC FINANCE  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	S	3	0	5	Prof.Dr. CEM KORKUT	3	Dönemsel	İngilizce			 	
+1	BF401	INTERNATIONAL FINANCE   [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	6	Prof.Dr. NİLDAĞ BAŞAK CEYLAN	4	Dönemsel	İngilizce			 	
+1	BF407	DIGITAL FINANCE  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	S	3	0	5	Prof.Dr. YÜKSEL AKAY ÜNVAN	4	Dönemsel	İngilizce			 	
+1	BF409	CREDIT ANALYSIS AND ALLOCATION  [Per 09:00,Per 10:00,Per 11:00]	S	3	0	5	Dr. Öğr. Üyesi ALİ İHSAN ÇETİN	4	Dönemsel	İngilizce			 	
+1	BF415	MANAGERIAL ECONOMICS  [Per 13:00,Per 14:00,Per 15:00]	S	3	0	5	Prof.Dr. CEM KORKUT	4	Dönemsel	İngilizce			 	
+26 - 1/3
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+FİNANS VE BANKACILIK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	BUS103	CALCULUS FOR BUSINESS I  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	5	Doç.Dr. İKLİM GEDİK BALAY	1	Dönemsel	İngilizce			 	
+1	BUS105	ACCOUNTING I  [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	5	Doç.Dr. KÜRŞAD ÇAVUŞOĞLU	1	Dönemsel	İngilizce			 	
+1	BUS107	INTRODUCTION TO BUSINESS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	5	Doç.Dr. SEMİH CEYHAN	1	Dönemsel	İngilizce			 	
+1	BUS109	FUNDAMENTALS OF LAW  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	4	Arş.Gör.Dr. HATİCE CEMRE AKYILMAZ	1	Dönemsel	İngilizce			 	
+1	BUS201	STATISTICS FOR BUSINESS I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	4	Doç.Dr. İKLİM GEDİK BALAY	2	Dönemsel	İngilizce			 	
+1	BUS203	BUSINESS LAW  [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	5	Öğr.Gör.Dr. BİHTER KAYTAZ EKER	2	Dönemsel	İngilizce			 	
+1	BUS211	HISTORY OF SCIENCE AND TECHNOLOGY  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	5	Dr. Öğr. Üyesi MURAT ULUBAY	2	Dönemsel	İngilizce			 	
+1	BUS300	STAJ	Z	0	0	5	Doç.Dr. İKLİM GEDİK BALAY	3	Staj	Türkçe			 	
+1	ENG101	ACADEMIC ENGLISH I  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	4	Öğr.Gör. YASEMEN ÖZFINDIK KOTIK	1	Dönemsel	İngilizce			 	
+1	ENG153	TRANSLATION I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	4	Öğr.Gör. YASEMEN ÖZFINDIK KOTIK	1	Dönemsel	İngilizce			 	
+26 - 2/3
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+FİNANS VE BANKACILIK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	ENG201	ACADEMIC ENGLISH III  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	4	Öğr.Gör. YASEMEN ÖZFINDIK KOTIK	2	Dönemsel	İngilizce			 	
+1	ITB101	INTRODUCTION TO ECONOMICS I  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Prof.Dr. CEM KORKUT	1	Dönemsel	İngilizce			 	
+1	ITB207	INTERNATIONAL BUSINESS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	5	Doç.Dr. BİLGE CANBALOĞLU	2	Dönemsel	İngilizce			 	
+1	MIS213	E-BUSINESS  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Dr. Öğr. Üyesi MUSAB TALHA AKPINAR	2	Dönemsel	İngilizce			 	
+1	TDL101	TÜRK DİLİ I  [Cum 17:00,Cum 18:00]	Z	2	0	2	Dr. Öğr. Üyesi CEREN SELVİ	1	Dönemsel	Türkçe			 	
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Pzt 17:00,Pzt 18:00]	Z	2	0	2	Dr. Öğr. Üyesi HAMİT KARASU	2	Dönemsel	Türkçe			 	
+26 - 3/3
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+İŞLETME(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Sal 17:00,Sal 18:00]	Z	2	0	2	Dr. Öğr. Üyesi HAMİT KARASU	2	Dönemsel	Türkçe			 	
+1	TDL101	TÜRK DİLİ I  [Çar 17:00,Çar 18:00]	Z	2	0	2	Dr. Öğr. Üyesi CEREN SELVİ	1	Dönemsel	Türkçe			 	
+1	MIS213	E-BUSINESS  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Dr. Öğr. Üyesi MUSAB TALHA AKPINAR	2	Dönemsel	İngilizce			 	
+1	ITB207	INTERNATIONAL BUSINESS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	5	Doç.Dr. BİLGE CANBALOĞLU	2	Dönemsel	İngilizce			 	
+1	ITB101	INTRODUCTION TO ECONOMICS I  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	5	Doç.Dr. MERVE KARACAER	1	Dönemsel	İngilizce			 	
+1	ENG201	ACADEMIC ENGLISH III  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	4	Öğr.Gör.Dr. SİBEL EYLENEN	2	Dönemsel	İngilizce			 	
+1	ENG153	TRANSLATION I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	4	Öğr.Gör. YASEMEN ÖZFINDIK KOTIK	1	Dönemsel	İngilizce			 	
+1	ENG101	ACADEMIC ENGLISH I  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	4	Öğr.Gör.Dr. SİBEL EYLENEN	1	Dönemsel	İngilizce			 	
+1	BUS437	NEGOTIATION AND CONFLICT MANAGEMENT  [Per 09:00,Per 10:00,Per 11:00]	S	3	0	5	Öğr.Gör.Dr. İLAY HİCRET ÖZTÜRK KAYALAK	4	Dönemsel	İngilizce			 	
+1	BUS435	CONSUMER BEHAVIOR  [Çar 09:00,Çar 10:00,Çar 11:00]	S	3	0	5	Dr. Öğr. Üyesi MUSTAFA ÜNSALAN	4	Dönemsel	İngilizce			 	
+32 - 1/4
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+İŞLETME(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	BUS431	CAREER MANAGEMENT  [Sal 13:00,Sal 14:00,Sal 15:00]	S	3	0	5	Dr. Öğr. Üyesi İSMAİL ÇAĞRI DOĞAN	4	Dönemsel	İngilizce			 	
+1	BUS429	SUSTAINABLE VALUE CHAIN MANAGEMENT  [Per 13:00,Per 14:00,Per 15:00]	S	3	0	5	Doç.Dr. HAROON MUZAFFAR	4	Dönemsel	İngilizce			 	
+1	BUS423	BUSINESS IN SME'S  [Çar 13:00,Çar 14:00,Çar 15:00]	S	3	0	5	Dr. Öğr. Üyesi SAFA ARSLAN	4	Dönemsel	İngilizce			 	
+1	BUS421	PROJECT MANAGEMENT  [Sal 09:00,Sal 10:00,Sal 11:00]	S	3	0	5	Dr. Öğr. Üyesi SEDAT ILGAZ GÜNAY	4	Dönemsel	İngilizce			 	
+1	BUS409	DATA SCIENCE FOR BUSINESS  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	4	Prof.Dr. RAFET AKTAŞ	4	Dönemsel	İngilizce			 	
+1	BUS403	INNOVATION AND ENTREPRENEURSHIP  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Prof.Dr. ÖZGE GÖKBULUT ÖZDEMİR	4	Dönemsel	İngilizce			 	
+1	BUS401	BUSINESS ETHICS AND CORPORATE SOCIAL RESPONSIBILITY  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	6	Prof.Dr. KERİM ÖZCAN	4	Dönemsel	İngilizce			 	
+1	BUS331	HUMAN RESOURCE PLANNING AND DEVELOPMENT  [Çar 09:00,Çar 10:00,Çar 11:00]	S	3	0	5	Dr. Öğr. Üyesi SAFA ARSLAN	3	Dönemsel	İngilizce			 	
+1	BUS329	MARKETING MANAGEMENT AND STRATEGY  [Çar 13:00,Çar 14:00,Çar 15:00]	S	3	0	5	Dr. Öğr. Üyesi MUSTAFA ÜNSALAN	3	Dönemsel	İngilizce			 	
+1	BUS317	TEAMWORK AND GROUP DYNAMICS  [Sal 13:00,Sal 14:00,Sal 15:00]	S	3	0	5	Dr. Öğr. Üyesi SEDAT ILGAZ GÜNAY	3	Dönemsel	İngilizce			 	
+32 - 2/4
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+İŞLETME(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	BUS315	BUSINESS COMMUNICATION  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	4	Öğr.Gör.Dr. İLAY HİCRET ÖZTÜRK KAYALAK	3	Dönemsel	İngilizce			 	
+1	BUS303	LEADERSHIP AND MANAGERIAL SKILLS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	S	3	0	5	Doç.Dr. HANDE ÖZGEN	3	Dönemsel	İngilizce			 	
+1	BUS301	STRATEGIC MANAGEMENT  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	6	Prof.Dr. HASAN ENGİN ŞENER	3	Dönemsel	İngilizce			 	
+1	BUS300	STAJ	Z	0	0	5	Dr. Öğr. Üyesi MUSTAFA ÜNSALAN	3	Staj	Türkçe			 	
+1	BUS211	HISTORY OF SCIENCE AND TECHNOLOGY  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	5	Dr. Öğr. Üyesi MURAT ULUBAY	2	Dönemsel	İngilizce			 	
+1	BUS203	BUSINESS LAW  [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	5	Öğr.Gör.Dr. BİHTER KAYTAZ EKER	2	Dönemsel	İngilizce			 	
+1	BUS201	STATISTICS FOR BUSINESS I  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	4	Dr. Öğr. Üyesi ALİ İHSAN ÇETİN	2	Dönemsel	İngilizce			 	
+1	BUS109	FUNDAMENTALS OF LAW  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	4	Arş.Gör.Dr. HATİCE CEMRE AKYILMAZ	1	Dönemsel	İngilizce			 	
+1	BUS107	INTRODUCTION TO BUSINESS  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Doç.Dr. SEMİH CEYHAN	1	Dönemsel	İngilizce			 	
+1	BUS105	ACCOUNTING I  [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	5	Doç.Dr. KÜRŞAD ÇAVUŞOĞLU	1	Dönemsel	İngilizce			 	
+32 - 3/4
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+İŞLETME(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	BUS103	CALCULUS FOR BUSINESS I  [Cum 09:00,Cum 10:00,Cum 11:00]	Z	3	0	5	Doç.Dr. İKLİM GEDİK BALAY	1	Dönemsel	İngilizce			 	
+1	BF307	CORPORATE FINANCE  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Doç.Dr. MERVE KARACAER	3	Dönemsel	İngilizce			 	
+32 - 4/4
+
+4
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+ULUSLARARASI TİCARET VE İŞLETMECİLİK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Sal 19:00,Sal 20:00]	Z	2	0	2	Dr. Öğr. Üyesi HAMİT KARASU	2	Dönemsel	Türkçe			 	
+1	TDL101	TÜRK DİLİ I  [Çar 19:00,Çar 20:00]	Z	2	0	2	Dr. Öğr. Üyesi CEREN SELVİ	1	Dönemsel	Türkçe			 	
+1	MIS213	E-BUSINESS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	5	Dr. Öğr. Üyesi MUSAB TALHA AKPINAR	2	Dönemsel	İngilizce			 	
+1	ITB437	BUSINESS ANALYSIS AND VALUATION  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	S	3	0	5	Doç.Dr. BİLGE CANBALOĞLU	4	Dönemsel	İngilizce			 	
+1	ITB435	GLOBAL LEADERSHIP  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	S	3	0	5	Doç.Dr. HAKAN DULKADİROĞLU	4	Dönemsel	İngilizce			 	
+1	ITB413	APPLIED DATA ANALYSIS I  [Cum 09:00,Cum 10:00,Cum 11:00]	S	3	0	5	Doç.Dr. SEDA EKMEN	4	Dönemsel	İngilizce			 	
+1	ITB407	INTERNATIONAL ORGANIZATIONS  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	4	Dr. Öğr. Üyesi MELEK MUTİOĞLU ÖZKESEN	4	Dönemsel	İngilizce			 	
+1	ITB331	INTEGRATED MARKETING COMMUNICATON IN INTERNATIONAL TRADE  [Sal 09:00,Sal 10:00,Sal 11:00]	S	3	0	5	Doç.Dr. ALİ AYCI	3	Dönemsel	İngilizce			 	
+1	ITB325	CONTEMPORARY DEBATES IN INTERNATIONAL TRADE  [Per 13:00,Per 14:00,Per 15:00]	S	3	0	5	Dr. Öğr. Üyesi MELEK MUTİOĞLU ÖZKESEN	3	Dönemsel	İngilizce			 	
+1	ITB323	INTERNATIONAL MARKETING STRATEGY  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	4	Doç.Dr. ALİ AYCI	3	Dönemsel	İngilizce			 	
+26 - 1/3
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+ULUSLARARASI TİCARET VE İŞLETMECİLİK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	ITB313	GLOBAL ENTREPRENEURSHIP AND TRADE  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	5	Doç.Dr. HAROON MUZAFFAR	3	Dönemsel	İngilizce			 	
+1	ITB311	INTERNATIONAL ECONOMICS I  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	6	Doç.Dr. SEDA EKMEN	3	Dönemsel	İngilizce			 	
+1	ITB207	INTERNATIONAL BUSINESS  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Doç.Dr. HAKAN DULKADİROĞLU	2	Dönemsel	İngilizce			 	
+1	ITB101	INTRODUCTION TO ECONOMICS I  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	5	Doç.Dr. MERVE KARACAER	1	Dönemsel	İngilizce			 	
+1	ENG201	ACADEMIC ENGLISH III  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	4	Öğr.Gör. YASEMEN ÖZFINDIK KOTIK	2	Dönemsel	İngilizce			 	
+1	ENG153	TRANSLATION I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	4	Öğr.Gör. YASEMEN ÖZFINDIK KOTIK	1	Dönemsel	İngilizce			 	
+1	ENG101	ACADEMIC ENGLISH I  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	4	Öğr.Gör. YASEMEN ÖZFINDIK KOTIK	1	Dönemsel	İngilizce			 	
+1	BUS300	STAJ	Z	0	0	5	Doç.Dr. BİLGE CANBALOĞLU	3	Staj	Türkçe			 	
+1	BUS211	HISTORY OF SCIENCE AND TECHNOLOGY  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	5	Dr. Öğr. Üyesi MURAT ULUBAY	2	Dönemsel	İngilizce			 	
+1	BUS203	BUSINESS LAW  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	5	Öğr.Gör.Dr. BİHTER KAYTAZ EKER	2	Dönemsel	İngilizce			 	
+26 - 2/3
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+ULUSLARARASI TİCARET VE İŞLETMECİLİK(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	BUS201	STATISTICS FOR BUSINESS I  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	4	Dr. Öğr. Üyesi ALİ İHSAN ÇETİN	2	Dönemsel	İngilizce			 	
+1	BUS109	FUNDAMENTALS OF LAW  [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	4	Arş.Gör.Dr. HATİCE CEMRE AKYILMAZ	1	Dönemsel	İngilizce			 	
+1	BUS107	INTRODUCTION TO BUSINESS  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Doç.Dr. SEMİH CEYHAN	1	Dönemsel	İngilizce			 	
+1	BUS105	ACCOUNTING I  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	5	Doç.Dr. KÜRŞAD ÇAVUŞOĞLU	1	Dönemsel	İngilizce			 	
+1	BUS103	CALCULUS FOR BUSINESS I  [Cum 09:00,Cum 10:00,Cum 11:00]	Z	3	0	5	Doç.Dr. İKLİM GEDİK BALAY	1	Dönemsel	İngilizce			 	
+1	BF401	INTERNATIONAL FINANCE   [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	6	Prof.Dr. NİLDAĞ BAŞAK CEYLAN	4	Dönemsel	İngilizce			 	
+26 - 3/3
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+YÖNETİM BİLİŞİM SİSTEMLERİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Pzt 19:00,Pzt 20:00]	Z	2	0	2	Dr. Öğr. Üyesi HAMİT KARASU	2	Dönemsel	Türkçe			 	
+1	TDL101	TÜRK DİLİ I  [Cum 19:00,Cum 20:00]	Z	2	0	2	Dr. Öğr. Üyesi CEREN SELVİ	1	Dönemsel	Türkçe			 	
+3	MIS497	SENIOR PROJECT I	Z	3	0	5	Prof.Dr. DERYA FINDIK YILMAZ	4	Dönemsel	İngilizce			 	
+4	MIS497	SENIOR PROJECT I	Z	3	0	5	Doç.Dr. VİLDAN ATEŞ	4	Dönemsel	İngilizce			 	
+7	MIS497	SENIOR PROJECT I	Z	3	0	5	Dr. Öğr. Üyesi MAZLUM ÖZÇAĞDAVUL	4	Dönemsel	İngilizce			 	
+6	MIS497	SENIOR PROJECT I	Z	3	0	5	Dr. Öğr. Üyesi MUSAB TALHA AKPINAR	4	Dönemsel	İngilizce			 	
+2	MIS497	SENIOR PROJECT I	Z	3	0	5	Prof.Dr. HÜSEYİN DEMİREL	4	Dönemsel	İngilizce			 	
+1	MIS497	SENIOR PROJECT I	Z	3	0	5	Prof.Dr. ÖMÜR AKDEMİR	4	Dönemsel	İngilizce			 	
+5	MIS497	SENIOR PROJECT I	Z	3	0	5	Doç.Dr. KEZİBAN SEÇKİN CODAL	4	Dönemsel	İngilizce			 	
+1	MIS488	DIGITAL FORENSICS  [Çar 13:00,Çar 14:00,Çar 15:00]	S	3	0	5	Dr. Öğr. Üyesi MAZLUM ÖZÇAĞDAVUL	4	Dönemsel	İngilizce			 	
+32 - 1/4
+
+1
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+YÖNETİM BİLİŞİM SİSTEMLERİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	MIS425	TECHNOLOGY AND SOCIETY  [Cum 09:00,Cum 10:00,Cum 11:00]	Z	3	0	5	Prof.Dr. DERYA FINDIK YILMAZ	4	Dönemsel	İngilizce			 	
+1	MIS406	INTRODUCTION TO SOCIAL NETWORK ANALYSIS  [Cum 13:00,Cum 14:00,Cum 15:00]	S	3	0	5	Prof.Dr. DERYA FINDIK YILMAZ	4	Dönemsel	İngilizce			 	
+1	MIS402	BUSINESS INTELLIGENCE AND DATA MINING  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	5	Doç.Dr. KEZİBAN SEÇKİN CODAL	4	Dönemsel	İngilizce			 	
+1	MIS321	OPERATIONS MANAGEMENT   [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	5	Doç.Dr. VİLDAN ATEŞ	3	Dönemsel	İngilizce			 	
+1	MIS310	PROBABILITY  [Per 13:00,Per 14:00,Per 15:00]	S	3	0	5	Doç.Dr. KEZİBAN SEÇKİN CODAL	3	Dönemsel	İngilizce			 	
+1	MIS307	INFORMATION SYSTEM ANALYSIS AND DESIGN  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	5	Doç.Dr. VİLDAN ATEŞ	3	Dönemsel	İngilizce			 	
+1	MIS305	OPERATING SYSTEMS  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	5	Dr. Öğr. Üyesi MAZLUM ÖZÇAĞDAVUL	3	Dönemsel	İngilizce			 	
+1	MIS303	SOFTWARE DEVELOPMENT  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	S	3	0	5	Prof.Dr. ÖMÜR AKDEMİR	3	Dönemsel	İngilizce			 	
+1	MIS217	FUNDAMENTALS OF INFORMATION TECHNOLOGIES  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	5	Prof.Dr. HÜSEYİN DEMİREL	2	Dönemsel	İngilizce			 	
+1	MIS215	COMPUTER PROGRAMMING II  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Prof.Dr. ÖMÜR AKDEMİR	2	Dönemsel	İngilizce			 	
+32 - 2/4
+
+2
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+YÖNETİM BİLİŞİM SİSTEMLERİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	MIS213	E-BUSINESS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	5	Dr. Öğr. Üyesi MUSAB TALHA AKPINAR	2	Dönemsel	İngilizce			 	
+1	MIS105	INTRODUCTION TO ALGORITHMS AND PROGRAMMING  [Cum 09:00,Cum 10:00,Cum 11:00]	Z	3	0	4	Prof.Dr. HÜSEYİN DEMİREL	1	Dönemsel	İngilizce			 	
+1	ITB101	INTRODUCTION TO ECONOMICS I  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Prof.Dr. CEM KORKUT	1	Dönemsel	İngilizce			 	
+1	ENG201	ACADEMIC ENGLISH III  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	4	Öğr.Gör.Dr. SİBEL EYLENEN	2	Dönemsel	İngilizce			 	
+1	ENG153	TRANSLATION I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	4	Öğr.Gör. YASEMEN ÖZFINDIK KOTIK	1	Dönemsel	İngilizce			 	
+1	ENG101	ACADEMIC ENGLISH I  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	4	Öğr.Gör.Dr. SİBEL EYLENEN	1	Dönemsel	İngilizce			 	
+1	BUS300	STAJ	Z	0	0	5	Dr. Öğr. Üyesi MUSAB TALHA AKPINAR	3	Staj	Türkçe			 	
+1	BUS211	HISTORY OF SCIENCE AND TECHNOLOGY  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	5	Dr. Öğr. Üyesi MURAT ULUBAY	2	Dönemsel	İngilizce			 	
+1	BUS201	STATISTICS FOR BUSINESS I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	4	Doç.Dr. İKLİM GEDİK BALAY	2	Dönemsel	İngilizce			 	
+1	BUS107	INTRODUCTION TO BUSINESS  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	5	Doç.Dr. SEMİH CEYHAN	1	Dönemsel	İngilizce			 	
+32 - 3/4
+
+3
+* Ders seçiminize devam edebilmek için, müfredatınızdaki seçtiğiniz derse ait bu dönemde açılmış bir sınıfı seçmeniz gerekmektedir.
+
+* Ders seçiminde bölümünüzün belirlediği ders kayıt kuralları uygulanmaktadır. Bu kurallarla ilgili bir sorun olması durumunda, lütfen durumu bölümünüze bildiriniz.
+
+* Burada sadece bölümünüz tarafından bu dönemde açılmış dersler listelenir. Aradığınız ders listede yoksa, bununla ilgili bölümünüzle iletişime geçiniz.
+
+Müfredattan Seçilen Dersin Kodu: / Tipi: Seçmeli
+Ders Kod/Ad	
+Öğretim Elemanı	
+ 
+Birim	
+İŞLETME FAKÜLTESİ
+Program	
+YÖNETİM BİLİŞİM SİSTEMLERİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod	 
+1	BUS105	ACCOUNTING I  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	5	Doç.Dr. KÜRŞAD ÇAVUŞOĞLU	1	Dönemsel	İngilizce			 	
+1	BUS103	CALCULUS FOR BUSINESS I  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	5	Doç.Dr. İKLİM GEDİK BALAY	1	Dönemsel	İngilizce			 	
+32 - 4/4
+
+4

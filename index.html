@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AYBÜ Program Yapıcı</title>
-<meta name="description" content="AYBÜ Mühendislik öğrencileri için çakışmasız ders programı oluşturucu">
-<link rel="stylesheet" href="style.css?v=7">
+<meta name="description" content="AYBÜ öğrencileri için çakışmasız ders programı oluşturucu">
+<link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
 <header class="top">
   <h1>AYBÜ Program Yapıcı</h1>
-  <span id="program" class="badge"></span>
+  <select id="programSel" class="program-sel" aria-label="Bölümün"></select>
   <span id="term" class="muted"></span>
   <span class="spacer"></span>
   <button id="theme" aria-label="Tema değiştir">Tema: Otomatik</button>
@@ -34,6 +34,7 @@
           <option value="secmeli">Bölüm seçmeli</option>
           <option value="engr">ENGR ortak seçmeli</option>
           <option value="rektorluk">Rektörlük ortak seçmeli</option>
+          <option value="diger">Fakültemdeki diğer bölümler</option>
         </select>
       </div>
       <button id="addRequired" class="wide" hidden></button>
@@ -64,11 +65,13 @@
         <select id="maxEnd"></select>
       </label>
       <label class="check"><input type="checkbox" id="ignoreOnline"> Online derslerin çakışmasını yok say</label>
+      <label class="check"><input type="checkbox" id="ownSections"> Ortak derslerde yalnızca kendi bölümümün şubeleri</label>
       <label class="row">Sıralama
         <select id="sortBy">
           <option value="freedays">En çok boş gün</option>
           <option value="gaps">En az boşluk</option>
           <option value="early">En erken bitiş</option>
+          <option value="late">En geç başlangıç</option>
         </select>
       </label>
     </section>
@@ -80,11 +83,13 @@
       <span id="counter">Ders seç</span>
       <button id="next" aria-label="Sonraki program">›</button>
       <span class="spacer"></span>
+      <button id="undo" title="Geri al (Ctrl+Z)" disabled>Geri al</button>
       <button id="saveFav">Kaydet</button>
       <button id="png">PNG indir</button>
       <button id="print">Yazdır</button>
       <button id="share">Linki kopyala</button>
     </div>
+    <p id="stats" class="small muted stats"></p>
     <p id="clashInfo" class="warn"></p>
     <div id="grid" class="grid"></div>
     <div id="unscheduled" class="small muted"></div>
@@ -109,11 +114,20 @@
   </section>
 </main>
 
+<dialog id="detail">
+  <div id="detailBody"></div>
+  <div class="row dlg-actions">
+    <button id="lockSec">Bu şubeyi sabitle</button>
+    <button id="removeCourse">Dersi kaldır</button>
+    <button id="closeDetail">Kapat</button>
+  </div>
+</dialog>
+
 <footer class="small muted">
   Veriler OBS ders programından aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
-<script src="data/courses.js?v=7"></script>
-<script src="app.js?v=7"></script>
+<script src="data/courses.js?v=11"></script>
+<script src="app.js?v=11"></script>
 </body>
 </html>

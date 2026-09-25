@@ -1,0 +1,52 @@
+Birim
+MÜHENDİSLİK VE DOĞA BİLİMLERİ FAKÜLTESİ
+Program
+ENERJİ SİSTEMLERİ MÜHENDİSLİĞİ(İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod
+1	CHEM101	GENERAL CHEMISTRY  [Çar 13:00,Çar 14:00,Çar 15:00]	Z	3	0	5	Prof.Dr. NURAY ÇELEBİ	1	Dönemsel	İngilizce
+1	ENG103	ACADEMIC ENGLISH I  [Çar 09:00,Çar 10:00]	Z	2	0	2	Öğr.Gör.Dr. DİLEK İŞLER HAYIRLI	1	Dönemsel	İngilizce
+1	ENG201	TECHNICAL ENGLISH   [Per 14:00,Per 15:00,Per 16:00]	Z	3	0	4	Prof.Dr. ÖZGE SÜRÜCÜ	2	Dönemsel	İngilizce
+1	ENGR201	ENGINEERING MATHEMATICS I  [Çar 08:00,Çar 09:00,Çar 10:00,Çar 11:00]	Z	4	0	6	Prof.Dr. ÖZGE SÜRÜCÜ	2	Dönemsel	İngilizce
+1	ENGR213	COMPUTER NETWORKS  [Per 10:00,Per 11:00,Per 12:00]	S	3	0	3	Dr. Öğr. Üyesi MUSARIA KARIM MAHMOOD MAHMOOD	2	Dönemsel	İngilizce
+1	ESE101	INTRODUCTION TO ENERGY SYSTEMS ENGINEERING  [Çar 11:00,Çar 12:00]	Z	2	0	2	Prof.Dr. NURAY ÇELEBİ	1	Dönemsel	İngilizce
+1	ESE103	COMPUTER AIDED TECHNICAL DRAWING  [Pzt 12:00,Pzt 13:00,Cum 08:00,Cum 12:00]	Z	4	0	5	Arş.Gör.Dr. MAHMUT CİHAT YILMAZ	1	Dönemsel	İngilizce
+1	ESE201	MATERIAL SCIENCE  [Pzt 10:00,Pzt 11:00,Pzt 12:00]	Z	3	0	4	Dr. Öğr. Üyesi AHMET UÇAR	2	Dönemsel	İngilizce
+1	ESE203	THERMODYNAMICS I  [Cum 09:00,Cum 10:00,Cum 11:00]	Z	3	0	5	Prof.Dr. NURAY ÇELEBİ	2	Dönemsel	İngilizce
+1	ESE205	PRINCIPLES OF ELECTRICAL AND ELECTRONIC ENGINEERING  [Per 08:00,Per 09:00]	Z	2	0	2	Dr. Öğr. Üyesi SITKI KOCAOĞLU	2	Dönemsel	İngilizce
+1	ESE207	MANUFACTURING TECHNOLOGIES  [Çar 14:00,Çar 15:00]	Z	2	0	3	Prof.Dr. ADEM ÇİÇEK	2	Dönemsel	İngilizce
+1	ESE300	INDUSTRIAL PRACTICE I  [Pzt 08:00,Pzt 09:00]	Z	2	0	4	Dr. Öğr. Üyesi SITKI KOCAOĞLU	3	Staj	İngilizce
+2	ESE300	INDUSTRIAL PRACTICE I  [Pzt 08:00,Pzt 09:00]	Z	2	0	4	Doç.Dr. FURKAN SOYSAL	3	Staj	İngilizce
+1	ESE301	FLUID MECHANICS  [Cum 14:00,Cum 15:00,Cum 16:00]	Z	3	0	5	Doç.Dr. FURKAN SOYSAL	3	Dönemsel	İngilizce
+1	ESE303	ENERGY SYSTEMS I  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	5	Doç.Dr. MEHMET ZAHİD EREL	3	Dönemsel	İngilizce
+1	ESE305	HEAT TRANSFER  [Sal 12:00,Sal 13:00,Sal 14:00,Sal 15:00]	Z	4	0	5	Prof.Dr. BÜLENT YEŞİLATA	3	Dönemsel	İngilizce
+1	ESE307	CONTROL SYSTEMS  [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	5	Dr. Öğr. Üyesi MUSARIA KARIM MAHMOOD MAHMOOD	3	Dönemsel	İngilizce
+1	ESE309	ENERGY ECONOMY  [Çar 14:00,Çar 16:00]	Z	2	0	3	Prof.Dr. TUNÇ DURMUŞ MEDENİ	3	Dönemsel	İngilizce
+1	ESE400	INDUSTRIAL PRACTICE II	Z	2	0	4	Doç.Dr. FURKAN SOYSAL	4	Staj	İngilizce
+2	ESE400	INDUSTRIAL PRACTICE II	Z	2	0	4	Dr. Öğr. Üyesi AHMET UÇAR	4	Staj	İngilizce
+5	ESE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Dr. Öğr. Üyesi MUSARIA KARIM MAHMOOD MAHMOOD	4	Dönemsel	İngilizce
+3	ESE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. ÖZGE SÜRÜCÜ	4	Dönemsel	İngilizce
+9	ESE401	GRADUATION PROJECT I  [Pzt 16:00,Cum 08:00]	Z	6	0	6	Doç.Dr. MEHMET ZAHİD EREL	4	Dönemsel	İngilizce
+1	ESE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. BÜLENT YEŞİLATA	4	Dönemsel	İngilizce
+4	ESE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Doç.Dr. MERYEM SENA AKKUŞ	4	Dönemsel	İngilizce
+10	ESE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. TUNÇ DURMUŞ MEDENİ	4	Dönemsel	İngilizce
+2	ESE401	GRADUATION PROJECT I  [Sal 08:00,Sal 09:00]	Z	6	0	6	Dr. Öğr. Üyesi SITKI KOCAOĞLU	4	Dönemsel	İngilizce
+6	ESE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Dr. Öğr. Üyesi AHMET UÇAR	4	Dönemsel	İngilizce
+7	ESE401	GRADUATION PROJECT I  [Pzt 08:00,Pzt 09:00]	Z	6	0	6	Prof.Dr. NURAY ÇELEBİ	4	Dönemsel	İngilizce
+8	ESE401	GRADUATION PROJECT I  [Sal 08:00,Sal 16:00]	Z	6	0	6	Doç.Dr. FURKAN SOYSAL	4	Dönemsel	İngilizce
+1	ESE403	ENERGY SYSTEMS LABORATORY I  [Per 08:00,Per 09:00,Per 10:00]	Z	3	0	5	Doç.Dr. MERYEM SENA AKKUŞ	4	Dönemsel	İngilizce
+3	ESE403	ENERGY SYSTEMS LABORATORY I  [Çar 08:00,Çar 09:00,Çar 10:00]	Z	3	0	5	Doç.Dr. FURKAN SOYSAL	4	Dönemsel	İngilizce
+2	ESE403	ENERGY SYSTEMS LABORATORY I  [Per 10:00,Per 11:00,Per 16:00]	Z	3	0	5	Doç.Dr. MEHMET ZAHİD EREL	4	Dönemsel	İngilizce
+4	ESE403	ENERGY SYSTEMS LABORATORY I  [Per 12:00,Per 13:00,Per 14:00]	Z	3	0	5	Arş.Gör.Dr. MAHMUT CİHAT YILMAZ	4	Dönemsel	İngilizce
+5	ESE403	ENERGY SYSTEMS LABORATORY I	Z	3	0	5	Dr. Öğr. Üyesi AHMET UÇAR	4	Dönemsel	İngilizce
+1	ESE411	BIOMASS  [Per 12:00,Per 13:00,Per 14:00]	S	3	0	5	Doç.Dr. FURKAN SOYSAL	4	Dönemsel	İngilizce
+1	ESE413	ENERGY EFFICIENCY  [Pzt 10:00,Pzt 11:00,Pzt 12:00]	S	3	0	5	Doç.Dr. MEHMET ZAHİD EREL	4	Dönemsel	İngilizce
+1	ESE417	GEOTHERMAL ENERGY  [Cum 09:00,Cum 10:00,Cum 11:00]	S	3	0	5	Doç.Dr. MERYEM SENA AKKUŞ	4	Dönemsel	İngilizce
+1	ESE419	FOSSIL ENERGY RESOURCES  [Çar 14:00,Çar 15:00,Çar 16:00]	S	3	0	5	Doç.Dr. KUROŞ SALİMİ	4	Dönemsel	İngilizce
+1	ESE423	POWER SYSTEMS  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	S	3	0	5	Dr. Öğr. Üyesi MUSARIA KARIM MAHMOOD MAHMOOD	4	Dönemsel	İngilizce
+1	ESE425	PRINCIPLES OF PROJECT MANAGEMENT  [Cum 14:00,Cum 15:00,Cum 16:00]	S	3	0	5	Doç.Dr. MERYEM SENA AKKUŞ	4	Dönemsel	İngilizce
+1	ESE427	ELECTROCHEMICAL ENERGY SYSTEMS  [Sal 09:00,Sal 10:00,Sal 11:00]	S	3	0	5	Dr. Öğr. Üyesi AHMET UÇAR	4	Dönemsel	İngilizce
+1	MATH101	CALCULUS I   [Sal 13:00,Sal 14:00]	Z	4	0	6	Dr. Öğr. Üyesi MİNE YİĞİTER	1	Dönemsel	İngilizce
+1	PHYS101	PHYSICS I  [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	4	Prof.Dr. ÖZGE SÜRÜCÜ	1	Dönemsel	İngilizce
+1	PHYS103	PHYSICS LABORATORY I  [Per 12:00,Per 13:00]	Z	2	0	2	Prof.Dr. ÖZGE SÜRÜCÜ	1	Dönemsel	İngilizce
+1	TDL101	TÜRK DİLİ I  [Pzt 14:00,Pzt 15:00]	Z	2	0	2	Öğr.Gör.Dr. ZEHRA KUM	1	Dönemsel	Türkçe
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Per 08:00,Per 09:00]	Z	2	0	2	Dr. Öğr. Üyesi ARZU ERMAN	1	Dönemsel	Türkçe
