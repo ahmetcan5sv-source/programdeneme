@@ -18,3 +18,7 @@ Kaynak PDF'ler `kaynak/` klasöründedir.
 ## Yerelde çalıştırma
 
 `index.html` dosyasını tarayıcıda açmak yeterlidir.
+
+## Yayınlama notu
+
+`index.html` içindeki `?v=` numarasını her güncellemede bir artır. Bu sayede tarayıcılar önbellekteki eski dosyaları kullanmaz.
