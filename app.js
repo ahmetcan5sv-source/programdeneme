@@ -3,7 +3,7 @@
 const DATA = window.COURSE_DATA;
 const DAYS = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"];
 const DAYS_SHORT = ["Pzt", "Sal", "Çar", "Per", "Cum"];
-const CATEGORY_LABEL = { dept: "Bölüm", engr: "ENGR", rektorluk: "Rektörlük", ortak: "Ortak zorunlu" };
+const CATEGORY_LABEL = { dept: "Seçmeli", engr: "ENGR", rektorluk: "Rektörlük", ortak: "Ortak" };
 const COLORS = ["#a5c8ff", "#ffc9a3", "#b8e6b0", "#f3b3d6", "#d7c4ff", "#ffe08a", "#9fe3e0", "#f5b2a8", "#c9d99a", "#c7d0dc"];
 const MAX_RESULTS = 20000;
 
@@ -55,12 +55,19 @@ function load() {
 }
 
 // ---------- search / selection ----------
-function initFilters() {
-  const df = $("deptFilter");
-  df.innerHTML = `<option value="">Tüm bölümler</option>` +
-    Object.entries(DATA.departments).map(([k, v]) => `<option value="${k}">${v}</option>`).join("") +
-    `<option value="@engr">ENGR dersleri</option><option value="@rektorluk">Rektörlük ortak dersleri</option>`;
+function matchesType(c, type) {
+  if (type === "zorunlu") return c.required;
+  if (type === "secmeli") return !c.required && (c.category === "dept" || c.category === "ortak");
+  if (type) return c.category === type;
+  return true;
+}
 
+function typeTag(c) {
+  if (c.required) return `<span class="tag req">Zorunlu</span>`;
+  return `<span class="tag">${CATEGORY_LABEL[c.category]}</span>`;
+}
+
+function initFilters() {
   $("freeDays").innerHTML = `<span class="small muted" style="width:100%">Boş olsun:</span>` +
     DAYS_SHORT.map((d, i) => `<label><input type="checkbox" value="${i}">${d}</label>`).join("");
 
@@ -72,20 +79,30 @@ function initFilters() {
 
 function searchCourses() {
   const q = $("search").value.trim().toLocaleUpperCase("tr").replace(/\s+/g, "");
-  const dept = $("deptFilter").value;
+  const year = +$("yearFilter").value;
+  const type = $("typeFilter").value;
   const list = DATA.courses.filter((c) => {
-    if (dept === "@engr" && c.category !== "engr") return false;
-    if (dept === "@rektorluk" && c.category !== "rektorluk") return false;
-    if (dept && !dept.startsWith("@") && !c.sections.some((s) => s.dept === dept)) return false;
+    if (year && c.year !== year) return false;
+    if (!matchesType(c, type)) return false;
     if (!q) return true;
     return c.code.includes(q) || c.name.toLocaleUpperCase("tr").replace(/\s+/g, "").includes(q);
-  }).slice(0, 150);
+  });
 
   $("results").innerHTML = list.map((c) => `
     <li data-code="${c.code}">
       <span><span class="code">${c.code}</span> ${c.name}</span>
-      <span class="tag">${c.category === "dept" ? c.sections.length + " şube" : CATEGORY_LABEL[c.category]}</span>
+      <span class="tags">${typeTag(c)}</span>
     </li>`).join("") || `<li class="muted">Sonuç yok</li>`;
+
+  const btn = $("addRequired");
+  const required = requiredFor(year);
+  btn.hidden = !year || !required.length;
+  btn.textContent = `${year}. sınıf zorunlu derslerini ekle (${required.length})`;
+}
+
+function requiredFor(year) {
+  return DATA.courses.filter((c) => c.required && c.year === year && c.sections.length &&
+    !state.selected.some((s) => s.code === c.code));
 }
 
 function addCourse(code) {
@@ -159,7 +176,7 @@ function generate() {
   });
 
   const empty = items.filter((i) => i.secs.length === 0).map((i) => i.code);
-  if (empty.length) return { list: [], empty };
+  if (empty.length) return { list: [], empty, pairs: [] };
 
   items.sort((a, b) => a.secs.length - b.secs.length);
   const list = [];
@@ -172,7 +189,17 @@ function generate() {
       chosen.push(opt); bt(i + 1); chosen.pop();
     }
   })(0);
-  return { list, empty: [] };
+
+  // No result: name the course pairs that clash in every section combination
+  const pairs = [];
+  if (!list.length) {
+    for (let i = 0; i < items.length; i++) for (let j = i + 1; j < items.length; j++) {
+      if (items[i].secs.every((a) => items[j].secs.every((b) => clashes(a.iv, b.iv)))) {
+        pairs.push(`${items[i].code} – ${items[j].code}`);
+      }
+    }
+  }
+  return { list, empty: [], pairs };
 }
 
 function score(sch) {
@@ -215,7 +242,7 @@ function renderGrid() {
         q.d === d && toMin(q.s) < toMin(sl.e) && toMin(sl.s) < toMin(q.e)));
       html += `<div class="blk${clash ? " clash" : ""}" style="top:calc(var(--row-h) * ${top});height:calc(var(--row-h) * ${h} - 2px);background:${colorOf(o.course.code)}"
         title="${o.course.code} ${o.course.name}\n${sectionLabel(o.sec)}${o.sec.instructor ? " — " + o.sec.instructor : ""}\n${sl.s}-${sl.e} ${sl.r || ""}">
-        <b>${o.course.code}</b>${sectionLabel(o.sec)}<br>${sl.r || ""}</div>`;
+        <b>${o.course.code}</b>${o.course.sections.length > 1 ? sectionLabel(o.sec) + "<br>" : ""}${sl.r || ""}</div>`;
     }
     html += `</div>`;
   }
@@ -239,8 +266,10 @@ let lastEmpty = [];
 function update() {
   save();
   renderSelected();
+  searchCourses();
   const r = generate();
   schedules = r.list; lastEmpty = r.empty;
+  $("clashInfo").textContent = r.pairs.length ? `Her şubesi çakışan dersler: ${r.pairs.join(", ")}` : "";
   sortSchedules();
   current = 0;
   renderCounter(lastEmpty);
@@ -250,7 +279,12 @@ function update() {
 // ---------- events ----------
 function bind() {
   $("search").addEventListener("input", searchCourses);
-  $("deptFilter").addEventListener("change", searchCourses);
+  $("yearFilter").addEventListener("change", searchCourses);
+  $("typeFilter").addEventListener("change", searchCourses);
+  $("addRequired").addEventListener("click", () => {
+    for (const c of requiredFor(+$("yearFilter").value)) state.selected.push({ code: c.code, excluded: [] });
+    update();
+  });
   $("results").addEventListener("click", (e) => {
     const li = e.target.closest("li[data-code]");
     if (li) addCourse(li.dataset.code);
@@ -296,10 +330,10 @@ function syncControls() {
   for (const cb of $("freeDays").querySelectorAll("input")) cb.checked = state.freeDays.includes(+cb.value);
 }
 
+$("program").textContent = DATA.program.name;
 $("term").textContent = DATA.term;
 initFilters();
 load();
 syncControls();
 bind();
-searchCourses();
 update();

@@ -101,13 +101,12 @@ IE331,Engineering Economy
 IE341,Ergonomics
 IE351,Production Planning and Control I
 IE363,Logistics Management
-IE371,IE Seçmeli
-IE407,IE Seçmeli
-IE417,IE Seçmeli
-IE419,IE Seçmeli
-IE421,IE Seçmeli
-IE471,IE Seçmeli
-IE4XX,IE Seçmeli (kodu belirtilmemiş)
+IE371,Service Systems Management
+IE407,Planning for Engineers
+IE417,Optimization Tools and Techniques
+IE419,Maintenance Planning
+IE421,Quality Improvement Methods
+IE471,Systems Engineering I
 MATH111,Calculus I
 MATH113,Abstract Mathematics
 MATH115,Analytic Geometry
@@ -171,3 +170,7 @@ MSE437,Metal Fatigue and Creep
 SENG113-LAB,SENG113 Laboratuvarı
 SENG201-LAB,SENG201 Laboratuvarı
 SENG301-LAB,SENG301 Laboratuvarı
+IE300,Industrial Practice I
+IE400,Industrial Practice II
+IE482,Advanced Topics
+IE491,Graduation Project I

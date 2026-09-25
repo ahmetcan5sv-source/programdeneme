@@ -1,9 +1,9 @@
 """data/src/*.csv dosyalarını data/courses.js dosyasına derler.
 
-Her CSV bir bölümün programıdır (dosya adı = bölüm kodu). Her satır bir ders bloğudur:
+Siteye yalnızca PROGRAM bölümünün dersleri, ENGR.csv ve rektorluk.csv girer.
+Her CSV satırı bir ders bloğudur:
     code,section,year,day,start,end,room,instructor
-Aynı ders kodu farklı bölümlerde açıldıysa her biri ayrı şube olur.
-rektorluk.csv içindeki dersler "Rektörlük ortak dersi" kategorisine girer.
+<PROGRAM>_mufredat.csv dersleri Zorunlu/Seçmeli olarak işaretler; listede olmayanlar seçmelidir.
 
 Kullanım:  python tools/build.py
 """
@@ -19,6 +19,7 @@ SRC = ROOT / "data" / "src"
 OUT = ROOT / "data" / "courses.js"
 
 TERM = "2026-2027 Güz"
+PROGRAM = "IE"
 DEPARTMENTS = OrderedDict([
     ("CENG", "Bilgisayar Mühendisliği"),
     ("EE", "Elektrik-Elektronik Mühendisliği"),
@@ -62,11 +63,17 @@ def main():
         for row in csv.DictReader(f):
             names[norm_code(row["code"])] = row["name"].strip()
 
+    curriculum = {}
+    with open(SRC / f"{PROGRAM}_mufredat.csv", encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            curriculum[norm_code(row["code"])] = row["type"].strip().lower().startswith("z")
+
     courses = OrderedDict()
-    for path in sorted(SRC.glob("*.csv")):
-        dept = path.stem
-        if dept == "names":
+    sources = [SRC / f"{d}.csv" for d in (PROGRAM, "ENGR", "rektorluk")]
+    for path in sources:
+        if not path.exists():
             continue
+        dept = path.stem
         with open(path, encoding="utf-8-sig") as f:
             for n, row in enumerate(csv.DictReader(f), start=2):
                 code = norm_code(row["code"])
@@ -76,6 +83,8 @@ def main():
                     "code": code,
                     "name": names.get(code, ""),
                     "category": category(code, dept),
+                    "year": int(m.group()) if (m := re.search(r"\d", code)) else None,
+                    "required": curriculum.get(code, False),
                     "sections": OrderedDict(),
                 })
                 sec_no = (row.get("section") or "").strip()
@@ -102,7 +111,7 @@ def main():
         c["sections"] = list(c["sections"].values())
         out.append(c)
     missing = [c["code"] for c in out if not c["name"]]
-    data = {"term": TERM, "departments": DEPARTMENTS, "courses": out}
+    data = {"term": TERM, "program": {"code": PROGRAM, "name": DEPARTMENTS[PROGRAM]}, "courses": out}
     OUT.write_text("window.COURSE_DATA = " + json.dumps(data, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")
     print(f"{len(out)} ders, {sum(len(c['sections']) for c in out)} şube -> {OUT.relative_to(ROOT)}")
     if missing:

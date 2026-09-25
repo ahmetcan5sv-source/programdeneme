@@ -1,32 +1,45 @@
 code,section,year,day,start,end,room,instructor
-IE231,,2,Pzt,11:30,14:20,A422,
-IE211,,2,Pzt,14:30,17:20,A422,
-IE331,,3,Pzt,08:30,11:20,A422,
-TDL101,,1,Sal,08:30,10:20,Online,
-PHYS101,,1,Sal,10:30,13:20,B515,
-MATH101,,1,Sal,15:30,17:20,A307,
-IE211,,2,Sal,08:30,10:20,B515 (Res),
-IE253,,2,Sal,13:30,16:20,B515,
-IE351,,3,Sal,08:30,11:20,A422,
-IE319,,3,Sal,11:30,14:20,A422,
-IE417,,4,Sal,08:30,11:20,C403,
-IE4XX,,4,Sal,11:30,14:20,C403,
-IE471,,4,Sal,14:30,17:20,C403,
-CHEM101,,1,Çar,09:30,12:20,B413,
-TIT101,,1,Çar,15:30,17:20,Online,
-MATH201,,2,Çar,10:30,12:20,A422,
-IE419,,4,Çar,13:30,16:20,C506,
-CENG103,,1,Per,08:30,10:20,B515 (Res),
-MATH101,,1,Per,10:30,12:20,B515,
-ENG103,,1,Per,12:30,14:20,Online,
-IE103,,1,Per,15:30,17:20,B515,
-IE233,,2,Per,12:30,15:20,B515,
-IE371,,3,Per,11:30,14:20,C506,
-IE341,,3,Per,14:30,17:20,C403,
-IE407,,4,Per,08:30,11:20,C506,
-IE421,,4,Per,14:30,17:20,C506,
-CENG103,,1,Cum,08:30,11:20,A307,
-PHYS103,,1,Cum,13:30,15:20,LAB,
-MATH201,,2,Cum,10:30,12:20,A422,
-IE221,,2,Cum,14:30,17:20,A307,
-IE363,,3,Cum,13:30,16:20,A422,
+TDL101,,1,Sal,08:00,09:50,Online,Öğr.Gör.Dr. Zehra Kum
+PHYS101,,1,Sal,10:00,12:50,B515,Dr. Öğr. Üyesi Ahmad Ajjaq
+MATH101,,1,Sal,15:00,16:50,A307,Öğr.Gör.Dr. Elif Altınay Özaslan
+MATH101,,1,Per,10:00,11:50,B515,
+CHEM101,,1,Çar,09:00,11:50,B-413,Dr. Öğr. Üyesi Ahmet Uçar
+TIT101,,1,Çar,12:00,13:50,Online,Dr. Öğr. Üyesi Arzu Erman
+CENG103,,1,Per,08:00,09:50,B515,Arş.Gör.Dr. Melda Kevser Akgün
+CENG103,,1,Cum,08:00,10:50,A307,
+ENG103,,1,Per,12:00,13:50,Online,Öğr.Gör. Dennis O'Keefe
+IE103,,1,Per,15:00,16:50,B515,Dr. Öğr. Üyesi Deniz Efendioğlu
+PHYS103,,1,Cum,13:00,14:50,Fizik Lab.,Dr. Öğr. Üyesi Ahmad Ajjaq
+IE231,,2,Pzt,11:00,13:50,A422,Arş.Gör.Dr. Nurullah Güleç
+IE211,,2,Pzt,14:00,16:50,A422,Prof. Babek Erdebilli
+IE211,,2,Sal,08:00,09:50,B515,
+IE253,,2,Sal,13:00,15:50,B515,Prof.Dr. Servet Soygüder
+MATH201,,2,Çar,10:00,11:50,A422,Öğr.Gör.Dr. Elif Altınay Özaslan
+MATH201,,2,Cum,10:00,11:50,A422,
+IE233,,2,Per,12:00,14:50,B515,Dr. Öğr. Üyesi Melike Kaya Akça
+IE221,,2,Cum,14:00,16:50,A307,Dr. Öğr. Üyesi Deniz Efendioğlu
+IE331,,3,Pzt,08:00,10:50,A422,Prof. Babek Erdebilli
+IE300,,3,Pzt,10:00,11:50,A528,Doç.Dr. Gerçek Budak
+IE351,,3,Sal,08:00,10:50,A422,Dr. Öğr. Üyesi Cihat Öztürk
+IE319,,3,Sal,11:00,13:50,A422,Doç.Dr. İbrahim Yılmaz
+IE371,,3,Per,11:00,13:50,C506,Doç.Dr. Gerçek Budak
+IE341,,3,Per,14:00,16:50,C403,Prof.Dr. Ergün Eraslan
+IE363,,3,Cum,13:00,15:50,A422,Dr. Öğr. Üyesi Melike Kaya Akça
+IE400,,4,Pzt,14:00,15:50,A528,Doç.Dr. İbrahim Yılmaz
+ENGR450,,4,Pzt,15:00,16:50,A532,Prof.Dr. Mete Gündoğan
+IE417,,4,Sal,08:00,10:50,C403,Doç.Dr. İbrahim Yılmaz
+IE482,,4,Sal,11:00,13:50,C403,Arş.Gör.Dr. Melda Kevser Akgün
+IE471,,4,Sal,14:00,16:50,C403,Prof.Dr. Mete Gündoğan
+IE419,,4,Çar,13:00,15:50,C506,Prof.Dr. Servet Soygüder
+IE407,,4,Per,08:00,10:50,C506,Dr. Öğr. Üyesi Cihat Öztürk
+IE421,,4,Per,14:00,16:50,C506,Doç.Dr. Gerçek Budak
+IE491,1,4,Cum,08:00,09:50,A532,Prof.Dr. Mete Gündoğan
+IE491,2,4,Cum,08:00,09:50,A531,Prof.Dr. Ergün Eraslan
+IE491,3,4,Cum,08:00,09:50,A529,Prof.Dr. Servet Soygüder
+IE491,4,4,Cum,08:00,09:50,A521,Prof. Babek Erdebilli
+IE491,5,4,Cum,08:00,09:50,A527,Doç.Dr. İbrahim Yılmaz
+IE491,6,4,Cum,08:00,09:50,A525,Doç.Dr. Gerçek Budak
+IE491,7,4,Cum,08:00,09:50,A523,Dr. Öğr. Üyesi Deniz Efendioğlu
+IE491,8,4,Cum,08:00,09:50,A526,Dr. Öğr. Üyesi Cihat Öztürk
+IE491,9,4,Cum,08:00,09:50,A530,Dr. Öğr. Üyesi Melike Kaya Akça
+IE491,10,4,Cum,08:00,09:50,A524,Arş.Gör.Dr. Nurullah Güleç

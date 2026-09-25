@@ -10,6 +10,7 @@
 <body>
 <header class="top">
   <h1>AYBÜ Program Yapıcı</h1>
+  <span id="program" class="badge"></span>
   <span id="term" class="muted"></span>
 </header>
 
@@ -17,9 +18,23 @@
   <aside class="panel">
     <section>
       <h2>Ders ekle</h2>
-      <div class="row">
-        <select id="deptFilter" aria-label="Bölüm filtresi"></select>
+      <div class="row filters">
+        <select id="yearFilter" aria-label="Sınıf">
+          <option value="">Tüm sınıflar</option>
+          <option value="1">1. sınıf</option>
+          <option value="2">2. sınıf</option>
+          <option value="3">3. sınıf</option>
+          <option value="4">4. sınıf</option>
+        </select>
+        <select id="typeFilter" aria-label="Ders türü">
+          <option value="">Tüm dersler</option>
+          <option value="zorunlu">Zorunlu</option>
+          <option value="secmeli">Bölüm seçmeli</option>
+          <option value="engr">ENGR ortak seçmeli</option>
+          <option value="rektorluk">Rektörlük ortak seçmeli</option>
+        </select>
       </div>
+      <button id="addRequired" class="wide" hidden></button>
       <input id="search" type="search" placeholder="Kod veya ad ara (ör. MATH101, ENGR)" autocomplete="off">
       <ul id="results" class="results"></ul>
     </section>
@@ -59,13 +74,14 @@
       <span class="spacer"></span>
       <button id="share">Linki kopyala</button>
     </div>
+    <p id="clashInfo" class="warn"></p>
     <div id="grid" class="grid"></div>
     <div id="unscheduled" class="small muted"></div>
   </section>
 </main>
 
 <footer class="small muted">
-  Veriler bölümlerin yayınladığı ders programı PDF'lerinden elle aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
+  Veriler OBS ders programından aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
 </footer>
 <script src="data/courses.js"></script>
 <script src="app.js"></script>
