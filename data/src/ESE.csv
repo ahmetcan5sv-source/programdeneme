@@ -1,0 +1,36 @@
+code,section,year,day,start,end,room,instructor
+TDL101,,1,Pzt,14:30,16:20,Online,Zehra Kum
+ESE103,,1,Pzt,16:30,18:20,CZ03,Dr. M. Cihat Yılmaz
+ESE103,,1,Per,15:30,17:20,CZ03,
+PHYS101,,1,Sal,09:30,12:20,DB420,Dr. Özge Sürücü
+MATH101,,1,Sal,13:30,15:20,C111,Dr. Mine Yiğiter
+MATH101,,1,Per,10:30,12:20,C111,
+ENG103,,1,Çar,09:00,10:50,Online,Dr. D. İşler Hayırlı
+ESE101,,1,Çar,11:00,12:50,C406,Dr. Nuray Çelebi
+CHEM101,,1,Çar,13:30,16:20,C510,Dr. Nuray Çelebi
+TIT101,,1,Çar,19:30,21:20,Online,Dr. Arzu Erman
+PHYS103,,1,Per,13:30,15:20,AB317 LAB,Fizik Lab Hocaları
+ESE201,,2,Pzt,09:30,12:20,A203,Dr. Ahmet Uçar
+ENGR201,,2,Çar,09:30,13:20,A203,Dr. Özge Sürücü
+ESE207,,2,Çar,15:30,17:20,A203,Dr. Adem Çiçek
+ESE205,,2,Per,08:30,10:20,A203,Dr. Sıtkı Kocaoğlu
+ENG201,,2,Per,13:30,16:20,A203,Dr. Özge Sürücü
+ESE203,,2,Cum,09:30,12:20,A203,Dr. Nuray Çelebi
+ESE303,,3,Pzt,13:30,16:20,A203,Dr. M. Zahid Erel
+ESE307,,3,Sal,09:30,12:20,A203,Dr. M. Karim Mahmood
+ESE305,,3,Sal,13:30,17:20,A203,Dr. Bülent Yeşilata
+ESE309,,3,Çar,13:30,15:20,A203,Dr. T. Durmuş Medeni
+ESE300,,3,Çar,16:30,18:20,C403,Tüm öğretim üyeleri
+ESE301,,3,Cum,14:00,16:50,A203,Dr. Furkan Soysal
+ESE413,,4,Pzt,09:30,12:20,C501,Dr. M. Zahid Erel
+ESE423,,4,Pzt,13:30,16:20,B310,Dr. M. Karim Mahmood
+ESE427,,4,Sal,09:30,12:20,B310,Dr. Ahmet Uçar
+ESE403,,4,Çar,09:30,12:20,CZ03 (Simülasyon),
+ESE403,,4,Per,13:30,14:20,A319 (Teorik),
+ESE403,,4,Per,14:30,16:20,Lab,
+ESE411,,4,Çar,13:30,16:20,B310,Dr. Furkan Soysal
+ESE400,,4,Çar,16:30,18:20,C403,Tüm öğretim üyeleri
+ESE419,,4,Per,09:30,12:20,C406,Dr. Kuroş Salimi
+ESE401,,4,Per,16:30,18:20,Ofis,Tüm öğretim üyeleri
+ESE417,,4,Cum,09:30,12:20,C406,Dr. M. Sena Akkuş
+ESE425,,4,Cum,14:00,16:50,C406,Dr. M. Sena Akkuş

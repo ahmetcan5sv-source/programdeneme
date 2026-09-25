@@ -1,0 +1,173 @@
+code,name
+BIO101,Biology
+CHEM101,General Chemistry
+ENG103,Academic English I
+ENG201,Technical English
+MATH101,Calculus I
+MATH201,Differential Equations
+PHYS101,Physics I
+PHYS103,Physics Laboratory I
+PHYS104,Physics Laboratory II
+TDL101,Türk Dili I
+TIT101,Türk İnkılap Tarihi I
+ENGR201,Engineering Mathematics I
+ENGR206,"Science, Technology and Society"
+ENGR213,Computer Networks
+ENGR227,Basic Photography
+ENGR251,Engineering Ethics
+ENGR265,Principles of Occupational Health and Safety I
+ENGR322,Labor Law
+ENGR450,Engineering Application On Site
+CENG101,Introduction to Computer Engineering
+CENG103,Computer Programming
+CENG113,Programming Fundamentals
+CENG114,Programming Laboratory
+CENG115,Computer Programming I
+CENG201,Object Oriented Programming
+CENG203,Digital Design
+CENG207,Probability and Statistics
+CENG209,Systems Programming
+CENG301,Database Management Systems
+CENG303,Design and Analysis of Algorithms
+CENG305,Operating Systems
+CENG315,Computer Graphics
+CENG327,Introduction to Scientific Computing
+CENG347,Introduction to Quantum Computing
+CENG403,Special Topics in CENG
+CENG407,Remote Sensing
+CENG431,Software Design Patterns
+CENG434,Microservice Oriented System Principles
+CENG441,Digital Image Processing
+CENG442,Natural Language Processing
+CENG443,Parallel Programming II
+CENG462,Game Development
+CENG463,Machine Learning
+CENG469,Autonomous Mobile Robots
+EE101,Introduction to Electrical and Electronics Engineering
+EE207,Probability and Random Variables
+EE213,Circuit Theory I
+EE215,Digital Design
+EE223,Circuit Theory I Laboratory
+EE225,Digital Design Laboratory
+EE303,Electromagnetic Fields
+EE307,Digital Signal Processing
+EE319,Electromechanical Energy Conversion I
+EE325,Introduction to Electronics
+EE329,Electromechanical Energy Conversion I Laboratory
+EE335,Introduction to Electronics Laboratory
+EE403,Digital Control Systems
+EE407,Computer Software Applications
+EE408,Nonlinear Control Systems
+EE409,Digital Image Processing
+EE416,Analog VLSI Circuit Design
+EE421,Optoelectronics
+EE423,Fundamentals of Electro-optical Systems
+EE424,Digital System Design with Verilog
+EE432,Information Theory
+EE450,Introduction to Optical Amplifier Systems
+EE455,Introduction to Computational Neuroscience
+EE461,Power Electronics I
+EE463,Power System Analysis
+ESE101,Introduction to Energy Systems Engineering
+ESE103,Computer Aided Technical Drawing
+ESE201,Material Science
+ESE203,Thermodynamics I
+ESE205,Principles of Electrical and Electronic Engineering
+ESE207,Manufacturing Technologies
+ESE300,Industrial Practice I
+ESE301,Fluid Mechanics
+ESE303,Energy Systems I
+ESE305,Heat Transfer
+ESE307,Control Systems
+ESE309,Energy Economy
+ESE400,Industrial Practice II
+ESE401,Graduation Project I
+ESE403,Energy Systems Laboratory I
+ESE411,Biomass
+ESE413,Energy Efficiency
+ESE417,Geothermal Energy
+ESE419,Fossil Energy Resources
+ESE423,Power Systems
+ESE425,Principles of Project Management
+ESE427,Electrochemical Energy Systems
+IE103,Introduction to Industrial Engineering
+IE211,Operations Research I
+IE221,Introduction to Probability
+IE231,Economics I
+IE233,Managerial and Cost Accounting for Engineers
+IE253,Introduction to Materials Science
+IE319,Operations Research III
+IE331,Engineering Economy
+IE341,Ergonomics
+IE351,Production Planning and Control I
+IE363,Logistics Management
+IE371,IE Seçmeli
+IE407,IE Seçmeli
+IE417,IE Seçmeli
+IE419,IE Seçmeli
+IE421,IE Seçmeli
+IE471,IE Seçmeli
+IE4XX,IE Seçmeli (kodu belirtilmemiş)
+MATH111,Calculus I
+MATH113,Abstract Mathematics
+MATH115,Analytic Geometry
+MATH211,Advanced Calculus I
+MATH213,Linear Algebra I
+MATH215,Differential Equations
+MATH217,Algebraic Structures
+MATH313,Abstract Algebra
+MATH315,General Topology
+MATH317,Introduction to Numerical Analysis
+MATH321,Introduction to Probability
+MATH323,Combinatorics
+MATH415,Research Methods in Mathematics
+MATH423,Functional Analysis
+MATH425,Mathematical Writing
+MCE101,Introduction to Mechanical Engineering
+MCE103,Computer Aided Technical Drawing I
+MCE201,Materials Science
+MCE203,Thermodynamics I
+MCE205,Strength of Materials I
+MCE209,Manufacturing Technologies I
+MCE301,Fluid Mechanics I
+MCE303,Mechanisms
+MCE305,Machine Elements I
+MCE307,Heat Transfer
+MCE309,System Dynamics and Control
+MCE311,Engineering Economy
+MCE403,Machinery Laboratory I
+MCE405,Hydraulic Turbomachinery
+MCE413,Refrigeration Technology
+MCE423,Heat Exchangers
+MCE429,Hydrogen Technologies
+MCE433,Finite Element Method
+MCE438,Computer Aided Manufacturing
+MCE443,Mechanical Systems Design and Analysis
+MCE451,Robotics
+MCE452,Mechanical Vibrations
+MCE479,Design and Analysis of Composite Structures
+MCE495,Optimization Techniques in Mechanical Engineering
+MSE101,Introduction to Materials Engineering
+MSE103,Computer Aided Engineering Drawing
+MSE201,Materials Science I
+MSE203,Thermodynamics of Materials I
+MSE211,Physical Measurement Laboratory
+MSE301,Materials Processing Laboratory I
+MSE303,Processing of Materials I
+MSE309,Mechanical Behavior of Materials
+MSE311,Materials Characterization Techniques
+MSE317,Introduction to Polymers
+MSE355,Chemical Metallurgy
+MSE361,Nucleation and Solidification
+MSE370,Introduction to Biomaterials
+MSE401,Nanotechnology and Nanomaterials
+MSE403,Selection and Performance of Materials
+MSE411,Graduation Project I
+MSE413,Thin Films Fabrication and Characterization
+MSE415,Glass Technology
+MSE417,Powder Based Production Methods
+MSE431,Novel Materials for Energy Application
+MSE437,Metal Fatigue and Creep
+SENG113-LAB,SENG113 Laboratuvarı
+SENG201-LAB,SENG201 Laboratuvarı
+SENG301-LAB,SENG301 Laboratuvarı

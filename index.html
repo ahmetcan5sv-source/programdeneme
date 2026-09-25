@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AYBÜ Program Yapıcı</title>
+<meta name="description" content="AYBÜ Mühendislik öğrencileri için çakışmasız ders programı oluşturucu">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>AYBÜ Program Yapıcı</h1>
+  <span id="term" class="muted"></span>
+</header>
+
+<main class="layout">
+  <aside class="panel">
+    <section>
+      <h2>Ders ekle</h2>
+      <div class="row">
+        <select id="deptFilter" aria-label="Bölüm filtresi"></select>
+      </div>
+      <input id="search" type="search" placeholder="Kod veya ad ara (ör. MATH101, ENGR)" autocomplete="off">
+      <ul id="results" class="results"></ul>
+    </section>
+
+    <section>
+      <h2>Seçilen dersler <span id="selCount" class="muted"></span></h2>
+      <p class="muted small">Şube kutucuklarının işaretini kaldırarak o şubeyi hariç tutabilirsin.</p>
+      <ul id="selected" class="selected"></ul>
+      <p id="warn" class="warn" hidden></p>
+    </section>
+
+    <section>
+      <h2>Filtreler</h2>
+      <div class="days" id="freeDays"></div>
+      <label class="row">En erken başlangıç
+        <select id="minStart"></select>
+      </label>
+      <label class="row">En geç bitiş
+        <select id="maxEnd"></select>
+      </label>
+      <label class="check"><input type="checkbox" id="ignoreOnline"> Online derslerin çakışmasını yok say</label>
+      <label class="row">Sıralama
+        <select id="sortBy">
+          <option value="freedays">En çok boş gün</option>
+          <option value="gaps">En az boşluk</option>
+          <option value="early">En erken bitiş</option>
+        </select>
+      </label>
+    </section>
+  </aside>
+
+  <section class="main">
+    <div class="toolbar">
+      <button id="prev" aria-label="Önceki program">‹</button>
+      <span id="counter">Ders seç</span>
+      <button id="next" aria-label="Sonraki program">›</button>
+      <span class="spacer"></span>
+      <button id="share">Linki kopyala</button>
+    </div>
+    <div id="grid" class="grid"></div>
+    <div id="unscheduled" class="small muted"></div>
+  </section>
+</main>
+
+<footer class="small muted">
+  Veriler bölümlerin yayınladığı ders programı PDF'lerinden elle aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
+</footer>
+<script src="data/courses.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
