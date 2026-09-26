@@ -5,68 +5,86 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AYBÜ Program Yapıcı</title>
 <meta name="description" content="AYBÜ öğrencileri için çakışmasız ders programı oluşturucu">
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 <header class="top">
-  <h1>AYBÜ Program Yapıcı</h1>
-  <select id="programSel" class="program-sel" aria-label="Bölümün"></select>
-  <span id="term" class="muted"></span>
-  <span class="spacer"></span>
-  <button id="theme" aria-label="Tema değiştir">Tema: Otomatik</button>
+  <div class="brand">
+    <span class="logo" aria-hidden="true">AY</span>
+    <div>
+      <h1>Program Yapıcı</h1>
+      <span id="term" class="muted small"></span>
+    </div>
+  </div>
+  <label class="program-pick">
+    <span class="small muted">Bölümün</span>
+    <select id="programSel" aria-label="Bölümün"></select>
+  </label>
+  <button id="theme" class="icon-btn" aria-label="Tema değiştir" title="Tema: Otomatik">◐</button>
 </header>
 
 <main class="layout">
   <aside class="panel">
-    <section>
-      <h2>Ders ekle</h2>
-      <div class="row filters">
-        <select id="yearFilter" aria-label="Sınıf">
-          <option value="">Tüm sınıflar</option>
-          <option value="1">1. sınıf</option>
-          <option value="2">2. sınıf</option>
-          <option value="3">3. sınıf</option>
-          <option value="4">4. sınıf</option>
-        </select>
-        <select id="typeFilter" aria-label="Ders türü">
-          <option value="">Tüm dersler</option>
-          <option value="zorunlu">Zorunlu</option>
-          <option value="secmeli">Bölüm seçmeli</option>
-          <option value="engr">ENGR ortak seçmeli</option>
-          <option value="rektorluk">Rektörlük ortak seçmeli</option>
-          <option value="diger">Fakültemdeki diğer bölümler</option>
-        </select>
+    <section class="card add-card">
+      <div class="card-head">
+        <h2>Ders ekle</h2>
+        <span class="kbd small" title="Aramaya git">/</span>
       </div>
-      <button id="addRequired" class="wide" hidden></button>
-      <input id="search" type="search" placeholder="Kod, ders adı veya hoca ara" autocomplete="off">
-      <ul id="results" class="results"></ul>
+      <div class="seg" id="yearSeg" role="group" aria-label="Sınıf">
+        <button data-year="">Tüm sınıflar</button>
+        <button data-year="1">1.</button>
+        <button data-year="2">2.</button>
+        <button data-year="3">3.</button>
+        <button data-year="4">4.</button>
+      </div>
+      <select id="yearFilter" hidden>
+        <option value=""></option><option value="1"></option><option value="2"></option>
+        <option value="3"></option><option value="4"></option>
+      </select>
+      <select id="typeFilter" aria-label="Ders türü" class="full">
+        <option value="">Tüm dersler</option>
+        <option value="zorunlu">Zorunlu dersler</option>
+        <option value="secmeli">Bölüm seçmelileri</option>
+        <option value="engr">ENGR ortak seçmelileri</option>
+        <option value="rektorluk">Rektörlük ortak seçmelileri</option>
+        <option value="diger">Fakültemdeki diğer bölümler</option>
+      </select>
+      <button id="addRequired" class="btn primary full" hidden></button>
+      <div class="search">
+        <span aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Kod, ders adı veya hoca ara" autocomplete="off">
+      </div>
+      <ul id="results" class="list results"></ul>
     </section>
 
-    <section>
-      <h2>Seçilen dersler <span id="selCount" class="muted"></span></h2>
-      <p class="muted small">Şube kutucuklarının işaretini kaldırarak o şubeyi hariç tutabilirsin.</p>
+    <section class="card sel-card">
+      <div class="card-head">
+        <h2>Seçtiğin dersler <span id="selCount" class="muted"></span></h2>
+        <span id="ects" class="pill"></span>
+      </div>
       <ul id="selected" class="selected"></ul>
-      <p id="ects" class="small"></p>
       <p id="warn" class="warn" hidden></p>
     </section>
 
-    <section id="favSection" hidden>
-      <h2>Kaydedilen programlar</h2>
-      <ul id="favs" class="results favs"></ul>
+    <section class="card fav-card" id="favSection" hidden>
+      <div class="card-head"><h2>Kaydedilen programlar</h2></div>
+      <ul id="favs" class="list favs"></ul>
     </section>
 
-    <section>
-      <h2>Filtreler</h2>
-      <div class="days" id="freeDays"></div>
-      <label class="row">En erken başlangıç
-        <select id="minStart"></select>
-      </label>
-      <label class="row">En geç bitiş
-        <select id="maxEnd"></select>
-      </label>
-      <label class="check"><input type="checkbox" id="ignoreOnline"> Online derslerin çakışmasını yok say</label>
-      <label class="check"><input type="checkbox" id="ownSections"> Ortak derslerde yalnızca kendi bölümümün şubeleri</label>
-      <label class="row">Sıralama
+    <details class="card prefs-card" open>
+      <summary class="card-head"><h2>Tercihler</h2><span class="chev" aria-hidden="true">▾</span></summary>
+      <div class="field">
+        <span class="label">Boş olsun</span>
+        <div class="days" id="freeDays"></div>
+      </div>
+      <div class="field two">
+        <label><span class="label">En erken başlangıç</span><select id="minStart"></select></label>
+        <label><span class="label">En geç bitiş</span><select id="maxEnd"></select></label>
+      </div>
+      <label class="field"><span class="label">Sıralama</span>
         <select id="sortBy">
           <option value="freedays">En çok boş gün</option>
           <option value="gaps">En az boşluk</option>
@@ -74,60 +92,85 @@
           <option value="late">En geç başlangıç</option>
         </select>
       </label>
-    </section>
+      <label class="switch"><input type="checkbox" id="ignoreOnline"><span></span> Online derslerin çakışmasını yok say</label>
+      <label class="switch"><input type="checkbox" id="ownSections"><span></span> Ortak derslerde yalnızca kendi bölümümün şubeleri</label>
+    </details>
   </aside>
 
   <section class="main">
-    <div class="toolbar">
-      <button id="prev" aria-label="Önceki program">‹</button>
-      <span id="counter">Ders seç</span>
-      <button id="next" aria-label="Sonraki program">›</button>
-      <span class="spacer"></span>
-      <button id="undo" title="Geri al (Ctrl+Z)" disabled>Geri al</button>
-      <button id="saveFav">Kaydet</button>
-      <button id="png">PNG indir</button>
-      <button id="print">Yazdır</button>
-      <button id="share">Linki kopyala</button>
-    </div>
-    <p id="stats" class="small muted stats"></p>
-    <p id="clashInfo" class="warn"></p>
-    <div id="grid" class="grid"></div>
-    <div id="unscheduled" class="small muted"></div>
-    <p class="small muted hint">Boş kalmasını istediğin saatlere takvimde tıkla. Arama listesinde bir dersin üstüne gelince saatleri takvimde soluk görünür. <button id="clearBlocked" class="link">Engelleri temizle</button></p>
-
-    <section class="extra" id="fitsSection" hidden>
-      <h2>Bu programa sığan dersler</h2>
-      <p class="small muted">Görüntülenen programa çakışmadan eklenebilecek dersler. Eklemek için tıkla.</p>
-      <ul id="fits" class="results fits"></ul>
-    </section>
-
-    <details class="extra" id="icsBox">
-      <summary>Takvime aktar (Google Takvim, telefon)</summary>
-      <p class="small muted">Görüntülenen programı haftalık tekrarlayan etkinlikler olarak .ics dosyasına aktarır. Dönemin ilk ve son ders gününü seç.</p>
-      <div class="row ics">
-        <label>Başlangıç <input type="date" id="icsStart"></label>
-        <label>Bitiş <input type="date" id="icsEnd"></label>
-        <button id="icsBtn">.ics indir</button>
+    <div class="card toolbar-card">
+      <div class="toolbar">
+        <div class="nav">
+          <button id="prev" class="icon-btn" aria-label="Önceki program">‹</button>
+          <span id="counter">Ders seç</span>
+          <button id="next" class="icon-btn" aria-label="Sonraki program">›</button>
+        </div>
+        <div class="actions">
+          <button id="undo" class="btn ghost" title="Geri al (Ctrl+Z)" disabled>↶ Geri al</button>
+          <button id="saveFav" class="btn">☆ Kaydet</button>
+          <details class="menu">
+            <summary class="btn">Dışa aktar ▾</summary>
+            <div class="menu-pop">
+              <button id="png">Resim olarak indir (PNG)</button>
+              <button id="openIcs">Takvime aktar (.ics)</button>
+              <button id="print">Yazdır</button>
+              <button id="share">Linki kopyala</button>
+            </div>
+          </details>
+        </div>
       </div>
-      <p id="icsWarn" class="warn"></p>
-    </details>
+      <div id="stats" class="stats"></div>
+      <p id="clashInfo" class="warn"></p>
+    </div>
+
+    <div class="card grid-card">
+      <div id="grid" class="grid"></div>
+      <div id="empty" class="empty" hidden></div>
+      <div id="unscheduled" class="small muted unscheduled"></div>
+      <p class="small muted hint">İpucu: Boş kalmasını istediğin saatlere takvimde tıkla, derse tıklayınca ayrıntısı açılır.
+        <button id="clearBlocked" class="link">Engelleri temizle</button></p>
+    </div>
+
+    <section class="card" id="fitsSection" hidden>
+      <div class="card-head">
+        <h2>Bu programa sığan dersler</h2>
+        <span class="small muted">Tıklayınca eklenir</span>
+      </div>
+      <ul id="fits" class="list fits"></ul>
+    </section>
   </section>
 </main>
 
 <dialog id="detail">
   <div id="detailBody"></div>
-  <div class="row dlg-actions">
-    <button id="lockSec">Bu şubeyi sabitle</button>
-    <button id="removeCourse">Dersi kaldır</button>
-    <button id="closeDetail">Kapat</button>
+  <div class="dlg-actions">
+    <button id="lockSec" class="btn">Bu şubeyi sabitle</button>
+    <button id="removeCourse" class="btn danger">Dersi kaldır</button>
+    <button id="closeDetail" class="btn primary">Kapat</button>
   </div>
 </dialog>
+
+<dialog id="icsDialog">
+  <h3>Takvime aktar</h3>
+  <p class="small muted">Görüntülenen program, haftalık tekrarlanan etkinlikler olarak .ics dosyasına aktarılır. Google Takvim, Outlook ve telefon takvimi bu dosyayı içe aktarabilir.</p>
+  <div class="field two">
+    <label><span class="label">Dönemin ilk ders günü</span><input type="date" id="icsStart"></label>
+    <label><span class="label">Dönemin son ders günü</span><input type="date" id="icsEnd"></label>
+  </div>
+  <p id="icsWarn" class="warn"></p>
+  <div class="dlg-actions">
+    <button id="closeIcs" class="btn">Vazgeç</button>
+    <button id="icsBtn" class="btn primary">.ics indir</button>
+  </div>
+</dialog>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
 
 <footer class="small muted">
   Veriler OBS ders programından aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
-<script src="data/courses.js?v=11"></script>
-<script src="app.js?v=11"></script>
+<script src="data/courses.js?v=12"></script>
+<script src="app.js?v=12"></script>
 </body>
 </html>

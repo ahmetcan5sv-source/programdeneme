@@ -121,7 +121,8 @@ function matchesType(c, type) {
 
 function typeTag(c) {
   const offer = c.category === "engr" && offeredBy(c).length
-    ? `<span class="tag" title="${offeredBy(c).map(deptName).join(", ")}">${offeredBy(c).join(", ")}</span>` : "";
+    ? `<span class="tag" title="Açan: ${offeredBy(c).map(deptName).join(", ")}">${offeredBy(c).length > 2
+      ? `${offeredBy(c).length} bölüm` : offeredBy(c).join(", ")}</span>` : "";
   if (isRequired(c)) return `<span class="tag req">Zorunlu</span>${offer}`;
   if (isOtherDept(c)) return `<span class="tag other">${deptsOf(c).join(", ")}</span>`;
   return `<span class="tag">${CATEGORY_LABEL[c.category]}</span>${offer}`;
@@ -134,8 +135,8 @@ function rank(c) {
 }
 
 function initFilters() {
-  $("freeDays").innerHTML = `<span class="small muted" style="width:100%">Boş olsun:</span>` +
-    DAYS_SHORT.map((d, i) => `<label><input type="checkbox" value="${i}">${d}</label>`).join("");
+  $("freeDays").innerHTML = DAYS_SHORT.map((d, i) =>
+    `<label title="${DAYS[i]} boş kalsın"><input type="checkbox" value="${i}"><span>${d}</span></label>`).join("");
 
   const opts = [];
   for (let m = gridStart; m <= gridEnd; m += 60) opts.push(m);
@@ -157,11 +158,8 @@ function searchCourses() {
     return c.code.includes(q) || norm(c.name).includes(q) || c.sections.some((s) => norm(s.instructor).includes(q));
   }).sort((a, b) => rank(a) - rank(b) || a.code.localeCompare(b.code));
 
-  $("results").innerHTML = list.map((c) => `
-    <li data-code="${c.code}">
-      <span><span class="code">${c.code}</span> ${c.name}</span>
-      <span class="tags">${typeTag(c)}</span>
-    </li>`).join("") || `<li class="muted">Sonuç yok</li>`;
+  $("results").innerHTML = list.map(courseRow).join("") || `<li class="muted">Sonuç yok</li>`;
+  for (const b of $("yearSeg").children) b.classList.toggle("on", b.dataset.year === $("yearFilter").value);
 
   const btn = $("addRequired");
   const required = requiredFor(year);
@@ -186,7 +184,35 @@ function addCourse(code) {
   update();
 }
 
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toast.timer);
+  toast.timer = setTimeout(() => t.classList.remove("show"), 2200);
+}
+
+function courseRow(c) {
+  const added = state.selected.some((s) => s.code === c.code);
+  return `<li data-code="${c.code}" class="${added ? "added" : ""}" title="${added ? "Çıkarmak" : "Eklemek"} için tıkla">
+    <span class="add" aria-hidden="true">${added ? "✓" : "+"}</span>
+    <span class="ctext"><span class="code">${c.code}</span> <span class="cname">${c.name}</span></span>
+    <span class="tags">${typeTag(c)}</span>
+  </li>`;
+}
+
+function toggleCourse(code) {
+  if (state.selected.some((s) => s.code === code)) {
+    state.selected = state.selected.filter((s) => s.code !== code);
+    showWarn("");
+    update();
+  } else {
+    addCourse(code);
+  }
+}
+
 function showWarn(msg) {
+  if (msg) toast(msg);
   const w = $("warn");
   w.textContent = msg; w.hidden = !msg;
 }
@@ -208,7 +234,7 @@ function renderSelected() {
   const unknown = state.selected.length - known.length;
   $("selCount").textContent = state.selected.length ? `(${state.selected.length})` : "";
   $("ects").textContent = state.selected.length
-    ? `Toplam ${known.reduce((a, b) => a + b, 0)} AKTS${unknown ? ` (+${unknown} dersin AKTS'si bilinmiyor)` : ""}`
+    ? `${known.reduce((a, b) => a + b, 0)}${unknown ? "+" : ""} AKTS`
     : "";
   $("selected").innerHTML = state.selected.map((sel) => {
     const c = courses.get(sel.code);
@@ -218,7 +244,7 @@ function renderSelected() {
         <input type="checkbox" data-code="${c.code}" data-sec="${s.id}" ${sel.excluded.includes(s.id) ? "" : "checked"}>
         ${sectionLabel(s)}${s.instructor ? ` <span class="who">· ${s.instructor.split(" ").pop()}</span>` : ""}
       </label>`).join("") + `</div>` : "";
-    return `<li style="border-color:${colorOf(c.code)}">
+    return `<li style="border-left-color:${colorOf(c.code)}">
       <div class="head"><span><b>${c.code}</b> ${c.name}${c.category === "engr" && offeredBy(c).length
         ? ` <span class="small muted">· ${offeredBy(c).map(deptName).join(", ")}</span>` : ""}</span>
       <button class="rm" data-rm="${c.code}" aria-label="Kaldır">×</button></div>${secs}
@@ -353,12 +379,14 @@ function sortSchedules() {
 // ---------- grid ----------
 function renderGrid() {
   const rows = (gridEnd - gridStart) / 60;
-  let html = `<div class="hd"></div>` + DAYS.map((d, i) => `<div class="hd"><span class="full">${d}</span></div>`).join("");
+  const today = (new Date().getDay() + 6) % 7;   // Monday = 0
+  let html = `<div class="hd"></div>` + DAYS.map((d, i) =>
+    `<div class="hd${i === today ? " today" : ""}"><span class="dl">${d}</span><span class="ds">${DAYS_SHORT[i]}</span></div>`).join("");
   html += `<div>` + Array.from({ length: rows }, (_, i) => `<div class="tm">${fmt(gridStart + i * 60)}</div>`).join("") + `</div>`;
 
   const sch = schedules[current] || [];
   for (let d = 0; d < 5; d++) {
-    html += `<div class="col">` + Array.from({ length: rows }, (_, i) => {
+    html += `<div class="col${d === today ? " today" : ""}">` + Array.from({ length: rows }, (_, i) => {
       const key = `${d}:${gridStart + i * 60}`;
       return `<div class="cell${state.blocked.includes(key) ? " blocked" : ""}" data-key="${key}"></div>`;
     }).join("");
@@ -384,9 +412,9 @@ function renderGrid() {
       const h = (e - s) / 60;
       const clash = lanes > 1;
       const pos = lanes > 1 ? `left:calc(${(lane / lanes) * 100}% + 1px);right:auto;width:calc(${100 / lanes}% - 2px);` : "";
-      html += `<div class="blk${clash ? " clash" : ""}" data-code="${o.course.code}" data-sec="${o.sec.id}" style="${pos}top:calc(var(--row-h) * ${top});height:calc(var(--row-h) * ${h} - 2px);background:${colorOf(o.course.code)}"
+      html += `<div class="blk${clash ? " clash" : ""}" data-code="${o.course.code}" data-sec="${o.sec.id}" style="${pos}top:calc(var(--row-h) * ${top});height:calc(var(--row-h) * ${h} - 2px);--c:${colorOf(o.course.code)}"
         title="${o.course.code} ${o.course.name}\n${sectionLabel(o.sec)}${o.sec.instructor ? " — " + o.sec.instructor : ""}\n${sl.s}-${sl.e} ${sl.r || ""}">
-        <b>${o.course.code}</b>${o.course.sections.length > 1 || o.course.category === "engr" ? sectionLabel(o.sec) + "<br>" : ""}${sl.r || ""}</div>`;
+        <b>${o.course.code}</b><span class="t">${sl.s}–${sl.e}</span><br>${o.course.sections.length > 1 || o.course.category === "engr" ? sectionLabel(o.sec) + " " : ""}${sl.r || ""}</div>`;
     }
     html += `</div>`;
   }
@@ -434,6 +462,7 @@ function update() {
   current = 0;
   renderCounter(lastEmpty);
   renderGrid();
+  renderEmpty();
 }
 
 // ---------- events ----------
@@ -442,13 +471,33 @@ function bind() {
   $("yearFilter").addEventListener("change", searchCourses);
   $("typeFilter").addEventListener("change", searchCourses);
   $("addRequired").addEventListener("click", () => {
-    for (const c of requiredFor(+$("yearFilter").value)) state.selected.push({ code: c.code, excluded: [] });
+    const list = requiredFor(+$("yearFilter").value);
+    for (const c of list) state.selected.push({ code: c.code, excluded: [] });
     update();
+    toast(`${list.length} zorunlu ders eklendi`);
   });
   $("results").addEventListener("click", (e) => {
     const li = e.target.closest("li[data-code]");
-    if (li) addCourse(li.dataset.code);
+    if (li) toggleCourse(li.dataset.code);
   });
+  $("yearSeg").addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    $("yearFilter").value = b.dataset.year;
+    searchCourses();
+  });
+  $("empty").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-quick]");
+    if (!b) return;
+    $("yearFilter").value = b.dataset.quick;
+    const list = requiredFor(+b.dataset.quick);
+    for (const c of list) state.selected.push({ code: c.code, excluded: [] });
+    update();
+    toast(`${list.length} zorunlu ders eklendi`);
+  });
+  $("openIcs").addEventListener("click", () => { closeMenus(); $("icsDialog").showModal(); });
+  $("closeIcs").addEventListener("click", () => $("icsDialog").close());
+  document.addEventListener("click", (e) => { if (!e.target.closest(".menu")) closeMenus(); });
   $("selected").addEventListener("click", (e) => {
     const rm = e.target.closest("[data-rm]");
     if (rm) { state.selected = state.selected.filter((s) => s.code !== rm.dataset.rm); showWarn(""); update(); }
@@ -502,6 +551,7 @@ function bind() {
       return;
     }
     if (e.target.matches("input, select")) return;
+    if (e.key === "/") { e.preventDefault(); $("search").focus(); return; }
     if (e.key === "ArrowLeft") $("prev").click();
     if (e.key === "ArrowRight") $("next").click();
   });
@@ -524,8 +574,7 @@ function bind() {
     const same = favs.find((f) => JSON.stringify(f.picks) === JSON.stringify(picks));
     if (!same) favs.push({ name: `Program ${favs.length + 1}`, picks });
     storeFavs(favs);
-    $("saveFav").textContent = same ? "Zaten kayıtlı" : "Kaydedildi";
-    setTimeout(() => ($("saveFav").textContent = "Kaydet"), 1500);
+    toast(same ? "Bu program zaten kayıtlı" : "Program kaydedildi");
   });
   $("favs").addEventListener("click", (e) => {
     const favs = loadFavs();
@@ -533,6 +582,7 @@ function bind() {
     if (rm) { favs.splice(+rm.dataset.rmfav, 1); storeFavs(favs); return; }
     const li = e.target.closest("[data-fav]");
     if (!li) return;
+    toast(`${favs[+li.dataset.fav].name} açıldı`);
     state.selected = favs[+li.dataset.fav].picks.filter((p) => courses.has(p.code)).map((p) => ({
       code: p.code,
       excluded: courses.get(p.code).sections.map((s) => s.id).filter((id) => id !== p.sec),
@@ -540,8 +590,8 @@ function bind() {
     }));
     update();
   });
-  $("png").addEventListener("click", downloadPng);
-  $("print").addEventListener("click", () => window.print());
+  $("png").addEventListener("click", () => { closeMenus(); downloadPng(); });
+  $("print").addEventListener("click", () => { closeMenus(); window.print(); });
   $("icsBtn").addEventListener("click", downloadIcs);
   $("theme").addEventListener("click", () => {
     const order = ["auto", "light", "dark"];
@@ -549,7 +599,7 @@ function bind() {
   });
   $("fits").addEventListener("click", (e) => {
     const li = e.target.closest("li[data-code]");
-    if (li) addCourse(li.dataset.code);
+    if (li) { addCourse(li.dataset.code); toast(`${li.dataset.code} eklendi`); }
   });
   // Preview only for mouse users; on touch a tap adds the course directly
   $("results").addEventListener("mouseover", (e) => {
@@ -559,17 +609,40 @@ function bind() {
   });
   $("results").addEventListener("mouseleave", () => { if (previewCode) { previewCode = null; renderGrid(); } });
   $("share").addEventListener("click", async () => {
-    try { await navigator.clipboard.writeText(location.href); $("share").textContent = "Kopyalandı"; }
+    closeMenus();
+    try { await navigator.clipboard.writeText(location.href); toast("Link kopyalandı, paylaşabilirsin"); }
     catch (_) { prompt("Linki kopyala:", location.href); }
-    setTimeout(() => ($("share").textContent = "Linki kopyala"), 1500);
   });
+}
+
+function closeMenus() {
+  for (const m of document.querySelectorAll(".menu[open]")) m.open = false;
+}
+
+// Shown over the grid until the first course is picked
+function renderEmpty() {
+  const empty = $("empty");
+  empty.hidden = state.selected.length > 0;
+  if (empty.hidden) return;
+  const years = [1, 2, 3, 4].map((y) => [y, requiredFor(y).length]).filter(([, n]) => n);
+  empty.innerHTML = `<div class="empty-box">
+    <h3>Programını oluşturalım</h3>
+    <p class="muted">${DATA.programs[state.program].name} · ${DATA.term}</p>
+    <ol class="steps">
+      <li><b>1</b><span>Üstten bölümünü seç (şu an: <strong>${DATA.programs[state.program].name}</strong>).</span></li>
+      <li><b>2</b><span>Sınıfının zorunlu derslerini tek tıkla ekle ya da soldan ders ara.</span></li>
+      <li><b>3</b><span>Çakışmayan tüm programlar oluşur; oklarla gez, beğendiğini kaydet.</span></li>
+    </ol>
+    <div class="quick">${years.map(([y, n]) =>
+      `<button class="btn primary" data-quick="${y}">${y}. sınıf zorunluları (${n})</button>`).join("")}</div>
+  </div>`;
 }
 
 function renderFavs() {
   const favs = loadFavs();
   $("favSection").hidden = !favs.length;
   $("favs").innerHTML = favs.map((f, i) => `
-    <li data-fav="${i}"><span><b>${f.name}</b> <span class="muted small">${f.picks.map((p) => p.code).join(", ")}</span></span>
+    <li data-fav="${i}"><span class="ctext"><b>${f.name}</b><br><span class="muted small">${f.picks.map((p) => p.code).join(", ")}</span></span>
     <button class="rm" data-rmfav="${i}" aria-label="Sil">×</button></li>`).join("");
 }
 
@@ -601,14 +674,15 @@ function undo() {
 
 function renderStats(sch) {
   const k = sch && sch.length ? score(sch) : null;
-  if (!k || !k.minutes) { $("stats").textContent = ""; return; }
+  if (!k || !k.minutes) { $("stats").innerHTML = ""; return; }
   const h = (m) => (m / 60).toLocaleString("tr", { maximumFractionDigits: 1 });
-  $("stats").textContent = [
-    `Haftada ${h(k.minutes)} ders saati`,
-    `${5 - k.freeDays} gün okulda`,
-    `En erken ${fmt(k.earliest)}, en geç ${fmt(k.latest)}`,
-    k.gaps ? `Toplam boşluk ${h(k.gaps)} saat` : "Arada boşluk yok",
-  ].join(" · ");
+  $("stats").innerHTML = [
+    `<b>${h(k.minutes)}</b> ders saati`,
+    `<b>${5 - k.freeDays}</b> gün okulda`,
+    `<b>${k.freeDays}</b> boş gün`,
+    `<b>${fmt(k.earliest)}–${fmt(k.latest)}</b> arası`,
+    k.gaps ? `<b>${h(k.gaps)} sa</b> boşluk` : "Arada boşluk yok",
+  ].map((x) => `<span class="stat">${x}</span>`).join("");
 }
 
 let detailOf = null;
@@ -663,11 +737,7 @@ function renderFits() {
     if (hasRektorluk && c.category === "rektorluk") return false;
     return candidateSections(c).some((sec) => sectionUsable(sec) && !clashes(taken, toIntervals(sec, {})));
   });
-  $("fits").innerHTML = list.map((c) => `
-    <li data-code="${c.code}">
-      <span><span class="code">${c.code}</span> ${c.name}</span>
-      <span class="tags">${typeTag(c)}</span>
-    </li>`).join("") || `<li class="muted">Sığan ders yok</li>`;
+  $("fits").innerHTML = list.map(courseRow).join("") || `<li class="muted">Sığan ders yok</li>`;
 }
 
 // ---------- calendar export ----------
@@ -723,7 +793,9 @@ function applyTheme(t) {
   if (t === "auto") delete document.documentElement.dataset.theme;
   else document.documentElement.dataset.theme = t;
   try { localStorage.setItem("aybu-theme", t); } catch (_) {}
-  $("theme").textContent = `Tema: ${{ auto: "Otomatik", light: "Açık", dark: "Koyu" }[t]}`;
+  const label = { auto: "Otomatik", light: "Açık", dark: "Koyu" }[t];
+  $("theme").textContent = { auto: "◐", light: "☀", dark: "☾" }[t];
+  $("theme").title = `Tema: ${label}`;
 }
 
 function syncControls() {
