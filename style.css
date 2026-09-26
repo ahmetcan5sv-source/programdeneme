@@ -315,6 +315,40 @@ dialog dd { margin: 0; }
   .actions .menu summary { width: 100%; justify-content: center; }
 }
 
+/* ---------- small additions ---------- */
+.head-right { display: flex; align-items: center; gap: 6px; }
+.btn.sm { padding: 3px 9px; font-size: 12px; border-radius: 8px; }
+.tag.rec { background: #fff4d6; border-color: #f3c94f; color: #8a5a00; }
+:root[data-theme="dark"] .tag.rec { background: #3a2f10; border-color: #8a6a1a; color: #f5cf6b; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tag.rec { background: #3a2f10; border-color: #8a6a1a; color: #f5cf6b; }
+}
+.favs .fname-input { width: 100%; padding: 4px 8px; font-weight: 600; }
+.favs .fav-btns { display: flex; gap: 2px; flex: none; }
+.favs .ren { border: none; background: none; color: var(--muted); font-size: 14px; cursor: pointer; padding: 0 4px; }
+.favs .ren:hover { color: var(--accent); }
+
+/* day tabs: only on phones */
+.day-tabs { display: none; gap: 4px; margin-bottom: 8px; }
+.day-tabs button {
+  flex: 1; border: 1px solid var(--border); background: var(--surface-2); border-radius: 10px;
+  padding: 6px 0 4px; cursor: pointer; font-weight: 600; color: var(--muted); position: relative;
+}
+.day-tabs button.on { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+.day-tabs button small { display: block; font-size: 10px; font-weight: 500; opacity: .8; }
+.day-tabs button.today:not(.on) { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 700px) {
+  .day-tabs { display: flex; }
+  .grid { grid-template-columns: 44px minmax(0, 1fr); overflow: visible; }
+  .grid .hd:not(:first-child):not(.on), .grid .col:not(.on) { display: none; }
+  .grid .hd .dl { display: inline; }
+  .grid .hd .ds { display: none; }
+  .blk { font-size: 12px; padding: 5px 8px; }
+  .blk b { font-size: 13px; }
+  .blk .t { display: block; }
+  .empty { inset: 90px 8px 36px 50px; }
+}
+
 @media print {
   .panel, .top, .toolbar, .hint, #fitsSection, footer, .empty, .toast { display: none !important; }
   .layout { display: block; padding: 0; }

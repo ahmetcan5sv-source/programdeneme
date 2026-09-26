@@ -84,6 +84,7 @@ const progInfo = (c) => c.programs[state.program];
 const isRequired = (c) => !!progInfo(c)?.req;
 const yearOf = (c) => progInfo(c)?.year ?? c.year;
 const isOtherDept = (c) => !progInfo(c) && (c.category === "dept" || c.category === "ortak");
+const recOf = (c) => (c.recommended || []).find((r) => !r.program || r.program === state.program);
 const deptsOf = (c) => [...new Set(c.sections.map((s) => s.dept))];
 const facultyOf = (dept) => DATA.programs[dept]?.faculty;
 const deptName = (dept) => DATA.programs[dept]?.name || dept;
@@ -119,11 +120,17 @@ function matchesType(c, type) {
   if (type === "zorunlu") return isRequired(c);
   if (type === "secmeli") return !!progInfo(c) && !isRequired(c) && (c.category === "dept" || c.category === "ortak");
   if (type === "diger") return isOtherDept(c);
+  if (type === "ozan") return !!recOf(c);
   if (type) return c.category === type;
   return true;
 }
 
 function typeTag(c) {
+  const rec = recOf(c) ? `<span class="tag rec" title="${recOf(c).note || "Ozan tarafından önerildi"}">★ Ozan</span>` : "";
+  return rec + baseTag(c);
+}
+
+function baseTag(c) {
   const offer = c.category === "engr" && offeredBy(c).length
     ? `<span class="tag" title="Açan: ${offeredBy(c).map(deptName).join(", ")}">${offeredBy(c).length > 2
       ? `${offeredBy(c).length} bölüm` : offeredBy(c).join(", ")}</span>` : "";
@@ -160,7 +167,7 @@ function searchCourses() {
     if (!q) return true;
     const norm = (t) => t.toLocaleUpperCase("tr").replace(/\s+/g, "");
     return c.code.includes(q) || norm(c.name).includes(q) || c.sections.some((s) => norm(s.instructor).includes(q));
-  }).sort((a, b) => rank(a) - rank(b) || a.code.localeCompare(b.code));
+  }).sort((a, b) => rank(a) - rank(b) || !!recOf(b) - !!recOf(a) || a.code.localeCompare(b.code));
 
   $("results").innerHTML = list.map(courseRow).join("") || `<li class="muted">Sonuç yok</li>`;
   for (const b of $("yearSeg").children) b.classList.toggle("on", b.dataset.year === $("yearFilter").value);
@@ -237,6 +244,7 @@ function renderSelected() {
   const known = state.selected.map((s) => courses.get(s.code).ects).filter((x) => x != null);
   const unknown = state.selected.length - known.length;
   $("selCount").textContent = state.selected.length ? `(${state.selected.length})` : "";
+  $("clearAll").hidden = !state.selected.length;
   const total = known.reduce((a, b) => a + b, 0);
   const goal = state.ectsMin || state.ectsMax;
   $("ects").textContent = state.selected.length || goal
@@ -391,13 +399,14 @@ function sortSchedules() {
 function renderGrid() {
   const rows = (gridEnd - gridStart) / 60;
   const today = (new Date().getDay() + 6) % 7;   // Monday = 0
+  renderDayTabs(today);
   let html = `<div class="hd"></div>` + DAYS.map((d, i) =>
-    `<div class="hd${i === today ? " today" : ""}"><span class="dl">${d}</span><span class="ds">${DAYS_SHORT[i]}</span></div>`).join("");
+    `<div class="hd${i === today ? " today" : ""}${i === mobileDay ? " on" : ""}"><span class="dl">${d}</span><span class="ds">${DAYS_SHORT[i]}</span></div>`).join("");
   html += `<div>` + Array.from({ length: rows }, (_, i) => `<div class="tm">${fmt(gridStart + i * 60)}</div>`).join("") + `</div>`;
 
   const sch = schedules[current] || [];
   for (let d = 0; d < 5; d++) {
-    html += `<div class="col${d === today ? " today" : ""}">` + Array.from({ length: rows }, (_, i) => {
+    html += `<div class="col${d === today ? " today" : ""}${d === mobileDay ? " on" : ""}">` + Array.from({ length: rows }, (_, i) => {
       const key = `${d}:${gridStart + i * 60}`;
       return `<div class="cell${state.blocked.includes(key) ? " blocked" : ""}" data-key="${key}"></div>`;
     }).join("");
@@ -540,6 +549,11 @@ function bind() {
   $("prev").addEventListener("click", () => { if (current > 0) { current--; renderCounter(lastEmpty); renderGrid(); } });
   $("next").addEventListener("click", () => { if (current < schedules.length - 1) { current++; renderCounter(lastEmpty); renderGrid(); } });
   $("undo").addEventListener("click", undo);
+  $("clearAll").addEventListener("click", () => {
+    state.selected = [];
+    update();
+    toast("Tüm dersler kaldırıldı · Geri al ile geri getirebilirsin");
+  });
   const num = (v) => (v === "" || isNaN(+v) || +v <= 0 ? null : Math.round(+v));
   let goalTimer;
   for (const id of ["ectsMin", "ectsMax"]) {
@@ -599,6 +613,19 @@ function bind() {
     update();
   });
   $("clearBlocked").addEventListener("click", () => { state.blocked = []; update(); });
+  $("dayTabs").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-day]");
+    if (b) setMobileDay(+b.dataset.day);
+  });
+  // Swipe left/right on the calendar to change the day (phones)
+  let touchX = null, touchY = null;
+  $("grid").addEventListener("touchstart", (e) => { touchX = e.touches[0].clientX; touchY = e.touches[0].clientY; }, { passive: true });
+  $("grid").addEventListener("touchend", (e) => {
+    if (touchX == null || !matchMedia("(max-width: 700px)").matches) return;
+    const dx = e.changedTouches[0].clientX - touchX, dy = e.changedTouches[0].clientY - touchY;
+    touchX = null;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) setMobileDay(mobileDay + (dx < 0 ? 1 : -1));
+  });
   $("saveFav").addEventListener("click", () => {
     const sch = schedules[current];
     if (!sch) return;
@@ -616,6 +643,9 @@ function bind() {
     const favs = loadFavs();
     const rm = e.target.closest("[data-rmfav]");
     if (rm) { favs.splice(+rm.dataset.rmfav, 1); storeFavs(favs); return; }
+    if (e.target.closest("input")) return;
+    const ren = e.target.closest("[data-renfav]");
+    if (ren) { renameFav(+ren.dataset.renfav); return; }
     const li = e.target.closest("[data-fav]");
     if (!li) return;
     toast(`${favs[+li.dataset.fav].name} açıldı`);
@@ -674,12 +704,41 @@ function renderEmpty() {
   </div>`;
 }
 
+function escapeHtml(t) {
+  return String(t).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[ch]);
+}
+
+function renameFav(i) {
+  const favs = loadFavs();
+  const name = $("favs").querySelector(`[data-fav="${i}"] .fname`);
+  const input = document.createElement("input");
+  input.className = "fname-input";
+  input.value = favs[i].name;
+  input.maxLength = 40;
+  name.replaceWith(input);
+  input.focus();
+  input.select();
+  let done = false;
+  const finish = (keep) => {
+    if (done) return;
+    done = true;
+    if (keep && input.value.trim()) favs[i].name = input.value.trim();
+    storeFavs(favs);
+  };
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") finish(true);
+    if (e.key === "Escape") finish(false);
+  });
+  input.addEventListener("blur", () => finish(true));
+}
+
 function renderFavs() {
   const favs = loadFavs();
   $("favSection").hidden = !favs.length;
   $("favs").innerHTML = favs.map((f, i) => `
-    <li data-fav="${i}"><span class="ctext"><b>${f.name}</b><br><span class="muted small">${f.picks.map((p) => p.code).join(", ")}</span></span>
-    <button class="rm" data-rmfav="${i}" aria-label="Sil">×</button></li>`).join("");
+    <li data-fav="${i}" title="Açmak için tıkla"><span class="ctext"><b class="fname">${escapeHtml(f.name)}</b><br><span class="muted small">${f.picks.map((p) => p.code).join(", ")}</span></span>
+    <span class="fav-btns"><button class="ren" data-renfav="${i}" aria-label="Yeniden adlandır" title="Yeniden adlandır">✎</button>
+    <button class="rm" data-rmfav="${i}" aria-label="Sil" title="Sil">×</button></span></li>`).join("");
 }
 
 async function downloadPng() {
@@ -695,6 +754,24 @@ async function downloadPng() {
   a.download = "ders-programi.png";
   a.href = canvas.toDataURL("image/png");
   a.click();
+}
+
+// ---------- phone day view ----------
+// On narrow screens the grid shows one day at a time
+let mobileDay = Math.min((new Date().getDay() + 6) % 7, 4);
+
+function renderDayTabs(today) {
+  const sch = schedules[current] || [];
+  const count = [0, 0, 0, 0, 0];
+  for (const o of sch) for (const sl of o.sec.slots) count[sl.d]++;
+  $("dayTabs").innerHTML = DAYS_SHORT.map((d, i) => `
+    <button role="tab" data-day="${i}" class="${i === mobileDay ? "on" : ""}${i === today ? " today" : ""}"
+      aria-selected="${i === mobileDay}">${d}<small>${count[i] ? `${count[i]} ders` : "boş"}</small></button>`).join("");
+}
+
+function setMobileDay(d) {
+  mobileDay = (d + 5) % 5;
+  renderGrid();
 }
 
 // ---------- ECTS goal suggestions ----------
@@ -715,7 +792,7 @@ function findPackages(need, taken, room, hasRektorluk) {
     .filter((c) => c.ects && available(c) && !isRequired(c) && !c.ownOnly && !state.selected.some((s) => s.code === c.code) &&
       state.goalSources.includes(goalSource(c)) && !(hasRektorluk && c.category === "rektorluk"))
     .map((c) => ({
-      c, rank: SOURCE_RANK[goalSource(c)],
+      c, rank: SOURCE_RANK[goalSource(c)] - (recOf(c) ? 0.5 : 0),
       secs: candidateSections(c).filter((s) => s.slots.length && sectionUsable(s)).map((s) => ({ s, iv: toIntervals(s, {}) })),
     }))
     .filter((x) => x.secs.length && (room == null || x.c.ects <= room))
@@ -838,6 +915,7 @@ function openDetail(code, secId) {
     ["Saatler", sec.slots.map((sl) => `${DAYS[sl.d]} ${sl.s}–${sl.e}${sl.r ? ` · ${sl.r}` : ""}`).join("<br>")],
     c.prereq?.length ? ["Ön koşul", c.prereq.join(", ")] : null,
     c.noClash ? ["Not", "Çakışma kontrolünden muaf"] : null,
+    recOf(c) ? ["★ Öneri", recOf(c).note || "Ozan tarafından önerildi"] : null,
   ].filter(Boolean);
   $("detailBody").innerHTML = `<h3>${c.code}</h3><div class="muted">${c.name}</div>
     <dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`;

@@ -6,6 +6,7 @@ Kaynaklar (data/src):
   derslik_*.csv    Derslik bilgisi (OBS listesinde derslik yok); ders+gün+başlangıç ile eşleşir
   names.csv        İsteğe bağlı ders adı düzeltmeleri
   prereq.csv       Ön koşullar
+  oneriler.csv     Ozan'ın önerdiği dersler: code,program(boş = herkes),note
 
 CSV satır biçimi: code,section,year,day,start,end,room,instructor[,ects,name]
 
@@ -145,6 +146,10 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8")
     names = {norm_code(r["code"]): r["name"].strip() for r in read_csv("names.csv")}
     prereq = {norm_code(r["code"]): r["prereq"].split() for r in read_csv("prereq.csv")}
+    recommended = {}
+    for r in read_csv("oneriler.csv"):
+        recommended.setdefault(norm_code(r["code"]), []).append(
+            {"program": (r.get("program") or "").strip().upper(), "note": (r.get("note") or "").strip()})
     rooms = {}
     for path in SRC.glob("derslik_*.csv"):
         for r in read_csv(path.name):
@@ -156,7 +161,8 @@ def main():
         return courses.setdefault(code, {
             "code": code, "name": names.get(code) or name, "category": category(code, source),
             "year": None, "ects": ects, "noClash": code in NO_CLASH, "ownOnly": code in OWN_ONLY_CODES,
-            "prereq": prereq.get(code, []), "programs": {}, "sections": OrderedDict(),
+            "prereq": prereq.get(code, []), "recommended": recommended.get(code, []),
+            "programs": {}, "sections": OrderedDict(),
         })
 
     # ---- OBS listesi ----

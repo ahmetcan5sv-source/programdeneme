@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=14">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 <header class="top">
@@ -51,6 +51,7 @@
         <option value="engr">ENGR ortak seçmelileri</option>
         <option value="rektorluk">Rektörlük ortak seçmelileri</option>
         <option value="diger">Fakültemdeki diğer bölümler</option>
+        <option value="ozan">★ Ozan'ın önerdikleri</option>
       </select>
       <button id="addRequired" class="btn primary full" hidden></button>
       <div class="search">
@@ -63,7 +64,10 @@
     <section class="card sel-card">
       <div class="card-head">
         <h2>Seçtiğin dersler <span id="selCount" class="muted"></span></h2>
-        <span id="ects" class="pill"></span>
+        <div class="head-right">
+          <span id="ects" class="pill"></span>
+          <button id="clearAll" class="btn ghost sm" title="Tüm seçimleri kaldır" hidden>Temizle</button>
+        </div>
       </div>
       <ul id="selected" class="selected"></ul>
       <p id="warn" class="warn" hidden></p>
@@ -140,6 +144,7 @@
     </div>
 
     <div class="card grid-card">
+      <div id="dayTabs" class="day-tabs" role="tablist" aria-label="Gün"></div>
       <div id="grid" class="grid"></div>
       <div id="empty" class="empty" hidden></div>
       <div id="unscheduled" class="small muted unscheduled"></div>
@@ -195,7 +200,7 @@
   Veriler OBS ders programından aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
-<script src="data/courses.js?v=14"></script>
-<script src="app.js?v=14"></script>
+<script src="data/courses.js?v=15"></script>
+<script src="app.js?v=15"></script>
 </body>
 </html>
