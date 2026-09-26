@@ -38,6 +38,8 @@ const state = {
   ectsMin: null,             // ECTS goal; suggestions fill the schedule up to this
   ectsMax: null,
   goalSources: ["dept", "engr", "rektorluk"],
+  passed: [],                // course codes the student has already passed
+  teacherPref: {},           // instructor name -> 1 (prefer) | -1 (avoid)
 };
 let schedules = [];
 let current = 0;
@@ -62,6 +64,8 @@ function load() {
     state.blocked = state.blocked || [];
     if (!DATA.programs[state.program]) state.program = DEFAULT_PROGRAM;
     if (!Array.isArray(state.goalSources)) state.goalSources = ["dept", "engr", "rektorluk"];
+    if (!Array.isArray(state.passed)) state.passed = [];
+    if (!state.teacherPref || typeof state.teacherPref !== "object") state.teacherPref = {};
     // Drop time limits that are no longer offered (e.g. saved when the grid started at 08:30)
     for (const k of ["minStart", "maxEnd"]) {
       const v = state[k];
@@ -112,15 +116,19 @@ function candidateSections(c) {
   if (c.ownOnly || (state.ownSections && secs.some((s) => s.dept === state.program))) {
     secs = secs.filter((s) => s.dept === state.program);
   }
-  return secs;
+  return secs.filter((s) => state.teacherPref[s.instructor] !== -1);
 }
+
+const hasPassed = (code) => state.passed.includes(code);
 
 // ---------- search / selection ----------
 function matchesType(c, type) {
+  if (type !== "gecti" && hasPassed(c.code)) return false;   // passed courses only under their own filter
   if (type === "zorunlu") return isRequired(c);
   if (type === "secmeli") return !!progInfo(c) && !isRequired(c) && (c.category === "dept" || c.category === "ortak");
   if (type === "diger") return isOtherDept(c);
   if (type === "ozan") return !!recOf(c);
+  if (type === "gecti") return hasPassed(c.code);
   if (type) return c.category === type;
   return true;
 }
@@ -179,7 +187,7 @@ function searchCourses() {
 }
 
 function requiredFor(year) {
-  return DATA.courses.filter((c) => isRequired(c) && yearOf(c) === year && c.sections.length &&
+  return DATA.courses.filter((c) => isRequired(c) && yearOf(c) === year && c.sections.length && !hasPassed(c.code) &&
     !state.selected.some((s) => s.code === c.code));
 }
 
@@ -267,7 +275,7 @@ function renderSelected() {
       <div class="head"><span><b>${c.code}</b> ${c.name}${c.category === "engr" && offeredBy(c).length
         ? ` <span class="small muted">· ${offeredBy(c).map(deptName).join(", ")}</span>` : ""}</span>
       <button class="rm" data-rm="${c.code}" aria-label="Kaldır">×</button></div>${secs}
-      ${c.prereq?.length ? `<div class="small prereq">Ön koşul: ${c.prereq.join(", ")} dersini geçmiş olmalısın</div>` : ""}
+      ${unmetPrereq(c).length ? `<div class="small prereq">Ön koşul: ${unmetPrereq(c).join(", ")} dersini geçmiş olmalısın</div>` : ""}
       ${c.noClash ? `<span class="small muted clashbox">Çakışmadan muaf</span>` : `<label class="small muted clashbox">
         <input type="checkbox" data-clash="${c.code}" ${sel.clash ? "checked" : ""}> Çakışabilir</label>`}</li>`;
   }).join("");
@@ -299,7 +307,10 @@ function sectionUsable(sec) {
 function emptyReason(sel) {
   const c = courses.get(sel.code);
   const cand = candidateSections(c);
-  if (!cand.length) return "bölümün için açılmış şubesi yok";
+  if (!cand.length) {
+    return c.sections.some((s) => state.teacherPref[s.instructor] === -1)
+      ? "kaçındığın hocanın dışında açık şubesi yok" : "bölümün için açılmış şubesi yok";
+  }
   const open = cand.filter((s) => !sel.excluded.includes(s.id));
   if (!open.length) return "tüm şubeleri hariç tutuldu";
   const reasons = new Set(open.map((s) => s.slots.map(slotProblem).find(Boolean)));
@@ -392,7 +403,9 @@ function sortSchedules() {
     early: (a, b) => a.k.lastEnd - b.k.lastEnd || a.k.gaps - b.k.gaps,
     late: (a, b) => avgStart(b.k) - avgStart(a.k) || a.k.gaps - b.k.gaps,
   }[state.sortBy];
-  schedules = scored.sort(cmp).map((x) => x.s);
+  const liked = (sch) => sch.filter((o) => state.teacherPref[o.sec.instructor] === 1).length;
+  for (const x of scored) x.liked = liked(x.s);
+  schedules = scored.sort((a, b) => b.liked - a.liked || cmp(a, b)).map((x) => x.s);
 }
 
 // ---------- grid ----------
@@ -466,7 +479,8 @@ function update() {
   const now = JSON.stringify({ selected: state.selected, blocked: state.blocked, freeDays: state.freeDays,
     minStart: state.minStart, maxEnd: state.maxEnd, ignoreOnline: state.ignoreOnline,
     program: state.program, ownSections: state.ownSections,
-    ectsMin: state.ectsMin, ectsMax: state.ectsMax, goalSources: state.goalSources });
+    ectsMin: state.ectsMin, ectsMax: state.ectsMax, goalSources: state.goalSources,
+    passed: state.passed, teacherPref: state.teacherPref });
   if (snapshot && snapshot !== now) {
     undoStack.push(snapshot);
     if (undoStack.length > 50) undoStack.shift();
@@ -485,6 +499,7 @@ function update() {
   renderCounter(lastEmpty);
   renderGrid();
   renderEmpty();
+  renderPrefs();
 }
 
 // ---------- events ----------
@@ -549,6 +564,36 @@ function bind() {
   $("prev").addEventListener("click", () => { if (current > 0) { current--; renderCounter(lastEmpty); renderGrid(); } });
   $("next").addEventListener("click", () => { if (current < schedules.length - 1) { current++; renderCounter(lastEmpty); renderGrid(); } });
   $("undo").addEventListener("click", undo);
+  const setTeacher = (v) => {
+    const c = courses.get(detailOf.code);
+    const name = c.sections.find((s) => s.id === detailOf.sec).instructor;
+    const pref = { ...state.teacherPref };
+    if (pref[name] === v) delete pref[name]; else pref[name] = v;
+    state.teacherPref = pref;
+    $("detail").close();
+    update();
+    toast(pref[name] === 1 ? `${name} tercih ediliyor` : pref[name] === -1 ? `${name} şubeleri kullanılmayacak` : "Hoca tercihi kaldırıldı");
+  };
+  $("preferTeacher").addEventListener("click", () => setTeacher(1));
+  $("avoidTeacher").addEventListener("click", () => setTeacher(-1));
+  $("teacherPrefs").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-tp]");
+    if (!b) return;
+    const pref = { ...state.teacherPref };
+    delete pref[b.dataset.tp];
+    state.teacherPref = pref;
+    update();
+  });
+  $("openPassed").addEventListener("click", () => { renderPassedList(); $("passedDialog").showModal(); });
+  $("closePassed").addEventListener("click", () => $("passedDialog").close());
+  $("passedNone").addEventListener("click", () => { state.passed = []; renderPassedList(); update(); });
+  $("passedList").addEventListener("change", (e) => {
+    const code = e.target.value;
+    state.passed = e.target.checked ? [...state.passed, code] : state.passed.filter((x) => x !== code);
+    // A passed course should not stay in the plan
+    if (e.target.checked) state.selected = state.selected.filter((s) => s.code !== code);
+    update();
+  });
   $("clearAll").addEventListener("click", () => {
     state.selected = [];
     update();
@@ -774,6 +819,33 @@ function setMobileDay(d) {
   renderGrid();
 }
 
+// ---------- passed courses / teacher preferences ----------
+const unmetPrereq = (c) => (c.prereq || []).filter((p) => !hasPassed(p));
+
+function renderPassedList() {
+  // Own program's courses by year, plus prerequisites that are not offered this term (e.g. spring courses)
+  const own = DATA.courses.filter((c) => progInfo(c) && !c.ownOnly);
+  const byYear = {};
+  for (const c of own) (byYear[yearOf(c) || 0] ||= []).push({ code: c.code, name: c.name });
+  const known = new Set(own.map((c) => c.code));
+  const extra = [...new Set(own.flatMap((c) => c.prereq || []))].filter((p) => !known.has(p));
+  if (extra.length) byYear["Ön koşul"] = extra.map((code) => ({ code, name: courses.get(code)?.name || "bu dönem açık değil" }));
+  const title = (y) => (isNaN(+y) ? y : +y ? `${y}. sınıf` : "Diğer");
+  $("passedList").innerHTML = Object.keys(byYear).sort().map((y) => `
+    <div><h4>${title(y)}</h4><div class="grp">${byYear[y].sort((a, b) => a.code.localeCompare(b.code)).map((c) => `
+      <label><input type="checkbox" value="${c.code}" ${hasPassed(c.code) ? "checked" : ""}>
+        <span><b>${c.code}</b><br><span class="nm">${c.name}</span></span></label>`).join("")}</div></div>`).join("");
+}
+
+function renderPrefs() {
+  const entries = Object.entries(state.teacherPref);
+  $("teacherField").hidden = !entries.length;
+  $("teacherPrefs").innerHTML = entries.map(([name, v]) => `
+    <span class="tp ${v === 1 ? "like" : "avoid"}" title="${v === 1 ? "Tercih ediliyor" : "Kaçınılıyor"}">${v === 1 ? "★" : "✕"} ${escapeHtml(name)}
+      <button data-tp="${escapeHtml(name)}" aria-label="Kaldır">×</button></span>`).join("");
+  $("openPassed").textContent = `✓ Geçtiğim dersler${state.passed.length ? ` (${state.passed.length})` : ""}`;
+}
+
 // ---------- ECTS goal suggestions ----------
 let lastSuggestions = [];
 
@@ -789,7 +861,7 @@ const SOURCE_RANK = { dept: 0, engr: 1, rektorluk: 2, diger: 3 };
 function findPackages(need, taken, room, hasRektorluk) {
   const cands = DATA.courses
     // Only electives: required courses are added per year, projects/internships are never "filler"
-    .filter((c) => c.ects && available(c) && !isRequired(c) && !c.ownOnly && !state.selected.some((s) => s.code === c.code) &&
+    .filter((c) => c.ects && available(c) && !isRequired(c) && !c.ownOnly && !hasPassed(c.code) && !state.selected.some((s) => s.code === c.code) &&
       state.goalSources.includes(goalSource(c)) && !(hasRektorluk && c.category === "rektorluk"))
     .map((c) => ({
       c, rank: SOURCE_RANK[goalSource(c)] - (recOf(c) ? 0.5 : 0),
@@ -913,7 +985,7 @@ function openDetail(code, secId) {
     c.sections.length > 1 ? ["Şube", `${sectionLabel(sec)} (${c.sections.length} şubeden biri)`] : null,
     ["Hoca", sec.instructor || "belirtilmemiş"],
     ["Saatler", sec.slots.map((sl) => `${DAYS[sl.d]} ${sl.s}–${sl.e}${sl.r ? ` · ${sl.r}` : ""}`).join("<br>")],
-    c.prereq?.length ? ["Ön koşul", c.prereq.join(", ")] : null,
+    c.prereq?.length ? ["Ön koşul", c.prereq.map((p) => hasPassed(p) ? `${p} ✓` : p).join(", ")] : null,
     c.noClash ? ["Not", "Çakışma kontrolünden muaf"] : null,
     recOf(c) ? ["★ Öneri", recOf(c).note || "Ozan tarafından önerildi"] : null,
   ].filter(Boolean);
@@ -922,6 +994,12 @@ function openDetail(code, secId) {
   const cand = candidateSections(c);
   const excluded = state.selected.find((s) => s.code === code).excluded;
   $("lockSec").hidden = cand.filter((s) => !excluded.includes(s.id)).length < 2;
+  const pref = state.teacherPref[sec.instructor];
+  $("preferTeacher").hidden = $("avoidTeacher").hidden = !sec.instructor;
+  $("preferTeacher").textContent = pref === 1 ? "★ Tercih ediliyor" : "★ Hocayı tercih et";
+  $("avoidTeacher").textContent = pref === -1 ? "Kaçınılıyor" : "Hocadan kaçın";
+  $("preferTeacher").classList.toggle("on-like", pref === 1);
+  $("avoidTeacher").classList.toggle("on-avoid", pref === -1);
   $("detail").showModal();
 }
 
@@ -949,7 +1027,7 @@ function renderFits() {
   const taken = sch.flatMap((o) => toIntervals(o.sec, state.selected.find((x) => x.code === o.course.code) || {}));
   const hasRektorluk = state.selected.some((s) => courses.get(s.code).category === "rektorluk");
   const list = DATA.courses.filter((c) => {
-    if (state.selected.some((s) => s.code === c.code) || !c.sections.length || !available(c)) return false;
+    if (state.selected.some((s) => s.code === c.code) || !c.sections.length || !available(c) || hasPassed(c.code)) return false;
     if (hasRektorluk && c.category === "rektorluk") return false;
     return candidateSections(c).some((sec) => sectionUsable(sec) && !clashes(taken, toIntervals(sec, {})));
   });
@@ -1036,5 +1114,8 @@ load();
 syncControls();
 bind();
 applyTheme(currentTheme());
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "127.0.0.1")) {
+  navigator.serviceWorker.register("sw.js").catch(() => {});
+}
 renderFavs();
 update();

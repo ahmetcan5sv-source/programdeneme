@@ -349,6 +349,26 @@ dialog dd { margin: 0; }
   .empty { inset: 90px 8px 36px 50px; }
 }
 
+/* ---------- passed courses / teacher prefs ---------- */
+.passed-btn { margin-top: 12px; justify-content: center; }
+.teacher-field { margin: 12px 0 0; }
+.chips .tp {
+  display: inline-flex; align-items: center; gap: 6px; padding: 3px 4px 3px 10px; border-radius: 99px;
+  border: 1px solid var(--border); background: var(--surface-2); font-size: 12px;
+}
+.chips .tp.like { border-color: var(--ok); color: var(--ok); }
+.chips .tp.avoid { border-color: var(--warn); color: var(--warn); }
+.chips .tp button { border: none; background: none; cursor: pointer; color: inherit; font-size: 14px; line-height: 1; padding: 0 4px; }
+.btn.on-like { border-color: var(--ok); color: var(--ok); }
+.btn.on-avoid { border-color: var(--warn); color: var(--warn); background: var(--warn-soft); }
+.wide-dialog { width: min(560px, calc(100vw - 32px)); }
+.passed-list { max-height: 55vh; overflow: auto; margin: 12px 0 0; display: grid; gap: 12px; }
+.passed-list h4 { margin: 0 0 6px; font-size: 13px; color: var(--muted); font-weight: 600; }
+.passed-list .grp { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 4px 10px; }
+.passed-list label { display: flex; gap: 6px; align-items: flex-start; font-size: 13px; cursor: pointer; }
+.passed-list input { accent-color: var(--accent); margin-top: 3px; }
+.passed-list .nm { color: var(--muted); font-size: 12px; }
+
 @media print {
   .panel, .top, .toolbar, .hint, #fitsSection, footer, .empty, .toast { display: none !important; }
   .layout { display: block; padding: 0; }

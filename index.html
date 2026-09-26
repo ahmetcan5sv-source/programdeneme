@@ -8,7 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=16">
+<link rel="stylesheet" href="style.css?v=17">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1f4fbf">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
 <header class="top">
@@ -52,6 +57,7 @@
         <option value="rektorluk">Rektörlük ortak seçmelileri</option>
         <option value="diger">Fakültemdeki diğer bölümler</option>
         <option value="ozan">★ Ozan'ın önerdikleri</option>
+        <option value="gecti">✓ Geçtiğim dersler</option>
       </select>
       <button id="addRequired" class="btn primary full" hidden></button>
       <div class="search">
@@ -114,6 +120,11 @@
       </label>
       <label class="switch"><input type="checkbox" id="ignoreOnline"><span></span> Online derslerin çakışmasını yok say</label>
       <label class="switch"><input type="checkbox" id="ownSections"><span></span> Ortak derslerde yalnızca kendi bölümümün şubeleri</label>
+      <button id="openPassed" class="btn full passed-btn">✓ Geçtiğim dersler</button>
+      <div class="field teacher-field" id="teacherField" hidden>
+        <span class="label">Hoca tercihlerin</span>
+        <div class="chips" id="teacherPrefs"></div>
+      </div>
     </details>
   </aside>
 
@@ -174,6 +185,8 @@
 <dialog id="detail">
   <div id="detailBody"></div>
   <div class="dlg-actions">
+    <button id="preferTeacher" class="btn">★ Hocayı tercih et</button>
+    <button id="avoidTeacher" class="btn">Hocadan kaçın</button>
     <button id="lockSec" class="btn">Bu şubeyi sabitle</button>
     <button id="removeCourse" class="btn danger">Dersi kaldır</button>
     <button id="closeDetail" class="btn primary">Kapat</button>
@@ -194,13 +207,23 @@
   </div>
 </dialog>
 
+<dialog id="passedDialog" class="wide-dialog">
+  <h3>Geçtiğim dersler</h3>
+  <p class="small muted">İşaretlediğin dersler ders listesinden, "zorunluları ekle" düğmesinden ve önerilerden çıkarılır; ön koşul uyarıları da buna göre güncellenir. Bilgiler sadece bu tarayıcıda saklanır.</p>
+  <div id="passedList" class="passed-list"></div>
+  <div class="dlg-actions">
+    <button id="passedNone" class="btn ghost">Hepsini kaldır</button>
+    <button id="closePassed" class="btn primary">Tamam</button>
+  </div>
+</dialog>
+
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
 <footer class="small muted">
   Veriler OBS ders programından aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
-<script src="data/courses.js?v=16"></script>
-<script src="app.js?v=16"></script>
+<script src="data/courses.js?v=17"></script>
+<script src="app.js?v=17"></script>
 </body>
 </html>
