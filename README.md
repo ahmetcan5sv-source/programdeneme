@@ -2,7 +2,7 @@
 
 AYBÜ öğrencileri için çakışmasız ders programı oluşturucu. Sunucu gerektirmeyen statik bir sitedir, GitHub Pages'te çalışır.
 
-Şu an Mühendislik ve Doğa Bilimleri Fakültesi ile İşletme Fakültesi bölümlerini kapsar.
+Şu an Mühendislik ve Doğa Bilimleri, İşletme ve Hukuk fakültelerini kapsar.
 
 ## Kurallar
 

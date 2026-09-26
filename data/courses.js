@@ -52,6 +52,10 @@ window.COURSE_DATA = {
   "MIS": {
    "name": "Yönetim Bilişim Sistemleri",
    "faculty": "İşletme Fakültesi"
+  },
+  "LAW": {
+   "name": "Hukuk",
+   "faculty": "Hukuk Fakültesi"
   }
  },
  "engrFaculty": "Mühendislik ve Doğa Bilimleri Fakültesi",
@@ -4636,7 +4640,7 @@ window.COURSE_DATA = {
      "id": "EE",
      "label": "EE",
      "dept": "EE",
-     "instructor": "Dr. Öğr. Üyesi Ahmad Salmanoghlı Khıavı",
+     "instructor": "Dr. Öğr. Üyesi Ahmad Salmanoghli Khiavi",
      "slots": [
       {
        "d": 0,
@@ -4708,7 +4712,7 @@ window.COURSE_DATA = {
      "id": "EE",
      "label": "EE",
      "dept": "EE",
-     "instructor": "Dr. Öğr. Üyesi Ahmad Salmanoghlı Khıavı",
+     "instructor": "Dr. Öğr. Üyesi Ahmad Salmanoghli Khiavi",
      "slots": [
       {
        "d": 2,
@@ -4858,7 +4862,7 @@ window.COURSE_DATA = {
      "id": "EE-9",
      "label": "EE Ş9",
      "dept": "EE",
-     "instructor": "Dr. Öğr. Üyesi Ahmad Salmanoghlı Khıavı",
+     "instructor": "Dr. Öğr. Üyesi Ahmad Salmanoghli Khiavi",
      "slots": [
       {
        "d": 4,
@@ -5210,7 +5214,7 @@ window.COURSE_DATA = {
      "id": "EE",
      "label": "EE",
      "dept": "EE",
-     "instructor": "Dr. Öğr. Üyesi Ahmad Salmanoghlı Khıavı",
+     "instructor": "Dr. Öğr. Üyesi Ahmad Salmanoghli Khiavi",
      "slots": [
       {
        "d": 0,
@@ -5497,6 +5501,10 @@ window.COURSE_DATA = {
    "prereq": [],
    "recommended": [],
    "programs": {
+    "LAW": {
+     "req": true,
+     "year": 1
+    },
     "BF": {
      "req": true,
      "year": 1
@@ -5516,16 +5524,72 @@ window.COURSE_DATA = {
    },
    "sections": [
     {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör. Dennis O'Keefe",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör. Ebru Sınar Okutucu",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-3",
+     "label": "LAW Ş3",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Sibel Eylenen",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-4",
+     "label": "LAW Ş4",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör. Yasemen Özfındık Kotik",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    },
+    {
      "id": "BF",
      "label": "BF",
      "dept": "BF",
-     "instructor": "Öğr.Gör. Yasemen Özfındık Kotık",
+     "instructor": "Öğr.Gör. Yasemen Özfındık Kotik",
      "slots": [
       {
        "d": 3,
        "s": "13:00",
        "e": "15:50",
-       "r": "Online"
+       "r": ""
       }
      ]
     },
@@ -5539,7 +5603,7 @@ window.COURSE_DATA = {
        "d": 3,
        "s": "09:00",
        "e": "11:50",
-       "r": "Online"
+       "r": ""
       }
      ]
     },
@@ -5547,13 +5611,13 @@ window.COURSE_DATA = {
      "id": "ITB",
      "label": "ITB",
      "dept": "ITB",
-     "instructor": "Öğr.Gör. Yasemen Özfındık Kotık",
+     "instructor": "Öğr.Gör. Yasemen Özfındık Kotik",
      "slots": [
       {
        "d": 3,
        "s": "13:00",
        "e": "15:50",
-       "r": "Online"
+       "r": ""
       }
      ]
     },
@@ -5567,7 +5631,7 @@ window.COURSE_DATA = {
        "d": 3,
        "s": "09:00",
        "e": "11:50",
-       "r": "Online"
+       "r": ""
       }
      ]
     }
@@ -5640,7 +5704,7 @@ window.COURSE_DATA = {
      "id": "CENG",
      "label": "CENG",
      "dept": "CENG",
-     "instructor": "Öğr.Gör. Dennıs O`keefe",
+     "instructor": "Öğr.Gör. Dennis O'Keefe",
      "slots": [
       {
        "d": 4,
@@ -5654,7 +5718,7 @@ window.COURSE_DATA = {
      "id": "EE",
      "label": "EE",
      "dept": "EE",
-     "instructor": "Öğr.Gör. Dennıs O`keefe",
+     "instructor": "Öğr.Gör. Dennis O'Keefe",
      "slots": [
       {
        "d": 4,
@@ -5668,7 +5732,7 @@ window.COURSE_DATA = {
      "id": "IE",
      "label": "IE",
      "dept": "IE",
-     "instructor": "Öğr.Gör. Dennıs O`keefe",
+     "instructor": "Öğr.Gör. Dennis O'Keefe",
      "slots": [
       {
        "d": 3,
@@ -5738,7 +5802,7 @@ window.COURSE_DATA = {
      "id": "SENG",
      "label": "SENG",
      "dept": "SENG",
-     "instructor": "Öğr.Gör. Dennıs O`keefe",
+     "instructor": "Öğr.Gör. Dennis O'Keefe",
      "slots": [
       {
        "d": 3,
@@ -5783,7 +5847,7 @@ window.COURSE_DATA = {
      "id": "BF",
      "label": "BF",
      "dept": "BF",
-     "instructor": "Öğr.Gör. Yasemen Özfındık Kotık",
+     "instructor": "Öğr.Gör. Yasemen Özfındık Kotik",
      "slots": [
       {
        "d": 2,
@@ -5797,7 +5861,7 @@ window.COURSE_DATA = {
      "id": "BUS",
      "label": "BUS",
      "dept": "BUS",
-     "instructor": "Öğr.Gör. Yasemen Özfındık Kotık",
+     "instructor": "Öğr.Gör. Yasemen Özfındık Kotik",
      "slots": [
       {
        "d": 2,
@@ -5811,7 +5875,7 @@ window.COURSE_DATA = {
      "id": "ITB",
      "label": "ITB",
      "dept": "ITB",
-     "instructor": "Öğr.Gör. Yasemen Özfındık Kotık",
+     "instructor": "Öğr.Gör. Yasemen Özfındık Kotik",
      "slots": [
       {
        "d": 2,
@@ -5825,7 +5889,7 @@ window.COURSE_DATA = {
      "id": "MIS",
      "label": "MIS",
      "dept": "MIS",
-     "instructor": "Öğr.Gör. Yasemen Özfındık Kotık",
+     "instructor": "Öğr.Gör. Yasemen Özfındık Kotik",
      "slots": [
       {
        "d": 2,
@@ -5900,7 +5964,7 @@ window.COURSE_DATA = {
      "id": "BF",
      "label": "BF",
      "dept": "BF",
-     "instructor": "Öğr.Gör. Yasemen Özfındık Kotık",
+     "instructor": "Öğr.Gör. Yasemen Özfındık Kotik",
      "slots": [
       {
        "d": 3,
@@ -5928,7 +5992,7 @@ window.COURSE_DATA = {
      "id": "ITB",
      "label": "ITB",
      "dept": "ITB",
-     "instructor": "Öğr.Gör. Yasemen Özfındık Kotık",
+     "instructor": "Öğr.Gör. Yasemen Özfındık Kotik",
      "slots": [
       {
        "d": 3,
@@ -6107,7 +6171,7 @@ window.COURSE_DATA = {
      "id": "ESE",
      "label": "ESE",
      "dept": "ESE",
-     "instructor": "Dr. Öğr. Üyesi Musarıa Karım Mahmood Mahmood",
+     "instructor": "Dr. Öğr. Üyesi Musaria Karim Mahmood Mahmood",
      "slots": [
       {
        "d": 3,
@@ -6749,7 +6813,7 @@ window.COURSE_DATA = {
      "id": "ESE",
      "label": "ESE",
      "dept": "ESE",
-     "instructor": "Dr. Öğr. Üyesi Musarıa Karım Mahmood Mahmood",
+     "instructor": "Dr. Öğr. Üyesi Musaria Karim Mahmood Mahmood",
      "slots": [
       {
        "d": 1,
@@ -6910,7 +6974,7 @@ window.COURSE_DATA = {
      "id": "ESE-5",
      "label": "ESE Ş5",
      "dept": "ESE",
-     "instructor": "Dr. Öğr. Üyesi Musarıa Karım Mahmood Mahmood",
+     "instructor": "Dr. Öğr. Üyesi Musaria Karim Mahmood Mahmood",
      "slots": [
       {
        "d": 0,
@@ -7238,7 +7302,7 @@ window.COURSE_DATA = {
      "id": "ESE",
      "label": "ESE",
      "dept": "ESE",
-     "instructor": "Dr. Öğr. Üyesi Musarıa Karım Mahmood Mahmood",
+     "instructor": "Dr. Öğr. Üyesi Musaria Karim Mahmood Mahmood",
      "slots": [
       {
        "d": 0,
@@ -8599,6 +8663,2477 @@ window.COURSE_DATA = {
    ]
   },
   {
+   "code": "LAW101",
+   "name": "Hukuk Başlangıcı",
+   "category": "dept",
+   "year": 1,
+   "ects": 2,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 1
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Belkıs Vural Çelenk",
+     "slots": [
+      {
+       "d": 3,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Hatice Kübra Ecemiş Yılmaz",
+     "slots": [
+      {
+       "d": 2,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW103",
+   "name": "Anayasa Hukuku Genel Teorisi",
+   "category": "dept",
+   "year": 1,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 1
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Mehmet Ali Zengin",
+     "slots": [
+      {
+       "d": 1,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Muhammed Said Bilal",
+     "slots": [
+      {
+       "d": 0,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW105",
+   "name": "Medeni Hukuka Giriş ve Kişiler Hukuku",
+   "category": "dept",
+   "year": 1,
+   "ects": 5,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 1
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Akın Ünal",
+     "slots": [
+      {
+       "d": 1,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      },
+      {
+       "d": 2,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW107",
+   "name": "Basic Concepts of Law I",
+   "category": "dept",
+   "year": 1,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 1
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Bihter Kaytaz Eker",
+     "slots": [
+      {
+       "d": 3,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Hamza Çorum",
+     "slots": [
+      {
+       "d": 1,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW115",
+   "name": "Legal Research and Writing",
+   "category": "dept",
+   "year": 1,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 1
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Elif Hande Altıntaş Açıkgöz",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Hamza Çorum",
+     "slots": [
+      {
+       "d": 0,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW117",
+   "name": "İktisat",
+   "category": "dept",
+   "year": 1,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 1
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Abdulkadir Develi",
+     "slots": [
+      {
+       "d": 4,
+       "s": "08:00",
+       "e": "10:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW201",
+   "name": "Borçlar Hukuku Genel Hükümler I",
+   "category": "dept",
+   "year": 2,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Ünsal Dönmez",
+     "slots": [
+      {
+       "d": 3,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      },
+      {
+       "d": 4,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Zeynep Dönmez",
+     "slots": [
+      {
+       "d": 0,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      },
+      {
+       "d": 3,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW203",
+   "name": "Ceza Hukuku Genel Hükümler I",
+   "category": "dept",
+   "year": 2,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Hakan Abdülhamid Yavuz",
+     "slots": [
+      {
+       "d": 1,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      },
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Köroğlu Kaya",
+     "slots": [
+      {
+       "d": 3,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      },
+      {
+       "d": 4,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW205",
+   "name": "İdare Hukuku I",
+   "category": "dept",
+   "year": 2,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Yeliz Şanlı Atay",
+     "slots": [
+      {
+       "d": 2,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Murat Ekinci",
+     "slots": [
+      {
+       "d": 0,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW209",
+   "name": "Uluslararası Hukuka Giriş",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Yücel Acer",
+     "slots": [
+      {
+       "d": 1,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Hatice Kübra Ecemiş Yılmaz",
+     "slots": [
+      {
+       "d": 1,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW211",
+   "name": "Legal Discussions I",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Alvin Joel Santos Garcia",
+     "slots": [
+      {
+       "d": 4,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW213",
+   "name": "Psychology",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Nazlı Altın",
+     "slots": [
+      {
+       "d": 2,
+       "s": "11:00",
+       "e": "12:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW215",
+   "name": "Civilization History",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Neslihan Özeler Sezici",
+     "slots": [
+      {
+       "d": 4,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW225",
+   "name": "Internet Law",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Fatmanur Cebeci Çorum",
+     "slots": [
+      {
+       "d": 3,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW227",
+   "name": "Fundamental Concepts of Turkish Administrative Law",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Mustafa Başar",
+     "slots": [
+      {
+       "d": 1,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW233",
+   "name": "Practices of Foreign Law I",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Hatice Hilal Tiritoğlu Ersoy",
+     "slots": [
+      {
+       "d": 3,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW243",
+   "name": "Data Protection Law",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Esra Özen",
+     "slots": [
+      {
+       "d": 3,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW249",
+   "name": "United Nations Law",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Ebru Demir",
+     "slots": [
+      {
+       "d": 1,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW251",
+   "name": "Electoral Law",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Muhammed Said Bilal",
+     "slots": [
+      {
+       "d": 3,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW255",
+   "name": "Legal Practices I",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Bihter Kaytaz Eker",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW257",
+   "name": "Finansal Muhasebe",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Rafet Aktaş",
+     "slots": [
+      {
+       "d": 2,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW263",
+   "name": "Türk Hukuk Tarihi I",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Ahmet Kılınç",
+     "slots": [
+      {
+       "d": 1,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Abdullah Vefa Karataş",
+     "slots": [
+      {
+       "d": 0,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW267",
+   "name": "Challenges of Digitalisation in Human Rights Law",
+   "category": "dept",
+   "year": 2,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 2
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Fatmanur Cebeci Çorum",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW301",
+   "name": "Ceza Hukuku Özel Hükümler",
+   "category": "dept",
+   "year": 3,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Ömer Çelen",
+     "slots": [
+      {
+       "d": 1,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Emre İkbal Açıkgöz",
+     "slots": [
+      {
+       "d": 1,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW303",
+   "name": "Medeni Usul Hukuku I",
+   "category": "dept",
+   "year": 3,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Süleyman Burak Gündoğdu",
+     "slots": [
+      {
+       "d": 2,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Nurbanu Erzurumlu Işık",
+     "slots": [
+      {
+       "d": 4,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW305",
+   "name": "Ticari İşletme Hukuku",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Cafer Eminoğlu",
+     "slots": [
+      {
+       "d": 3,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Nevin Meral",
+     "slots": [
+      {
+       "d": 2,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW307",
+   "name": "Eşya Hukuku I",
+   "category": "dept",
+   "year": 3,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Mehmet Kılıç",
+     "slots": [
+      {
+       "d": 0,
+       "s": "08:00",
+       "e": "10:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Mehmet Zahid Yener",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW309",
+   "name": "Hukuk Sosyolojisi",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Neslihan Özeler Sezici",
+     "slots": [
+      {
+       "d": 3,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Yunus Emre Berber",
+     "slots": [
+      {
+       "d": 0,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW321",
+   "name": "Introduction to Comparative Law",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Ziynet Seldağ Güneş Peschke",
+     "slots": []
+    }
+   ]
+  },
+  {
+   "code": "LAW327",
+   "name": "Europian Union Law",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Mustafa Başar",
+     "slots": [
+      {
+       "d": 4,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW333",
+   "name": "Corporate Governance",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Tuğçe Nimet Yaşar",
+     "slots": [
+      {
+       "d": 0,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW335",
+   "name": "Human Rights",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Anıl Güven Yüksel",
+     "slots": [
+      {
+       "d": 1,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW339",
+   "name": "International Organizations",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi İrem Şengül",
+     "slots": [
+      {
+       "d": 4,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW341",
+   "name": "Moot Court I",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Tuğrul Çakır",
+     "slots": [
+      {
+       "d": 4,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW345",
+   "name": "Fikri Mülkiyet Hukuku",
+   "category": "dept",
+   "year": 3,
+   "ects": 2,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Osman Buğra Beydoğan",
+     "slots": [
+      {
+       "d": 0,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW355",
+   "name": "Farazi Dava III",
+   "category": "dept",
+   "year": 3,
+   "ects": 2,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Zehra Avcı",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW361",
+   "name": "Hukuk ve Sanat",
+   "category": "dept",
+   "year": 3,
+   "ects": 2,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Emine Feyza Tiryakioğlu",
+     "slots": [
+      {
+       "d": 2,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW365",
+   "name": "International Law Practices",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Ekin Deniz Uzun",
+     "slots": [
+      {
+       "d": 0,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW367",
+   "name": "International Space Law",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Tuğrul Çakır",
+     "slots": [
+      {
+       "d": 1,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW371",
+   "name": "Refugee Law and International Protection in Turkey",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi İrem Şengül",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW375",
+   "name": "Contract Law",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Ceren Cerit Dindar",
+     "slots": [
+      {
+       "d": 1,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Aysun Bolaca",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW377",
+   "name": "Borçlar Hukuku Özel Hükümler I",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Ünsal Dönmez",
+     "slots": [
+      {
+       "d": 3,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Zeynep Dönmez",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW379",
+   "name": "Comparative Intellectual Property Law",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Osman Buğra Beydoğan",
+     "slots": [
+      {
+       "d": 0,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW381",
+   "name": "Vergi Hukuku I",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Yusuf Ziya Taşkan",
+     "slots": [
+      {
+       "d": 0,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Mert Silahşör",
+     "slots": [
+      {
+       "d": 2,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW383",
+   "name": "Transnational Organized Crimes",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Maya Ezgi Avcı",
+     "slots": [
+      {
+       "d": 3,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW387",
+   "name": "Law of Carrige of Goods by Air",
+   "category": "dept",
+   "year": 3,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 3
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Hamza Çorum",
+     "slots": [
+      {
+       "d": 3,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW401",
+   "name": "Ceza Muhakemesi Hukuku I",
+   "category": "dept",
+   "year": 4,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Köroğlu Kaya",
+     "slots": [
+      {
+       "d": 4,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Emre İkbal Açıkgöz",
+     "slots": [
+      {
+       "d": 0,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW403",
+   "name": "Milletlararası Özel Hukuk I",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Belkıs Vural Çelenk",
+     "slots": [
+      {
+       "d": 4,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Aysun Bolaca",
+     "slots": [
+      {
+       "d": 3,
+       "s": "09:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW405",
+   "name": "İcra Hukuku",
+   "category": "dept",
+   "year": 4,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Ersin Erdoğan",
+     "slots": [
+      {
+       "d": 0,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Cansu Korkmaz",
+     "slots": [
+      {
+       "d": 1,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW407",
+   "name": "İş ve Sosyal Güvenlik Hukuku I",
+   "category": "dept",
+   "year": 4,
+   "ects": 4,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Seracettin Göktaş",
+     "slots": [
+      {
+       "d": 3,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Canan Erdoğan",
+     "slots": [
+      {
+       "d": 3,
+       "s": "13:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW409",
+   "name": "Kıymetli Evrak Hukuku",
+   "category": "dept",
+   "year": 4,
+   "ects": 2,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Abdülhamid Oğuzhan Hacıömeroğlu",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Zehra Avcı",
+     "slots": [
+      {
+       "d": 2,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW411",
+   "name": "Disputes in the Internet From the Perspective of Private International Law",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Elif Hande Altıntaş Açıkgöz",
+     "slots": [
+      {
+       "d": 0,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW415",
+   "name": "Miras Hukuku",
+   "category": "dept",
+   "year": 4,
+   "ects": 2,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Mehmet Kılıç",
+     "slots": [
+      {
+       "d": 1,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Akın Ünal",
+     "slots": [
+      {
+       "d": 1,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW427",
+   "name": "Business Law",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Tuğçe Nimet Yaşar",
+     "slots": [
+      {
+       "d": 0,
+       "s": "09:00",
+       "e": "10:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW433",
+   "name": "International Contract Law",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Alvin Joel Santos Garcia",
+     "slots": [
+      {
+       "d": 4,
+       "s": "08:00",
+       "e": "09:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW435",
+   "name": "International Jurisprudence",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Tuğrul Çakır",
+     "slots": [
+      {
+       "d": 2,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW455",
+   "name": "Women and Law",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Prof.Dr. Ziynet Seldağ Güneş Peschke",
+     "slots": [
+      {
+       "d": 1,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW469",
+   "name": "International Criminal Law",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Maya Ezgi Avcı",
+     "slots": [
+      {
+       "d": 1,
+       "s": "13:00",
+       "e": "14:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW473",
+   "name": "Maritime Law",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Ceren Cerit Dindar",
+     "slots": [
+      {
+       "d": 3,
+       "s": "09:00",
+       "e": "10:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW481",
+   "name": "Human Rights Law",
+   "category": "dept",
+   "year": 4,
+   "ects": 2,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": true,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW-1",
+     "label": "LAW Ş1",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Anıl Güven Yüksel",
+     "slots": [
+      {
+       "d": 2,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    },
+    {
+     "id": "LAW-2",
+     "label": "LAW Ş2",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Ekin Deniz Uzun",
+     "slots": [
+      {
+       "d": 2,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW487",
+   "name": "Disinformation and Law",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Fatmanur Cebeci Çorum",
+     "slots": [
+      {
+       "d": 0,
+       "s": "15:00",
+       "e": "16:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW491",
+   "name": "Economic Justice",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Mert Silahşör",
+     "slots": [
+      {
+       "d": 2,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW495",
+   "name": "Maden Hukuku",
+   "category": "dept",
+   "year": 4,
+   "ects": 2,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Hayrettin Kurt",
+     "slots": [
+      {
+       "d": 4,
+       "s": "14:00",
+       "e": "15:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "LAW497",
+   "name": "Trademark Law",
+   "category": "dept",
+   "year": 4,
+   "ects": 3,
+   "noClash": false,
+   "ownOnly": false,
+   "prereq": [],
+   "recommended": [],
+   "programs": {
+    "LAW": {
+     "req": false,
+     "year": 4
+    }
+   },
+   "sections": [
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Dr. Öğr. Üyesi Fatma Betül Çakır Çelebi",
+     "slots": [
+      {
+       "d": 4,
+       "s": "10:00",
+       "e": "11:50",
+       "r": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
    "code": "MATH101",
    "name": "Calculus I",
    "category": "dept",
@@ -8737,7 +11272,7 @@ window.COURSE_DATA = {
      "id": "MCE",
      "label": "MCE",
      "dept": "MCE",
-     "instructor": "Öğr.Gör.Dr. Nezakat Javanshır",
+     "instructor": "Öğr.Gör.Dr. Nezakat Javanshir",
      "slots": [
       {
        "d": 0,
@@ -8757,7 +11292,7 @@ window.COURSE_DATA = {
      "id": "MSE",
      "label": "MSE",
      "dept": "MSE",
-     "instructor": "Öğr.Gör.Dr. Nezakat Javanshır",
+     "instructor": "Öğr.Gör.Dr. Nezakat Javanshir",
      "slots": [
       {
        "d": 0,
@@ -9261,7 +11796,7 @@ window.COURSE_DATA = {
      "id": "MATH",
      "label": "MATH",
      "dept": "MATH",
-     "instructor": "Öğr.Gör.Dr. Nezakat Javanshır",
+     "instructor": "Öğr.Gör.Dr. Nezakat Javanshir",
      "slots": [
       {
        "d": 0,
@@ -9575,7 +12110,7 @@ window.COURSE_DATA = {
      "id": "MATH-11",
      "label": "MATH Ş11",
      "dept": "MATH",
-     "instructor": "Öğr.Gör.Dr. Nezakat Javanshır",
+     "instructor": "Öğr.Gör.Dr. Nezakat Javanshir",
      "slots": [
       {
        "d": 0,
@@ -14180,6 +16715,10 @@ window.COURSE_DATA = {
      "req": true,
      "year": 1
     },
+    "LAW": {
+     "req": true,
+     "year": 1
+    },
     "BF": {
      "req": true,
      "year": 1
@@ -14240,6 +16779,20 @@ window.COURSE_DATA = {
        "d": 0,
        "s": "14:00",
        "e": "15:50",
+       "r": "Online"
+      }
+     ]
+    },
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Öğr.Gör.Dr. Semih Alper Dündar",
+     "slots": [
+      {
+       "d": 1,
+       "s": "10:00",
+       "e": "11:50",
        "r": "Online"
       }
      ]
@@ -14441,6 +16994,10 @@ window.COURSE_DATA = {
      "req": true,
      "year": 1
     },
+    "LAW": {
+     "req": true,
+     "year": 1
+    },
     "BF": {
      "req": true,
      "year": 2
@@ -14496,6 +17053,20 @@ window.COURSE_DATA = {
      "label": "ESE",
      "dept": "ESE",
      "instructor": "Dr. Öğr. Üyesi Arzu Erman",
+     "slots": [
+      {
+       "d": 3,
+       "s": "08:00",
+       "e": "09:50",
+       "r": "Online"
+      }
+     ]
+    },
+    {
+     "id": "LAW",
+     "label": "LAW",
+     "dept": "LAW",
+     "instructor": "Doç.Dr. Tuba Tombuloğlu",
      "slots": [
       {
        "d": 3,

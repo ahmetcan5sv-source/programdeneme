@@ -1,0 +1,99 @@
+Birim
+HUKUK FAKÜLTESİ
+Program
+HUKUK (%30 İNG)
+ 	 	Şube 	Ders Kod	Ders Adı	Z/S 	T+U 	Krd 	AKTS	Öğretim Elemanı	Snf 	Açma Nedeni	Ders Dili			Grup Kod
+1	ENG101	ACADEMIC ENGLISH I  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	4	Öğr.Gör. DENNIS O`KEEFE	1	Dönemsel	İngilizce
+3	ENG101	ACADEMIC ENGLISH I  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	4	Öğr.Gör.Dr. SİBEL EYLENEN	1	Dönemsel	İngilizce
+2	ENG101	ACADEMIC ENGLISH I  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	4	Öğr.Gör. EBRU SINAR OKUTUCU	1	Dönemsel	İngilizce
+4	ENG101	ACADEMIC ENGLISH I  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	4	Öğr.Gör. YASEMEN ÖZFINDIK KOTIK	1	Dönemsel	İngilizce
+1	LAW101	HUKUK BAŞLANGICI  [Per 10:00,Per 11:00]	Z	2	0	2	Doç.Dr. BELKIS VURAL ÇELENK	1	Dönemsel	Türkçe
+2	LAW101	HUKUK BAŞLANGICI  [Çar 10:00,Çar 11:00]	Z	2	0	2	Doç.Dr. HATİCE KÜBRA ECEMİŞ YILMAZ	1	Dönemsel	Türkçe
+1	LAW103	ANAYASA HUKUKU GENEL TEORİSİ  [Sal 13:00,Sal 14:00]	Z	2	0	4	Prof.Dr. MEHMET ALİ ZENGİN	1	Dönemsel	Türkçe
+2	LAW103	ANAYASA HUKUKU GENEL TEORİSİ  [Pzt 10:00,Pzt 11:00]	Z	2	0	4	Dr. Öğr. Üyesi MUHAMMED SAİD BİLAL	1	Dönemsel	Türkçe
+1	LAW105	MEDENİ HUKUKA GİRİŞ VE KİŞİLER HUKUKU  [Sal 08:00,Sal 09:00,Çar 08:00,Çar 09:00]	Z	4	0	5	Prof.Dr. AKIN ÜNAL	1	Dönemsel	Türkçe
+2	LAW107	BASIC CONCEPTS OF LAW I  [Sal 15:00,Sal 16:00]	Z	2	0	4	Öğr.Gör.Dr. HAMZA ÇORUM	1	Dönemsel	İngilizce
+1	LAW107	BASIC CONCEPTS OF LAW I  [Per 13:00,Per 14:00]	Z	2	0	4	Öğr.Gör.Dr. BİHTER KAYTAZ EKER	1	Dönemsel	İngilizce
+1	LAW115	LEGAL RESEARCH AND WRITING  [Çar 13:00,Çar 14:00]	Z	2	0	4	Dr. Öğr. Üyesi ELİF HANDE ALTINTAŞ AÇIKGÖZ	1	Dönemsel	İngilizce
+2	LAW115	LEGAL RESEARCH AND WRITING  [Pzt 08:00,Pzt 09:00]	Z	2	0	4	Öğr.Gör.Dr. HAMZA ÇORUM	1	Dönemsel	İngilizce
+1	LAW117	İKTİSAT  [Cum 08:00,Cum 09:00,Cum 10:00]	Z	3	0	3	Prof.Dr. ABDULKADİR DEVELİ	1	Dönemsel	Türkçe
+1	LAW201	BORÇLAR HUKUKU GENEL HÜKÜMLER I  [Per 10:00,Per 11:00,Cum 08:00,Cum 09:00]	Z	4	0	4	Dr. Öğr. Üyesi ÜNSAL DÖNMEZ	2	Dönemsel	Türkçe
+2	LAW201	BORÇLAR HUKUKU GENEL HÜKÜMLER I  [Pzt 13:00,Pzt 14:00,Per 13:00,Per 14:00]	Z	4	0	4	Doç.Dr. ZEYNEP DÖNMEZ	2	Dönemsel	Türkçe
+1	LAW203	CEZA HUKUKU GENEL HÜKÜMLER I  [Sal 15:00,Sal 16:00,Çar 13:00,Çar 14:00]	Z	4	0	4	Doç.Dr. HAKAN ABDÜLHAMİD YAVUZ	2	Dönemsel	Türkçe
+2	LAW203	CEZA HUKUKU GENEL HÜKÜMLER I  [Per 08:00,Per 09:00,Cum 10:00,Cum 11:00]	Z	4	0	4	Dr. Öğr. Üyesi KÖROĞLU KAYA	2	Dönemsel	Türkçe
+1	LAW205	İDARE HUKUKU I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	4	Doç.Dr. YELİZ ŞANLI ATAY	2	Dönemsel	Türkçe
+2	LAW205	İDARE HUKUKU I  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	4	Dr. Öğr. Üyesi MURAT EKİNCİ	2	Dönemsel	Türkçe
+1	LAW209	ULUSLARARASI HUKUKA GİRİŞ  [Sal 13:00,Sal 14:00]	Z	2	0	3	Prof.Dr. YÜCEL ACER	2	Dönemsel	Türkçe
+2	LAW209	ULUSLARARASI HUKUKA GİRİŞ  [Sal 08:00,Sal 09:00]	Z	2	0	3	Doç.Dr. HATİCE KÜBRA ECEMİŞ YILMAZ	2	Dönemsel	Türkçe
+1	LAW211	LEGAL DISCUSSIONS I  [Cum 15:00,Cum 16:00]	S	2	0	3	Dr. Öğr. Üyesi ALVIN JOEL SANTOS GARCIA	2	Dönemsel	İngilizce
+1	LAW213	PSYCHOLOGY  [Çar 11:00,Çar 12:00]	S	2	0	3	Öğr.Gör.Dr. NAZLI ALTIN	2	Dönemsel	İngilizce
+1	LAW215	CIVILIZATION HISTORY  [Cum 10:00,Cum 11:00]	S	2	0	3	Dr. Öğr. Üyesi NESLİHAN ÖZELER SEZİCİ	2	Dönemsel	İngilizce
+1	LAW225	INTERNET LAW  [Per 15:00,Per 16:00]	S	2	0	3	Öğr.Gör.Dr. FATMANUR CEBECİ ÇORUM	2	Dönemsel	İngilizce
+1	LAW227	FUNDAMENTAL CONCEPTS OF TURKISH ADMINISTRATIVE LAW  [Sal 13:00,Sal 14:00]	S	2	0	3	Öğr.Gör.Dr. MUSTAFA BAŞAR	2	Dönemsel	İngilizce
+1	LAW233	PRACTICES OF FOREIGN LAW I  [Per 10:00,Per 11:00]	S	2	0	3	Dr. Öğr. Üyesi HATİCE HİLAL TİRİTOĞLU ERSOY	2	Dönemsel	İngilizce
+1	LAW243	DATA PROTECTION LAW  [Per 15:00,Per 16:00]	S	2	0	3	Dr. Öğr. Üyesi ESRA ÖZEN	2	Dönemsel	İngilizce
+1	LAW249	UNITED NATIONS LAW  [Sal 10:00,Sal 11:00]	S	2	0	3	Dr. Öğr. Üyesi EBRU DEMİR	2	Dönemsel	İngilizce
+1	LAW251	ELECTORAL LAW  [Per 08:00,Per 09:00]	S	2	0	3	Dr. Öğr. Üyesi MUHAMMED SAİD BİLAL	2	Dönemsel	İngilizce
+1	LAW255	LEGAL PRACTICES I  [Cum 13:00,Cum 14:00]	S	2	0	3	Öğr.Gör.Dr. BİHTER KAYTAZ EKER	2	Dönemsel	İngilizce
+1	LAW257	FİNANSAL MUHASEBE  [Çar 15:00,Çar 16:00]	Z	2	0	3	Prof.Dr. RAFET AKTAŞ	2	Dönemsel	Türkçe
+1	LAW263	TÜRK HUKUK TARİHİ I  [Sal 10:00,Sal 11:00]	Z	2	0	3	Prof.Dr. AHMET KILINÇ	2	Dönemsel	Türkçe
+2	LAW263	TÜRK HUKUK TARİHİ I  [Pzt 15:00,Pzt 16:00]	Z	2	0	3	Dr. Öğr. Üyesi ABDULLAH VEFA KARATAŞ	2	Dönemsel	Türkçe
+1	LAW267	CHALLENGES OF DIGITALISATION IN HUMAN RIGHTS LAW  [Cum 13:00,Cum 14:00]	S	3	0	3	Öğr.Gör.Dr. FATMANUR CEBECİ ÇORUM	2	Dönemsel	İngilizce
+1	LAW301	CEZA HUKUKU ÖZEL HÜKÜMLER  [Sal 09:00,Sal 10:00,Sal 11:00]	Z	3	0	4	Dr. Öğr. Üyesi ÖMER ÇELEN	3	Dönemsel	Türkçe
+2	LAW301	CEZA HUKUKU ÖZEL HÜKÜMLER  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	4	Dr. Öğr. Üyesi EMRE İKBAL AÇIKGÖZ	3	Dönemsel	Türkçe
+1	LAW303	MEDENİ USUL HUKUKU I  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	4	Dr. Öğr. Üyesi SÜLEYMAN BURAK GÜNDOĞDU	3	Dönemsel	Türkçe
+2	LAW303	MEDENİ USUL HUKUKU I  [Cum 09:00,Cum 10:00,Cum 11:00]	Z	3	0	4	Dr. Öğr. Üyesi NURBANU ERZURUMLU IŞIK	3	Dönemsel	Türkçe
+2	LAW305	TİCARİ İŞLETME HUKUKU  [Çar 09:00,Çar 10:00,Çar 11:00]	Z	3	0	3	Dr. Öğr. Üyesi NEVİN MERAL	3	Dönemsel	Türkçe
+1	LAW305	TİCARİ İŞLETME HUKUKU  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	3	Prof.Dr. CAFER EMİNOĞLU	3	Dönemsel	Türkçe
+2	LAW307	EŞYA HUKUKU I  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	4	Dr. Öğr. Üyesi MEHMET ZAHİD YENER	3	Dönemsel	Türkçe
+1	LAW307	EŞYA HUKUKU I  [Pzt 08:00,Pzt 09:00,Pzt 10:00]	Z	3	0	4	Prof.Dr. MEHMET KILIÇ	3	Dönemsel	Türkçe
+2	LAW309	HUKUK SOSYOLOJİSİ  [Pzt 15:00,Pzt 16:00]	Z	2	0	3	Dr. Öğr. Üyesi YUNUS EMRE BERBER	3	Dönemsel	Türkçe
+1	LAW309	HUKUK SOSYOLOJİSİ  [Per 15:00,Per 16:00]	Z	2	0	3	Dr. Öğr. Üyesi NESLİHAN ÖZELER SEZİCİ	3	Dönemsel	Türkçe
+1	LAW321	INTRODUCTION TO COMPARATIVE LAW	S	2	0	3	Prof.Dr. ZİYNET SELDAĞ GÜNEŞ PESCHKE	3	Dönemsel	İngilizce
+1	LAW327	EUROPIAN UNION LAW  [Cum 15:00,Cum 16:00]	S	2	0	3	Öğr.Gör.Dr. MUSTAFA BAŞAR	3	Dönemsel	İngilizce
+1	LAW333	CORPORATE GOVERNANCE  [Pzt 13:00,Pzt 14:00]	S	2	0	3	Dr. Öğr. Üyesi TUĞÇE NİMET YAŞAR	3	Dönemsel	İngilizce
+1	LAW335	HUMAN RIGHTS  [Sal 13:00,Sal 14:00]	S	2	0	3	Dr. Öğr. Üyesi ANIL GÜVEN YÜKSEL	3	Dönemsel	İngilizce
+1	LAW339	INTERNATIONAL ORGANIZATIONS  [Cum 10:00,Cum 11:00]	S	2	0	3	Dr. Öğr. Üyesi İREM ŞENGÜL	3	Dönemsel	İngilizce
+1	LAW341	MOOT COURT I  [Cum 15:00,Cum 16:00]	S	2	0	3	Dr. Öğr. Üyesi TUĞRUL ÇAKIR	3	Dönemsel	İngilizce
+1	LAW345	FİKRİ MÜLKİYET HUKUKU  [Pzt 10:00,Pzt 11:00]	S	2	0	2	Dr. Öğr. Üyesi OSMAN BUĞRA BEYDOĞAN	3	Dönemsel	Türkçe
+1	LAW355	FARAZİ DAVA III  [Cum 13:00,Cum 14:00]	S	2	0	2	Dr. Öğr. Üyesi ZEHRA AVCI	3	Dönemsel	Türkçe
+1	LAW361	HUKUK VE SANAT  [Çar 15:00,Çar 16:00]	S	2	0	2	Dr. Öğr. Üyesi EMİNE FEYZA TİRYAKİOĞLU	3	Dönemsel	Türkçe
+1	LAW365	INTERNATIONAL LAW PRACTICES  [Pzt 08:00,Pzt 09:00]	S	2	0	3	Dr. Öğr. Üyesi EKİN DENİZ UZUN	3	Dönemsel	İngilizce
+1	LAW367	INTERNATIONAL SPACE LAW  [Sal 15:00,Sal 16:00]	S	2	0	3	Dr. Öğr. Üyesi TUĞRUL ÇAKIR	3	Dönemsel	İngilizce
+1	LAW371	REFUGEE LAW AND INTERNATIONAL PROTECTION IN TURKEY  [Cum 13:00,Cum 14:00]	S	2	0	3	Dr. Öğr. Üyesi İREM ŞENGÜL	3	Dönemsel	İngilizce
+1	LAW375	CONTRACT LAW  [Sal 08:00,Sal 09:00]	S	2	0	3	Dr. Öğr. Üyesi CEREN CERİT DİNDAR	3	Dönemsel	İngilizce
+2	LAW375	CONTRACT LAW  [Çar 13:00,Çar 14:00]	S	2	0	3	Dr. Öğr. Üyesi AYSUN BOLACA	3	Dönemsel	İngilizce
+2	LAW377	BORÇLAR HUKUKU ÖZEL HÜKÜMLER I  [Çar 13:00,Çar 14:00]	Z	2	0	3	Doç.Dr. ZEYNEP DÖNMEZ	3	Dönemsel	Türkçe
+1	LAW377	BORÇLAR HUKUKU ÖZEL HÜKÜMLER I  [Per 13:00,Per 14:00]	Z	2	0	3	Dr. Öğr. Üyesi ÜNSAL DÖNMEZ	3	Dönemsel	Türkçe
+1	LAW379	COMPARATIVE INTELLECTUAL PROPERTY LAW  [Pzt 15:00,Pzt 16:00]	S	2	0	3	Dr. Öğr. Üyesi OSMAN BUĞRA BEYDOĞAN	3	Dönemsel	İngilizce
+2	LAW381	VERGİ HUKUKU I  [Çar 15:00,Çar 16:00]	Z	2	0	3	Dr. Öğr. Üyesi MERT SİLAHŞÖR	3	Dönemsel	Türkçe
+1	LAW381	VERGİ HUKUKU I  [Pzt 13:00,Pzt 14:00]	Z	2	0	3	Prof.Dr. YUSUF ZİYA TAŞKAN	3	Dönemsel	Türkçe
+1	LAW383	TRANSNATIONAL ORGANIZED CRIMES  [Per 10:00,Per 11:00]	S	2	0	3	Öğr.Gör.Dr. MAYA EZGİ AVCI	3	Dönemsel	İngilizce
+1	LAW387	LAW OF CARRIGE OF GOODS BY AIR  [Per 08:00,Per 09:00]	S	2	0	3	Öğr.Gör.Dr. HAMZA ÇORUM	3	Dönemsel	İngilizce
+1	LAW401	CEZA MUHAKEMESİ HUKUKU I  [Cum 13:00,Cum 14:00,Cum 15:00]	Z	3	0	4	Dr. Öğr. Üyesi KÖROĞLU KAYA	4	Dönemsel	Türkçe
+2	LAW401	CEZA MUHAKEMESİ HUKUKU I  [Pzt 09:00,Pzt 10:00,Pzt 11:00]	Z	3	0	4	Dr. Öğr. Üyesi EMRE İKBAL AÇIKGÖZ	4	Dönemsel	Türkçe
+2	LAW403	MİLLETLARARASI ÖZEL HUKUK I  [Per 09:00,Per 10:00,Per 11:00]	Z	3	0	3	Dr. Öğr. Üyesi AYSUN BOLACA	4	Dönemsel	Türkçe
+1	LAW403	MİLLETLARARASI ÖZEL HUKUK I  [Cum 09:00,Cum 10:00,Cum 11:00]	Z	3	0	3	Doç.Dr. BELKIS VURAL ÇELENK	4	Dönemsel	Türkçe
+2	LAW405	İCRA HUKUKU  [Sal 13:00,Sal 14:00,Sal 15:00]	Z	3	0	4	Dr. Öğr. Üyesi CANSU KORKMAZ	4	Dönemsel	Türkçe
+1	LAW405	İCRA HUKUKU  [Pzt 13:00,Pzt 14:00,Pzt 15:00]	Z	3	0	4	Prof.Dr. ERSİN ERDOĞAN	4	Dönemsel	Türkçe
+2	LAW407	İŞ VE SOSYAL GÜVENLİK HUKUKU I  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	4	Doç.Dr. CANAN ERDOĞAN	4	Dönemsel	Türkçe
+1	LAW407	İŞ VE SOSYAL GÜVENLİK HUKUKU I  [Per 13:00,Per 14:00,Per 15:00]	Z	3	0	4	Doç.Dr. SERACETTİN GÖKTAŞ	4	Dönemsel	Türkçe
+1	LAW409	KIYMETLİ EVRAK HUKUKU  [Çar 13:00,Çar 14:00]	Z	2	0	2	Doç.Dr. ABDÜLHAMİD OĞUZHAN HACIÖMEROĞLU	4	Dönemsel	Türkçe
+2	LAW409	KIYMETLİ EVRAK HUKUKU  [Çar 08:00,Çar 09:00]	Z	2	0	2	Dr. Öğr. Üyesi ZEHRA AVCI	4	Dönemsel	Türkçe
+1	LAW411	DISPUTES IN THE INTERNET FROM THE PERSPECTIVE OF PRIVATE INTERNATIONAL LAW  [Pzt 13:00,Pzt 14:00]	S	2	0	3	Dr. Öğr. Üyesi ELİF HANDE ALTINTAŞ AÇIKGÖZ	4	Dönemsel	İngilizce
+1	LAW415	MİRAS HUKUKU  [Sal 08:00,Sal 09:00]	Z	2	0	2	Prof.Dr. MEHMET KILIÇ	4	Dönemsel	Türkçe
+2	LAW415	MİRAS HUKUKU  [Sal 10:00,Sal 11:00]	Z	2	0	2	Prof.Dr. AKIN ÜNAL	4	Dönemsel	Türkçe
+1	LAW427	BUSINESS LAW  [Pzt 09:00,Pzt 10:00]	S	2	0	3	Dr. Öğr. Üyesi TUĞÇE NİMET YAŞAR	4	Dönemsel	İngilizce
+1	LAW433	INTERNATIONAL CONTRACT LAW  [Cum 08:00,Cum 09:00]	S	2	0	3	Dr. Öğr. Üyesi ALVIN JOEL SANTOS GARCIA	4	Dönemsel	İngilizce
+1	LAW435	INTERNATIONAL JURISPRUDENCE  [Çar 13:00,Çar 14:00]	S	2	0	3	Dr. Öğr. Üyesi TUĞRUL ÇAKIR	4	Dönemsel	İngilizce
+1	LAW455	WOMEN AND LAW  [Sal 10:00,Sal 11:00]	S	2	0	3	Prof.Dr. ZİYNET SELDAĞ GÜNEŞ PESCHKE	4	Dönemsel	İngilizce
+1	LAW469	INTERNATIONAL CRIMINAL LAW  [Sal 13:00,Sal 14:00]	S	2	0	3	Öğr.Gör.Dr. MAYA EZGİ AVCI	4	Dönemsel	İngilizce
+1	LAW473	MARITIME LAW  [Per 09:00,Per 10:00]	S	2	0	3	Dr. Öğr. Üyesi CEREN CERİT DİNDAR	4	Dönemsel	İngilizce
+1	LAW481	HUMAN RIGHTS LAW  [Çar 10:00,Çar 11:00]	Z	2	0	2	Dr. Öğr. Üyesi ANIL GÜVEN YÜKSEL	4	Dönemsel	İngilizce
+2	LAW481	HUMAN RIGHTS LAW  [Çar 15:00,Çar 16:00]	Z	2	0	2	Dr. Öğr. Üyesi EKİN DENİZ UZUN	4	Dönemsel	İngilizce
+1	LAW487	DISINFORMATION AND LAW  [Pzt 15:00,Pzt 16:00]	S	2	0	3	Öğr.Gör.Dr. FATMANUR CEBECİ ÇORUM	4	Dönemsel	İngilizce
+1	LAW491	ECONOMIC JUSTICE  [Çar 10:00,Çar 11:00]	S	2	0	3	Dr. Öğr. Üyesi MERT SİLAHŞÖR	4	Dönemsel	İngilizce
+1	LAW495	MADEN HUKUKU  [Cum 14:00,Cum 15:00]	S	2	0	2	Doç.Dr. HAYRETTİN KURT	4	Dönemsel	Türkçe
+1	LAW497	TRADEMARK LAW  [Cum 10:00,Cum 11:00]	S	2	0	3	Dr. Öğr. Üyesi FATMA BETÜL ÇAKIR ÇELEBİ	4	Dönemsel	İngilizce
+1	TDL101	TÜRK DİLİ I  [Sal 10:00,Sal 11:00]	Z	2	0	2	Öğr.Gör.Dr. SEMİH ALPER DÜNDAR	1	Dönemsel	Türkçe
+1	TİT101	TÜRK İNKILAP TARİHİ I  [Per 08:00,Per 09:00]	Z	2	0	2	Doç.Dr. TUBA TOMBULOĞLU	1	Dönemsel	Türkçe

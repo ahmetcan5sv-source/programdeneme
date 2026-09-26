@@ -26,6 +26,7 @@ OUT = ROOT / "data" / "courses.js"
 TERM = "2026-2027 Güz"
 MUH = "Mühendislik ve Doğa Bilimleri Fakültesi"
 ISL = "İşletme Fakültesi"
+HUK = "Hukuk Fakültesi"
 # OBS program adının başı (büyük harf) -> kısa kod, görünen ad, fakülte
 PROGRAMS = OrderedDict([
     ("BİLGİSAYAR", ("CENG", "Bilgisayar Mühendisliği", MUH)),
@@ -41,6 +42,7 @@ PROGRAMS = OrderedDict([
     ("İŞLETME", ("BUS", "İşletme", ISL)),
     ("ULUSLARARASI", ("ITB", "Uluslararası Ticaret ve İşletmecilik", ISL)),
     ("YÖNETİM", ("MIS", "Yönetim Bilişim Sistemleri", ISL)),
+    ("HUKUK", ("LAW", "Hukuk", HUK)),
 ])
 ENGR_FACULTY = MUH
 # Herkesin yalnızca kendi bölümünün şubesinden alabileceği dersler (staj ayrıca açma nedeninden anlaşılır)
@@ -49,10 +51,16 @@ OWN_ONLY_NAME = re.compile(r"GRADUATION PROJECT|SENIOR PROJECT|BİTİRME", re.I)
 DAYS = {"pzt": 0, "sal": 1, "çar": 2, "car": 2, "per": 3, "cum": 4}
 COMMON = re.compile(r"^(TDL|TIT|ENG10[1-4])")
 # Derslik bilgisi olmayan ama online yapıldığı bilinen dersler
-ONLINE = re.compile(r"^(TDL|TIT|ENG10[1-4]|ENGR206|ENGR213|ENGR251|ENGR265)")
+ONLINE = re.compile(r"^(TDL|TIT|ENG103|ENGR206|ENGR213|ENGR251|ENGR265)")
 # Açma nedeni "Staj" olanlar zaten muaf; ek olarak çakışma kontrolüne girmeyecek dersler
 NO_CLASH = set()
 ALIASES = {"TT101": "TIT101", "TT102": "TIT102"}
+# Türkçe büyük/küçük harf kuralı yabancı isimleri bozar (DENNIS -> Dennıs); bunları düzelt
+NAME_FIX = {
+    "Dennıs": "Dennis", "O`keefe": "O'Keefe", "Alvın": "Alvin", "Garcıa": "Garcia",
+    "Javanshır": "Javanshir", "Karım": "Karim", "Khıavı": "Khiavi", "Kotık": "Kotik",
+    "Musarıa": "Musaria", "Salmanoghlı": "Salmanoghli",
+}
 ROMAN = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII"}
 SMALL_EN = {"and", "of", "in", "the", "for", "to", "with", "on", "a", "an", "at", "by"}
 SMALL_TR = {"ve", "ile"}
@@ -96,7 +104,8 @@ def title(text, turkish=False):
 
 def person(name):
     # "Doç.Dr. İBRAHİM YILMAZ" -> "Doç.Dr. İbrahim Yılmaz"
-    return " ".join(w if "." in w else title(w, turkish=True) for w in name.split())
+    words = (w if "." in w else title(w, turkish=True) for w in name.split())
+    return " ".join(NAME_FIX.get(w, w) for w in words)
 
 
 def parse_slots(text):
