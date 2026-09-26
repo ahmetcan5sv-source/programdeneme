@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 <header class="top">
@@ -67,6 +67,22 @@
       </div>
       <ul id="selected" class="selected"></ul>
       <p id="warn" class="warn" hidden></p>
+    </section>
+
+    <section class="card goal-card">
+      <div class="card-head"><h2>AKTS hedefi</h2><span class="small muted">isteğe bağlı</span></div>
+      <div class="field two">
+        <label><span class="label">En az AKTS</span><input type="number" id="ectsMin" min="0" max="60" placeholder="ör. 30" inputmode="numeric"></label>
+        <label><span class="label">En fazla AKTS</span><input type="number" id="ectsMax" min="0" max="60" placeholder="sınır yok" inputmode="numeric"></label>
+      </div>
+      <span class="label">Önerilecek dersler</span>
+      <div class="chips" id="goalSources">
+        <label><input type="checkbox" value="dept"><span>Bölüm seçmelileri</span></label>
+        <label><input type="checkbox" value="engr"><span>ENGR</span></label>
+        <label><input type="checkbox" value="rektorluk"><span>Rektörlük</span></label>
+        <label><input type="checkbox" value="diger"><span>Fakültedeki diğer bölümler</span></label>
+      </div>
+      <p class="small muted goal-hint">Hedef girince takvimin altında, programına çakışmadan eklenebilecek ders paketleri önerilir.</p>
     </section>
 
     <section class="card fav-card" id="favSection" hidden>
@@ -131,6 +147,15 @@
         <button id="clearBlocked" class="link">Engelleri temizle</button></p>
     </div>
 
+    <section class="card" id="suggestSection" hidden>
+      <div class="card-head">
+        <h2>AKTS hedefi için öneriler</h2>
+        <span id="suggestNeed" class="pill"></span>
+      </div>
+      <p id="suggestInfo" class="small muted"></p>
+      <ul id="suggest" class="suggest"></ul>
+    </section>
+
     <section class="card" id="fitsSection" hidden>
       <div class="card-head">
         <h2>Bu programa sığan dersler</h2>
@@ -170,7 +195,7 @@
   Veriler OBS ders programından aktarılmıştır. Kayıt öncesi OBS'den kontrol et.
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
-<script src="data/courses.js?v=12"></script>
-<script src="app.js?v=12"></script>
+<script src="data/courses.js?v=14"></script>
+<script src="app.js?v=14"></script>
 </body>
 </html>

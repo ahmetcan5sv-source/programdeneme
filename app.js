@@ -35,6 +35,9 @@ const state = {
   sortBy: "freedays",
   program: DEFAULT_PROGRAM,  // student's department
   ownSections: true,         // for shared courses (MATH101...) only use the student's department section
+  ectsMin: null,             // ECTS goal; suggestions fill the schedule up to this
+  ectsMax: null,
+  goalSources: ["dept", "engr", "rektorluk"],
 };
 let schedules = [];
 let current = 0;
@@ -58,6 +61,7 @@ function load() {
     state.selected = state.selected.filter((x) => courses.has(x.code));
     state.blocked = state.blocked || [];
     if (!DATA.programs[state.program]) state.program = DEFAULT_PROGRAM;
+    if (!Array.isArray(state.goalSources)) state.goalSources = ["dept", "engr", "rektorluk"];
     // Drop time limits that are no longer offered (e.g. saved when the grid started at 08:30)
     for (const k of ["minStart", "maxEnd"]) {
       const v = state[k];
@@ -233,9 +237,16 @@ function renderSelected() {
   const known = state.selected.map((s) => courses.get(s.code).ects).filter((x) => x != null);
   const unknown = state.selected.length - known.length;
   $("selCount").textContent = state.selected.length ? `(${state.selected.length})` : "";
-  $("ects").textContent = state.selected.length
-    ? `${known.reduce((a, b) => a + b, 0)}${unknown ? "+" : ""} AKTS`
+  const total = known.reduce((a, b) => a + b, 0);
+  const goal = state.ectsMin || state.ectsMax;
+  $("ects").textContent = state.selected.length || goal
+    ? `${total}${unknown ? "+" : ""}${state.ectsMin ? ` / ${state.ectsMin}` : ""} AKTS`
     : "";
+  const tooLow = state.ectsMin && total < state.ectsMin;
+  const tooHigh = state.ectsMax && total > state.ectsMax;
+  $("ects").classList.toggle("bad", !!(goal && (tooLow || tooHigh)));
+  $("ects").classList.toggle("ok", !!(goal && !tooLow && !tooHigh && state.selected.length));
+  $("ects").title = tooHigh ? `En fazla ${state.ectsMax} AKTS sınırını aşıyorsun` : "";
   $("selected").innerHTML = state.selected.map((sel) => {
     const c = courses.get(sel.code);
     const cand = candidateSections(c);
@@ -435,6 +446,7 @@ function renderCounter(empty) {
   else if (empty.length) $("counter").textContent = `${empty.join(", ")} için uygun şube yok`;
   else if (!n) $("counter").textContent = "Çakışmasız program yok";
   else $("counter").textContent = `${current + 1} / ${n}${n >= MAX_RESULTS ? "+" : ""}`;
+  renderSuggestions();
 }
 
 let lastEmpty = [];
@@ -444,7 +456,8 @@ let snapshot = null;
 function update() {
   const now = JSON.stringify({ selected: state.selected, blocked: state.blocked, freeDays: state.freeDays,
     minStart: state.minStart, maxEnd: state.maxEnd, ignoreOnline: state.ignoreOnline,
-    program: state.program, ownSections: state.ownSections });
+    program: state.program, ownSections: state.ownSections,
+    ectsMin: state.ectsMin, ectsMax: state.ectsMax, goalSources: state.goalSources });
   if (snapshot && snapshot !== now) {
     undoStack.push(snapshot);
     if (undoStack.length > 50) undoStack.shift();
@@ -527,6 +540,29 @@ function bind() {
   $("prev").addEventListener("click", () => { if (current > 0) { current--; renderCounter(lastEmpty); renderGrid(); } });
   $("next").addEventListener("click", () => { if (current < schedules.length - 1) { current++; renderCounter(lastEmpty); renderGrid(); } });
   $("undo").addEventListener("click", undo);
+  const num = (v) => (v === "" || isNaN(+v) || +v <= 0 ? null : Math.round(+v));
+  let goalTimer;
+  for (const id of ["ectsMin", "ectsMax"]) {
+    $(id).addEventListener("input", (e) => {
+      clearTimeout(goalTimer);
+      goalTimer = setTimeout(() => { state[id] = num(e.target.value); update(); }, 350);
+    });
+  }
+  $("goalSources").addEventListener("change", () => {
+    state.goalSources = [...$("goalSources").querySelectorAll("input:checked")].map((i) => i.value);
+    update();
+  });
+  $("suggest").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-pkg]");
+    if (!b) return;
+    const pkg = lastSuggestions[+b.dataset.pkg];
+    for (const { c, s } of pkg.picks) {
+      if (state.selected.some((x) => x.code === c.code)) continue;
+      state.selected.push({ code: c.code, excluded: candidateSections(c).map((x) => x.id).filter((id) => id !== s.id) });
+    }
+    update();
+    toast(`${pkg.picks.map((p) => p.c.code).join(", ")} eklendi`);
+  });
   $("grid").addEventListener("click", (e) => {
     const blk = e.target.closest(".blk:not(.ghost)");
     if (blk) openDetail(blk.dataset.code, blk.dataset.sec);
@@ -659,6 +695,108 @@ async function downloadPng() {
   a.download = "ders-programi.png";
   a.href = canvas.toDataURL("image/png");
   a.click();
+}
+
+// ---------- ECTS goal suggestions ----------
+let lastSuggestions = [];
+
+function goalSource(c) {
+  if (c.category === "rektorluk") return "rektorluk";
+  if (c.category === "engr") return "engr";
+  return progInfo(c) ? "dept" : "diger";
+}
+
+// Preference when ranking packages: own department first, then ENGR, rektörlük, other departments
+const SOURCE_RANK = { dept: 0, engr: 1, rektorluk: 2, diger: 3 };
+
+function findPackages(need, taken, room, hasRektorluk) {
+  const cands = DATA.courses
+    // Only electives: required courses are added per year, projects/internships are never "filler"
+    .filter((c) => c.ects && available(c) && !isRequired(c) && !c.ownOnly && !state.selected.some((s) => s.code === c.code) &&
+      state.goalSources.includes(goalSource(c)) && !(hasRektorluk && c.category === "rektorluk"))
+    .map((c) => ({
+      c, rank: SOURCE_RANK[goalSource(c)],
+      secs: candidateSections(c).filter((s) => s.slots.length && sectionUsable(s)).map((s) => ({ s, iv: toIntervals(s, {}) })),
+    }))
+    .filter((x) => x.secs.length && (room == null || x.c.ects <= room))
+    .sort((a, b) => a.rank - b.rank || b.c.ects - a.c.ects);
+
+  const found = [];
+  let nodes = 0;
+  // Iterative deepening so packages with fewer courses are found first
+  for (let depth = 1; depth <= 4 && found.length < 12; depth++) {
+    (function dfs(start, picks, ivs, ects, rek) {
+      if (++nodes > 40000 || found.length >= 60) return;
+      if (ects >= need) { if (picks.length === depth) found.push({ picks: picks.slice(), ects }); return; }
+      if (picks.length === depth) return;
+      for (let i = start; i < cands.length; i++) {
+        const x = cands[i];
+        if (rek && x.c.category === "rektorluk") continue;
+        if (room != null && ects + x.c.ects > room) continue;
+        const sec = x.secs.find((s) => !clashes(ivs, s.iv));
+        if (!sec) continue;
+        picks.push({ c: x.c, s: sec.s, rank: x.rank });
+        dfs(i + 1, picks, ivs.concat(sec.iv), ects + x.c.ects, rek || x.c.category === "rektorluk");
+        picks.pop();
+      }
+    })(0, [], taken, 0, hasRektorluk);
+  }
+  const score = (p) => p.picks.reduce((a, x) => a + x.rank, 0);
+  found.sort((a, b) => a.picks.length - b.picks.length || (a.ects - need) - (b.ects - need) || score(a) - score(b));
+  // Keep the list varied: a course may appear in at most 3 packages
+  const uses = {};
+  const out = [];
+  for (const p of found) {
+    if (p.picks.some((x) => (uses[x.c.code] || 0) >= 3)) continue;
+    for (const x of p.picks) uses[x.c.code] = (uses[x.c.code] || 0) + 1;
+    out.push(p);
+    if (out.length === 8) break;
+  }
+  return out;
+}
+
+function renderSuggestions() {
+  const box = $("suggestSection");
+  lastSuggestions = [];
+  box.hidden = !state.ectsMin;
+  if (box.hidden) return;
+
+  const total = state.selected.reduce((a, s) => a + (courses.get(s.code).ects || 0), 0);
+  const need = state.ectsMin - total;
+  const room = state.ectsMax ? state.ectsMax - total : null;
+  $("suggestNeed").textContent = need > 0 ? `${need} AKTS eksik` : "Hedefe ulaştın";
+  $("suggestNeed").className = "pill " + (need > 0 ? "bad" : "ok");
+
+  const base = state.selected.length ? schedules[current] : [];
+  if (need <= 0) {
+    $("suggestInfo").textContent = room != null && room < 0 ? `En fazla ${state.ectsMax} AKTS sınırını ${-room} AKTS aşıyorsun.` : "";
+    $("suggest").innerHTML = "";
+    return;
+  }
+  if (!base) {
+    $("suggestInfo").textContent = "Önce seçtiğin derslerden çakışmasız bir program oluşmalı.";
+    $("suggest").innerHTML = "";
+    return;
+  }
+  if (!state.goalSources.length) {
+    $("suggestInfo").textContent = "Önerilecek ders türlerinden en az birini seç.";
+    $("suggest").innerHTML = "";
+    return;
+  }
+  const taken = base.flatMap((o) => toIntervals(o.sec, state.selected.find((x) => x.code === o.course.code) || {}));
+  const hasRek = state.selected.some((s) => courses.get(s.code).category === "rektorluk");
+  lastSuggestions = findPackages(need, taken, room, hasRek);
+
+  $("suggestInfo").textContent = lastSuggestions.length
+    ? `Görüntülenen programa (${current + 1}. seçenek) çakışmadan eklenebilecek paketler. Filtreler ve engellenen saatler de dikkate alınır.`
+    : "Bu programa çakışmadan sığan ve hedefe ulaştıran bir paket bulunamadı. Başka bir program seçeneğine geçmeyi, filtreleri gevşetmeyi veya daha fazla ders türü seçmeyi dene.";
+  $("suggest").innerHTML = lastSuggestions.map((p, i) => `
+    <li>
+      <div class="pk">${p.picks.map(({ c, s }) => `<span class="cc" title="${c.name} · ${s.slots.map(slotText).join(", ")}">
+        <b>${c.code}</b> ${c.ects} AKTS${c.sections.length > 1 ? ` · ${sectionLabel(s)}` : ""}</span>`).join("")}</div>
+      <span class="sum">+${p.ects} → <b>${total + p.ects} AKTS</b></span>
+      <button class="btn primary" data-pkg="${i}">Ekle</button>
+    </li>`).join("");
 }
 
 // ---------- undo / stats / detail ----------
@@ -803,6 +941,9 @@ function syncControls() {
   $("maxEnd").value = state.maxEnd ?? "";
   $("ignoreOnline").checked = state.ignoreOnline;
   $("ownSections").checked = state.ownSections;
+  $("ectsMin").value = state.ectsMin ?? "";
+  $("ectsMax").value = state.ectsMax ?? "";
+  for (const cb of $("goalSources").querySelectorAll("input")) cb.checked = state.goalSources.includes(cb.value);
   $("programSel").value = state.program;
   $("sortBy").value = state.sortBy;
   for (const cb of $("freeDays").querySelectorAll("input")) cb.checked = state.freeDays.includes(+cb.value);
